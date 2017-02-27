@@ -26,4 +26,28 @@ public class Spending {
     public double getAmount(){
         return this.amount;
     }
+
+    public void setDate(String date){
+        this.date = date;
+    }
+
+    public String getDate(){
+        return this.date;
+    }
+
+    public void setCategory(int category){
+        this.category = category;
+    }
+
+    public int getCategory(){
+        return this.category;
+    }
+
+    public void setDescription(String description){
+        this.description = description
+    }
+
+    public String getDescription(){
+        return this.description;
+    }
 }
