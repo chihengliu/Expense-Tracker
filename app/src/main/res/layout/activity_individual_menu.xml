@@ -101,4 +101,13 @@
         android:layout_toRightOf="@+id/week_individual"
         android:layout_toEndOf="@+id/week_individual" />
 
+    <ListView
+        android:id="@+id/spendingList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/list_individual"
+        android:layout_below="@+id/day_individual"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp" />
+
 </RelativeLayout>
