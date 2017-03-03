@@ -48,12 +48,12 @@
             android:layout_height="match_parent" >
 
             <EditText
+                android:id="@+id/category"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:inputType="textPersonName"
-                android:ems="10"
-                android:id="@+id/editText"
                 android:background="@android:color/background_light"
+                android:ems="10"
+                android:inputType="textPersonName"
                 android:textSize="30sp" />
         </TableRow>
 
@@ -103,26 +103,27 @@
             android:layout_height="match_parent" >
 
             <EditText
+                android:id="@+id/description_individual"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:inputType="textPersonName"
-                android:text="(Optional)"
-                android:ems="10"
-                android:id="@+id/description_individual"
                 android:background="@android:color/background_light"
+                android:ems="10"
+                android:hint="Optional"
+                android:inputType="textPersonName"
                 android:textSize="30sp" />
         </TableRow>
 
     </TableLayout>
 
     <Button
-        android:text="save"
+        android:id="@+id/save"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/save"
-        android:background="@android:color/holo_orange_dark"
         android:layout_alignBaseline="@+id/cancel"
         android:layout_alignBottom="@+id/cancel"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:background="@android:color/holo_orange_dark"
+        android:onClick="saveCreate"
+        android:text="save" />
 </RelativeLayout>
