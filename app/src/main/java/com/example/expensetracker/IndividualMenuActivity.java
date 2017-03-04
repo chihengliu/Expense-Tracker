@@ -36,8 +36,7 @@ public class IndividualMenuActivity extends AppCompatActivity {
     }
 
     public void mainMenu(View view) {
-        Intent backToMain = new Intent(IndividualMenuActivity.this,MainMenu.class);
-        startActivity(backToMain);
+        finish();
         overridePendingTransition(R.animator.zoom_enter,R.animator.zoom_exit);
     }
 
@@ -55,7 +54,13 @@ public class IndividualMenuActivity extends AppCompatActivity {
                 //temp.put(FIRST_COLUMN, info.get(3));
                 //temp.put(SECOND_COLUMN, info.get(2));
                 //temp.put("Third",info.get(1));
-                list.add(info);
+                int position = (int)data.getSerializableExtra("position");
+                if (position==-1) {
+                    list.add(info);
+                }
+                else {
+                    list.set(position,info);
+                }
                 ListViewAdapter adapter=new ListViewAdapter(this, list);
                 ListView listView = (ListView) findViewById(R.id.spendingList);
                 listView.setAdapter(adapter);
@@ -67,9 +72,10 @@ public class IndividualMenuActivity extends AppCompatActivity {
                     {
                         int pos=position+1;
                         Toast.makeText(IndividualMenuActivity.this, Integer.toString(pos)+" Clicked", Toast.LENGTH_SHORT).show();
-                        Intent intent = new Intent(IndividualMenuActivity.this,individual_detail.class);
+                        Intent intent = new Intent(IndividualMenuActivity.this,AddIndividual.class);
                         intent.putExtra("detail",list.get(position));
-                        startActivity(intent);
+                        intent.putExtra("position",position);
+                        startActivityForResult(intent,REQEST_CODE_ADD_IND);
                     }
 
                 });

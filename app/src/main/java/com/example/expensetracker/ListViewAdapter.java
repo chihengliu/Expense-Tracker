@@ -72,7 +72,7 @@ public class ListViewAdapter extends BaseAdapter{
 
         Spending temp = list.get(position);
         txtFirst.setText(temp.getCategory());
-        txtSecond.setText(Integer.toString((int)temp.getAmount()));
+        txtSecond.setText(Double.toString(temp.getAmount()));
 
 
         return convertView;

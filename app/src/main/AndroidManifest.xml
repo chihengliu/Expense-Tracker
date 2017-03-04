@@ -23,7 +23,6 @@
         <activity android:name=".AddIndividual" />
         <activity android:name=".EventPage" />
         <activity android:name=".AddEventSpending" />
-        <activity android:name=".individual_detail"></activity>
     </application>
 
 </manifest>
