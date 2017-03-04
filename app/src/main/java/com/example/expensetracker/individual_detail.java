@@ -6,9 +6,7 @@ import android.os.Bundle;
 import android.widget.TextView;
 
 import java.util.HashMap;
-
-import static classObject.Constants.FIRST_COLUMN;
-import static classObject.Constants.SECOND_COLUMN;
+import classObject.*;
 
 public class individual_detail extends AppCompatActivity {
     private HashMap<String, String> detail;
@@ -17,13 +15,13 @@ public class individual_detail extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_individual_detail);
         Intent intent = getIntent();
-        detail = (HashMap<String, String>)intent.getSerializableExtra("detail");
+        Spending detail = intent.getParcelableExtra("detail");
         TextView cat = (TextView) findViewById(R.id.category_detal);
-        cat.setText(detail.get(FIRST_COLUMN));
+        cat.setText(detail.getCategory());
         TextView am = (TextView) findViewById(R.id.amount_detail);
-        am.setText(detail.get(SECOND_COLUMN));
+        am.setText(Double.toString(detail.getAmount()));
         TextView des = (TextView) findViewById(R.id.description_detail);
-        des.setText(detail.get("Third"));
+        des.setText(detail.getDescription());
 
     }
 

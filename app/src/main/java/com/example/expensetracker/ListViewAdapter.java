@@ -13,18 +13,21 @@ import java.util.HashMap;
 import static classObject.Constants.FIRST_COLUMN;
 import static classObject.Constants.SECOND_COLUMN;
 
+import classObject.*;
+
 /**
  * Created by yueweiyang on 3/3/17.
  */
 
 public class ListViewAdapter extends BaseAdapter{
-    public ArrayList<HashMap<String, String>> list;
+    //public ArrayList<HashMap<String, String>> list;
+    public ArrayList<Spending> list;
     Activity activity;
     TextView txtFirst;
     TextView txtSecond;
 
 
-    public ListViewAdapter(Activity activity, ArrayList<HashMap<String, String>> list){
+    public ListViewAdapter(Activity activity, ArrayList<Spending> list){
         super();
         this.activity=activity;
         this.list=list;
@@ -67,9 +70,9 @@ public class ListViewAdapter extends BaseAdapter{
 
         }
 
-        HashMap<String, String> map=list.get(position);
-        txtFirst.setText(map.get(FIRST_COLUMN));
-        txtSecond.setText(map.get(SECOND_COLUMN));
+        Spending temp = list.get(position);
+        txtFirst.setText(temp.getCategory());
+        txtSecond.setText(Integer.toString((int)temp.getAmount()));
 
 
         return convertView;

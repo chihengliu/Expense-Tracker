@@ -1,13 +1,16 @@
 package com.example.expensetracker;
 
 import android.content.Intent;
+import android.os.Parcelable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 
+import java.io.Serializable;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
+import classObject.*;
 
 public class AddIndividual extends AppCompatActivity {
     EditText ET_CAT,ET_AMT,ET_DES;
@@ -32,17 +35,20 @@ public class AddIndividual extends AppCompatActivity {
         category = ET_CAT.getText().toString();
         description = ET_DES.getText().toString();
         amount = ET_AMT.getText().toString();
-        ArrayList<String> spendingInfo = new ArrayList<String>();
-        spendingInfo.add(name);
-        spendingInfo.add(description);
-        spendingInfo.add(amount);
-        spendingInfo.add(category);
+        int amountInt = Integer.parseInt(amount);
+
+        //ArrayList<String> spendingInfo = new ArrayList<String>();
+        Spending spendingInfo = new Spending();
+        //spendingInfo.(name);
+        spendingInfo.setDescription(description);
+        spendingInfo.setAmount(amountInt);
+        spendingInfo.setCategory(category);
 
         //String method = "addSpend";
         //BackgroundTask backgroundTask = new BackgroundTask(this);
         //backgroundTask.execute(method,name,category,description,amount);
         Intent intent = new Intent();
-        intent.putStringArrayListExtra("spinfo",spendingInfo);
+        intent.putExtra("spinfo",spendingInfo);
         setResult(RESULT_OK,intent);
         finish();
     }
