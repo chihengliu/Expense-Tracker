@@ -4,8 +4,10 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -43,10 +45,25 @@ public class IndividualMenuActivity extends AppCompatActivity {
                 HashMap<String,String> temp=new HashMap<String, String>();
                 temp.put(FIRST_COLUMN, info.get(3));
                 temp.put(SECOND_COLUMN, info.get(2));
+                temp.put("Third",info.get(1));
                 list.add(temp);
                 ListViewAdapter adapter=new ListViewAdapter(this, list);
                 ListView listView = (ListView) findViewById(R.id.spendingList);
                 listView.setAdapter(adapter);
+
+                listView.setOnItemClickListener(new AdapterView.OnItemClickListener()
+                {
+                    @Override
+                    public void onItemClick(AdapterView<?> parent, final View view, int position, long id)
+                    {
+                        int pos=position+1;
+                        Toast.makeText(IndividualMenuActivity.this, Integer.toString(pos)+" Clicked", Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(IndividualMenuActivity.this,individual_detail.class);
+                        intent.putExtra("detail",list.get(position));
+                        startActivity(intent);
+                    }
+
+                });
             }
         }
         super.onActivityResult(requestCode, resultCode, data);

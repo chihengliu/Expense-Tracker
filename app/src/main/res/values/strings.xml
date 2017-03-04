@@ -17,4 +17,5 @@
     <string name="description">Description</string>
     <string name="member_name">Member Name</string>
     <string name="save">save</string>
+    <string name="title_activity_individual_detail">individual_detail</string>
 </resources>
