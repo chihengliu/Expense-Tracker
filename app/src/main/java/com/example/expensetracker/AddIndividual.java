@@ -24,8 +24,7 @@ public class AddIndividual extends AppCompatActivity {
     }
 
     public void cancelCreate(View view){
-        Intent backtoIndividual = new Intent(AddIndividual.this,IndividualMenuActivity.class);
-        startActivity(backtoIndividual);
+        finish();
     }
 
     public void saveCreate(View view){
@@ -39,11 +38,12 @@ public class AddIndividual extends AppCompatActivity {
         spendingInfo.add(amount);
         spendingInfo.add(category);
 
-        String method = "addSpend";
-        BackgroundTask backgroundTask = new BackgroundTask(this);
-        backgroundTask.execute(method,name,category,description,amount);
-        Intent gotoIndividual = new Intent(AddIndividual.this,IndividualMenuActivity.class);
-        gotoIndividual.putStringArrayListExtra("spinfo",spendingInfo);
-        startActivity(gotoIndividual);
+        //String method = "addSpend";
+        //BackgroundTask backgroundTask = new BackgroundTask(this);
+        //backgroundTask.execute(method,name,category,description,amount);
+        Intent intent = new Intent();
+        intent.putStringArrayListExtra("spinfo",spendingInfo);
+        setResult(RESULT_OK,intent);
+        finish();
     }
 }
