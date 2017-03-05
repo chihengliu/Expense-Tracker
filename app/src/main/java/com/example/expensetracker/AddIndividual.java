@@ -1,9 +1,9 @@
 package com.example.expensetracker;
 
 import android.content.Intent;
-import android.os.Parcelable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.EditText;
 
@@ -46,9 +46,29 @@ public class AddIndividual extends AppCompatActivity {
 
     public void saveCreate(View view){
         name = "Yuewei Yang";
-        category = ET_CAT.getText().toString();
-        description = ET_DES.getText().toString();
-        amount = ET_AMT.getText().toString();
+
+        if (TextUtils.isEmpty(ET_CAT.getText())){
+            category = "Unknown";
+        }
+        else{
+            category = ET_CAT.getText().toString();
+        }
+
+
+        if (TextUtils.isEmpty(ET_DES.getText())){
+            description = "Unknown";
+        }
+        else{
+            description = ET_DES.getText().toString();
+        }
+
+        if (TextUtils.isEmpty(ET_AMT.getText())){
+            amount = "0";
+        }
+        else{
+            amount = ET_AMT.getText().toString();
+        }
+
         double amountInt = Double.parseDouble(amount);
 
         //ArrayList<String> spendingInfo = new ArrayList<String>();

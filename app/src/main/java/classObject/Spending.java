@@ -8,11 +8,15 @@ import android.os.Parcelable;
 import android.os.Parcel;
 
 public class Spending implements Parcelable {
-    String label;
-    double amount;
-    String date;
-    String category;
-    String description;
+    private  String label;
+    private double amount;
+    private String date;
+    private String category;
+    private String description;
+
+    //Use global variable to assign unique spending ID
+    private static int idCounter = 0;
+    private final int spendingId;
 
     public Spending(){
         label = "Unknown";
@@ -20,6 +24,7 @@ public class Spending implements Parcelable {
         date = "Unknown";
         category = "Unknown";
         description = "Unknown";
+        this.spendingId = ++idCounter;
     }
 
     // 99.9% of the time you can just ignore this
@@ -36,6 +41,7 @@ public class Spending implements Parcelable {
         out.writeString(date);
         out.writeString(category);
         out.writeString(description);
+        out.writeInt(spendingId);
     }
 
     // this is used to regenerate your object. All Parcelables must have a CREATOR that implements these two methods
@@ -56,6 +62,7 @@ public class Spending implements Parcelable {
         date = in.readString();
         category = in.readString();
         description = in.readString();
+        spendingId = in.readInt();
     }
 
     public void setLabel(String label){
@@ -96,5 +103,9 @@ public class Spending implements Parcelable {
 
     public String getDescription(){
         return this.description;
+    }
+
+    public int getId(){
+        return this.spendingId;
     }
 }
