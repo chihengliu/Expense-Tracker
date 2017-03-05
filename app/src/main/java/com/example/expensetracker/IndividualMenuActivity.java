@@ -36,6 +36,7 @@ public class IndividualMenuActivity extends AppCompatActivity {
         adapter=new ListViewAdapter(this, list);
         listView = (ListView) findViewById(R.id.spendingList);
         listView.setAdapter(adapter);
+        adapter.notifyDataSetChanged();
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener()
         {
@@ -82,8 +83,9 @@ public class IndividualMenuActivity extends AppCompatActivity {
                     list.set(position,info);
                 }
 
+                adapter.notifyDataSetChanged();
                 //listView.setAdapter(adapter);
-                //adapter.notifyDataSetChanged();
+
 
 
 
@@ -92,7 +94,7 @@ public class IndividualMenuActivity extends AppCompatActivity {
                     @Override
                     public void onItemClick(AdapterView<?> parent, final View view, int position, long id)
                     {
-                        int pos=position+1;
+                        int pos=position;
                         Toast.makeText(IndividualMenuActivity.this, Integer.toString(pos)+" Clicked", Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(IndividualMenuActivity.this,AddIndividual.class);
                         intent.putExtra("detail",list.get(position));
