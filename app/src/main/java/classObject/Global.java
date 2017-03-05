@@ -7,9 +7,9 @@ import classObject.*;
  */
 
 public class Global extends Application{
-    public Spending sp;
+    public static int flag = 0;
 
     public Global(){
-        sp = new Spending();
+        this.flag = 0;
     }
 }

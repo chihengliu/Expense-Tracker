@@ -24,20 +24,36 @@ public class IndividualMenuActivity extends AppCompatActivity {
     //private ArrayList<HashMap<String, String>> list;
     private ArrayList<Spending> list;
     private static final int REQEST_CODE_ADD_IND = 100;
+    ListViewAdapter adapter;
+    ListView listView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_individual_menu);
-        list = new ArrayList<Spending>();
-        //String url="http://152.3.52.123/updateList.php";
-        //Downloader downloader = new Downloader(this,url);
+        Intent intent2 = getIntent();
+        list = intent2.getParcelableArrayListExtra("list");
+        adapter=new ListViewAdapter(this, list);
+        listView = (ListView) findViewById(R.id.spendingList);
+        listView.setAdapter(adapter);
 
-        //downloader.execute();
-        //list = downloader.getSpendings();
-        //ListViewAdapter adapter=new ListViewAdapter(this, list);
-        //ListView listView = (ListView) findViewById(R.id.spendingList);
-        //listView.setAdapter(adapter);
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener()
+        {
+            @Override
+            public void onItemClick(AdapterView<?> parent, final View view, int position, long id)
+            {
+                int pos=position+1;
+                Toast.makeText(IndividualMenuActivity.this, Integer.toString(pos)+" Clicked", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(IndividualMenuActivity.this,AddIndividual.class);
+                intent.putExtra("detail",list.get(position));
+                intent.putExtra("position",position);
+                startActivityForResult(intent,REQEST_CODE_ADD_IND);
+            }
+
+        });
+
+
+
 
     }
 
@@ -65,9 +81,9 @@ public class IndividualMenuActivity extends AppCompatActivity {
                 else {
                     list.set(position,info);
                 }
-                ListViewAdapter adapter=new ListViewAdapter(this, list);
-                ListView listView = (ListView) findViewById(R.id.spendingList);
-                listView.setAdapter(adapter);
+
+                //listView.setAdapter(adapter);
+                //adapter.notifyDataSetChanged();
 
 
 

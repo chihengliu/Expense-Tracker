@@ -1,7 +1,9 @@
 package com.example.expensetracker;
 
+import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.support.design.widget.Snackbar;
 import android.view.View;
@@ -19,15 +21,15 @@ import classObject.Spending;
 
 public class Parser extends AsyncTask<Void,Integer,Integer>{
     Context c;
-    ListView lv;
     String data;
     ArrayList<Spending> spendings = new ArrayList<>();
     ProgressDialog pd;
+    Activity activity;
 
-    public Parser(Context c,String data,ListView lv){
+    public Parser(Context c,String data,Activity activity){
         this.c = c;
         this.data = data;
-        this.lv = lv;
+        this.activity = activity;
     }
 
     @Override
@@ -47,7 +49,11 @@ public class Parser extends AsyncTask<Void,Integer,Integer>{
     protected void onPostExecute(Integer integer){
         super.onPostExecute(integer);
         if (integer == 1){
-            //Adapter
+
+            Intent intent = new Intent(this.activity,IndividualMenuActivity.class);
+            intent.putExtra("list",spendings);
+            activity.startActivity(intent);
+           /* //Adapter
             ArrayAdapter<Spending> adapter = new ArrayAdapter<>(c,android.R.layout.simple_list_item_1,spendings);
             //Adapt to ListView
             lv.setAdapter(adapter);
@@ -74,7 +80,7 @@ public class Parser extends AsyncTask<Void,Integer,Integer>{
             JSONArray ja = new JSONArray(data);
             //Create JSON object to hold a single item
             JSONObject jo = null;
-            spendings.clear();
+            spendings = new ArrayList<Spending>();
             //Loop thru array
             for(int i=0;i<ja.length();i++){
                 jo = ja.getJSONObject(i);

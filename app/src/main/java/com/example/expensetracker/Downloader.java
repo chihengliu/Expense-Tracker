@@ -1,7 +1,9 @@
 package com.example.expensetracker;
 
+import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.widget.ListView;
 import android.widget.Toast;
@@ -20,6 +22,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
 
+import classObject.Global;
 import classObject.Spending;
 
 public class Downloader extends AsyncTask<String, Void, String> {
@@ -28,10 +31,12 @@ public class Downloader extends AsyncTask<String, Void, String> {
     String address;
     ArrayList<Spending> spendings;
     ProgressDialog pd;
+    Activity activity;
 
-    public Downloader(Context c, String address){
+    public Downloader(Context c, String address, Activity activity){
         this.c = c;
         this.address = address;
+        this.activity = activity;
 
     }
     @Override
@@ -44,7 +49,7 @@ public class Downloader extends AsyncTask<String, Void, String> {
 
     @Override
     protected String doInBackground(String... params) {
-        android.os.Debug.waitForDebugger();
+
 
         return downloadData();
 
@@ -55,36 +60,16 @@ public class Downloader extends AsyncTask<String, Void, String> {
 
         pd.dismiss();
         if(s != null){
-            try{
-                //Add data to JSON Array
-                JSONArray ja = new JSONArray(s);
-                //Create JSON object to hold a single item
-                JSONObject jo = null;
-                spendings.clear();
-                //Loop thru array
-                for(int i=0;i<ja.length();i++){
-                    jo = ja.getJSONObject(i);
+            Parser p=new Parser(c,s,activity);
+            p.execute();
 
-                    //Retrieve fields
-                    String category = jo.getString("Category");
-                    double amount = jo.getDouble("Amount");
-                    String description = jo.getString("Description");
-
-                    //Add them to arraylist
-                    Spending spending = new Spending();
-                    spending.setCategory(category);
-                    spending.setAmount(amount);
-                    spending.setDescription(description);
-                    spendings.add(spending);
-
-                }
-
-            }catch (JSONException e){
-                e.printStackTrace();
-            }
         }else{
             Toast.makeText(c,"Unable to download data",Toast.LENGTH_SHORT).show();
         }
+
+
+
+
 
     }
 

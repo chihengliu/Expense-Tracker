@@ -17,13 +17,23 @@ public class MainMenu extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_menu);
-        Global global = new Global();
+
     }
 
     public void individualMenu(View view){
-        Intent startIndividualMenu = new Intent(MainMenu.this, IndividualMenuActivity.class);
+        String url = "http://152.3.52.123/updateList.php";
+        Downloader downloader = new Downloader(this,url,MainMenu.this);
+        downloader.execute();
+
+
+        /*Intent intent = new Intent(MainMenu.this,IndividualMenuActivity.class);
+        ArrayList<Spending> list = downloader.getSpendings();
+        intent.putExtra("list",list);
+        startActivity(intent);
+
+        /*Intent startIndividualMenu = new Intent(MainMenu.this, IndividualMenuActivity.class);
         startActivity(startIndividualMenu);
-        overridePendingTransition(R.animator.zoom_enter,R.animator.zoom_exit);
+        overridePendingTransition(R.animator.zoom_enter,R.animator.zoom_exit);*/
     }
 
     public void groupMenu(View view){
