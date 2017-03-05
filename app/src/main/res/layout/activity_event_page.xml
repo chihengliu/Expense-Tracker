@@ -106,11 +106,12 @@
         android:layout_toEndOf="@+id/week_event" />
 
     <TextView
-        android:text="Event Name"
+        android:text="@string/event_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/event_label"
         android:textSize="18sp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
+
 </RelativeLayout>

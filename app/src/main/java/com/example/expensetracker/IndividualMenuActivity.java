@@ -29,9 +29,15 @@ public class IndividualMenuActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_individual_menu);
-        //list = new ArrayList<HashMap<String,String>>();
-
         list = new ArrayList<Spending>();
+        //String url="http://152.3.52.123/updateList.php";
+        //Downloader downloader = new Downloader(this,url);
+
+        //downloader.execute();
+        //list = downloader.getSpendings();
+        //ListViewAdapter adapter=new ListViewAdapter(this, list);
+        //ListView listView = (ListView) findViewById(R.id.spendingList);
+        //listView.setAdapter(adapter);
 
     }
 
@@ -43,6 +49,7 @@ public class IndividualMenuActivity extends AppCompatActivity {
     public void addIndividualEvent(View view){
         Intent addIndividualWindow = new Intent(IndividualMenuActivity.this,AddIndividual.class);
         startActivityForResult(addIndividualWindow,REQEST_CODE_ADD_IND);
+        //startActivity(addIndividualWindow);
     }
 
     @Override
@@ -50,10 +57,7 @@ public class IndividualMenuActivity extends AppCompatActivity {
         if (requestCode==REQEST_CODE_ADD_IND){
             if (resultCode==RESULT_OK){
                 Spending info = data.getParcelableExtra("spinfo");
-                //HashMap<String,String> temp=new HashMap<String, String>();
-                //temp.put(FIRST_COLUMN, info.get(3));
-                //temp.put(SECOND_COLUMN, info.get(2));
-                //temp.put("Third",info.get(1));
+
                 int position = (int)data.getSerializableExtra("position");
                 if (position==-1) {
                     list.add(info);
@@ -64,6 +68,8 @@ public class IndividualMenuActivity extends AppCompatActivity {
                 ListViewAdapter adapter=new ListViewAdapter(this, list);
                 ListView listView = (ListView) findViewById(R.id.spendingList);
                 listView.setAdapter(adapter);
+
+
 
                 listView.setOnItemClickListener(new AdapterView.OnItemClickListener()
                 {

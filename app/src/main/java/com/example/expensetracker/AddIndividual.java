@@ -17,6 +17,7 @@ public class AddIndividual extends AppCompatActivity {
     String name,category,description,amount;
     Spending spendingInfo;
     int position;
+    String method;
 
 
     @Override
@@ -57,13 +58,19 @@ public class AddIndividual extends AppCompatActivity {
         spendingInfo.setAmount(amountInt);
         spendingInfo.setCategory(category);
 
-        //String method = "addSpend";
-        //BackgroundTask backgroundTask = new BackgroundTask(this);
-        //backgroundTask.execute(method,name,category,description,amount);
+        if (position==-1) {
+            method = "addSpend";
+        }
+        else method = "updateSpend";
+
+        BackgroundTask backgroundTask = new BackgroundTask(this);
+        backgroundTask.execute(method,name,category,description,amount);
+
         Intent intent = new Intent();
         intent.putExtra("spinfo",spendingInfo);
         intent.putExtra("position",position);
         setResult(RESULT_OK,intent);
         finish();
+
     }
 }

@@ -39,6 +39,7 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
     @Override
     protected String doInBackground(String... params) {
         String addS_url = "http://152.3.52.123/addSpending.php";
+        String update_url = "http://152.3.52.123/addSpending.php";
         String method = params[0];
         if (method.equals("addSpend")) {
             String name = params[1];
@@ -72,6 +73,9 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
             } catch (IOException e) {
                 e.printStackTrace();
             }
+        }
+        else if (method=="updateSpend"){
+
         }
         return null;
     }

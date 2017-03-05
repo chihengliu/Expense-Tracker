@@ -69,4 +69,11 @@
         android:layout_toRightOf="@+id/back_button"
         android:layout_toEndOf="@+id/back_button" />
 
+    <ListView
+        android:id="@+id/event_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/week_group"
+        android:layout_centerHorizontal="true" />
+
 </RelativeLayout>
