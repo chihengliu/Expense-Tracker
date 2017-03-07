@@ -89,12 +89,14 @@ public class Parser extends AsyncTask<Void,Integer,Integer>{
                 String category = jo.getString("Category");
                 double amount = jo.getDouble("Amount");
                 String description = jo.getString("Description");
+                int id = jo.getInt("ID");
 
                 //Add them to arraylist
                 Spending spending = new Spending();
                 spending.setCategory(category);
                 spending.setAmount(amount);
                 spending.setDescription(description);
+                spending.setId(id);
                 spendings.add(spending);
 
             }

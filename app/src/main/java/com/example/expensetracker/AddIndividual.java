@@ -1,6 +1,7 @@
 package com.example.expensetracker;
 
 import android.content.Intent;
+import android.icu.text.DecimalFormat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -14,7 +15,7 @@ import classObject.*;
 
 public class AddIndividual extends AppCompatActivity {
     EditText ET_CAT,ET_AMT,ET_DES;
-    String name,category,description,amount;
+    String name,category,description,amount,id;
     Spending spendingInfo;
     int position;
     String method;
@@ -34,9 +35,11 @@ public class AddIndividual extends AppCompatActivity {
             ET_AMT.setText(Double.toString(spendingInfo.getAmount() ) );
             ET_DES.setText(spendingInfo.getDescription());
             position = (int)inten1.getSerializableExtra("position");
+            id = Integer.toString(spendingInfo.getId());
         }
         else {
             position = -1;
+            id = Integer.toString(inten1.getIntExtra("id",0)+1);
         }
     }
 
@@ -69,7 +72,10 @@ public class AddIndividual extends AppCompatActivity {
             amount = ET_AMT.getText().toString();
         }
 
+
         double amountInt = Double.parseDouble(amount);
+
+
 
         //ArrayList<String> spendingInfo = new ArrayList<String>();
         Spending spendingInfo = new Spending();
@@ -84,7 +90,7 @@ public class AddIndividual extends AppCompatActivity {
         else method = "updateSpend";
 
         BackgroundTask backgroundTask = new BackgroundTask(this);
-        backgroundTask.execute(method,name,category,description,amount);
+        backgroundTask.execute(method,name,category,description,amount,id);
 
         Intent intent = new Intent();
         intent.putExtra("spinfo",spendingInfo);

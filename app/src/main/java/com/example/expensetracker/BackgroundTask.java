@@ -39,22 +39,30 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
     @Override
     protected String doInBackground(String... params) {
         String addS_url = "http://152.3.52.123/addSpending.php";
-        String update_url = "http://152.3.52.123/addSpending.php";
+        String update_url = "http://152.3.52.123/updateSpending.php";
         String method = params[0];
-        if (method.equals("addSpend")) {
-            String name = params[1];
-            String category = params[2];
-            String description = params[3];
-            String amount = params[4];
+        String name = params[1];
+        String category = params[2];
+        String description = params[3];
+        String amount = params[4];
+        String id = params[5];
+
             try {
-                URL url = new URL(addS_url);
+                URL url;
+                if (method.equals("addSpend")) {
+                    url = new URL(addS_url);
+                }
+                else {
+                    url = new URL(update_url);
+                }
                 HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
                 httpURLConnection.setRequestMethod("POST");
                 httpURLConnection.setDoOutput(true);
                 //httpURLConnection.setDoInput(true);
                 OutputStream OS = httpURLConnection.getOutputStream();
                 BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(OS, "UTF-8"));
-                String data = URLEncoder.encode("name", "UTF-8") + "=" + URLEncoder.encode(name, "UTF-8") + "&" +
+                String data = URLEncoder.encode("id", "UTF-8") + "=" + URLEncoder.encode(id, "UTF-8") + "&" +
+                        URLEncoder.encode("name", "UTF-8") + "=" + URLEncoder.encode(name, "UTF-8") + "&" +
                         URLEncoder.encode("category", "UTF-8") + "=" + URLEncoder.encode(category, "UTF-8") + "&" +
                         URLEncoder.encode("description", "UTF-8") + "=" + URLEncoder.encode(description, "UTF-8") + "&" +
                         URLEncoder.encode("amount", "UTF-8") + "=" + URLEncoder.encode(amount, "UTF-8");
@@ -67,16 +75,19 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
                 IS.close();
                 //httpURLConnection.connect();
                 httpURLConnection.disconnect();
-                return "Add Spending Success...";
+                if (method.equals("addSpend")) {
+                    return "Add Spending Success...";
+                }
+                else {
+                    return "Edit Spending Success...";
+                }
             } catch (MalformedURLException e) {
                 e.printStackTrace();
             } catch (IOException e) {
                 e.printStackTrace();
             }
-        }
-        else if (method=="updateSpend"){
 
-        }
+
         return null;
     }
 
@@ -89,6 +100,9 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
         if(result.equals("Add Spending Success..."))
         {
             Toast.makeText(ctx, result, Toast.LENGTH_LONG).show();
+        }
+        else if (result.equals("Edit Spending Success...")){
+            Toast.makeText(ctx, result, Toast.LENGTH_LONG).show(); 
         }
         else
         {

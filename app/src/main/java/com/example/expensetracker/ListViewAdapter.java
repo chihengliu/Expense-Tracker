@@ -1,6 +1,7 @@
 package com.example.expensetracker;
 
 import android.app.Activity;
+import android.icu.text.DecimalFormat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -54,13 +55,13 @@ public class ListViewAdapter extends BaseAdapter{
     @Override
     public int getViewTypeCount() {
 
-        return getCount();
+        return list.size();
     }
 
     @Override
     public int getItemViewType(int position) {
 
-        return position-1;
+        return position;
     }
 
     @Override
@@ -82,9 +83,18 @@ public class ListViewAdapter extends BaseAdapter{
 
         Spending temp = list.get(position);
         txtFirst.setText(temp.getCategory());
-        txtSecond.setText(Double.toString(temp.getAmount()));
+        if (temp.getAmount()!=-1) {
+
+            txtSecond.setText(String.format("%.2f",temp.getAmount()));
+        }
+        else {
+            txtSecond.setText(null);
+        }
 
 
         return convertView;
     }
+
+
+
 }

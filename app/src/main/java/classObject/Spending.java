@@ -15,8 +15,8 @@ public class Spending implements Parcelable {
     private String description;
 
     //Use global variable to assign unique spending ID
-    private static int idCounter = 0;
-    private final int spendingId;
+    //private static int idCounter = -1;
+    private int spendingId;
 
     public Spending(){
         label = "Unknown";
@@ -24,7 +24,7 @@ public class Spending implements Parcelable {
         date = "Unknown";
         category = "Unknown";
         description = "Unknown";
-        this.spendingId = ++idCounter;
+        this.spendingId = 0;
     }
 
     // 99.9% of the time you can just ignore this
@@ -104,6 +104,8 @@ public class Spending implements Parcelable {
     public String getDescription(){
         return this.description;
     }
+
+    public void setId(int id) {this.spendingId = id;  }
 
     public int getId(){
         return this.spendingId;

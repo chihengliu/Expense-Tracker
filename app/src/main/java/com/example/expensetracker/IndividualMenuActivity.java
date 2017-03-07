@@ -12,6 +12,7 @@ import android.widget.Toast;
 
 import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 
 import static classObject.Constants.FIRST_COLUMN;
@@ -33,10 +34,11 @@ public class IndividualMenuActivity extends AppCompatActivity {
         setContentView(R.layout.activity_individual_menu);
         Intent intent2 = getIntent();
         list = intent2.getParcelableArrayListExtra("list");
+        Collections.reverse(list);
         adapter=new ListViewAdapter(this, list);
         listView = (ListView) findViewById(R.id.spendingList);
         listView.setAdapter(adapter);
-        adapter.notifyDataSetChanged();
+        //adapter.notifyDataSetChanged();
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener()
         {
@@ -44,11 +46,13 @@ public class IndividualMenuActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, final View view, int position, long id)
             {
                 int pos=position+1;
-                Toast.makeText(IndividualMenuActivity.this, Integer.toString(pos)+" Clicked", Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(IndividualMenuActivity.this,AddIndividual.class);
-                intent.putExtra("detail",list.get(position));
-                intent.putExtra("position",position);
-                startActivityForResult(intent,REQEST_CODE_ADD_IND);
+                if (pos!=list.size()) {
+                    Toast.makeText(IndividualMenuActivity.this, Integer.toString(pos) + " Clicked", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(IndividualMenuActivity.this, AddIndividual.class);
+                    intent.putExtra("detail", list.get(position));
+                    intent.putExtra("position", position);
+                    startActivityForResult(intent, REQEST_CODE_ADD_IND);
+                }
             }
 
         });
@@ -65,6 +69,7 @@ public class IndividualMenuActivity extends AppCompatActivity {
 
     public void addIndividualEvent(View view){
         Intent addIndividualWindow = new Intent(IndividualMenuActivity.this,AddIndividual.class);
+        addIndividualWindow.putExtra("id",list.get(0).getId());
         startActivityForResult(addIndividualWindow,REQEST_CODE_ADD_IND);
         //startActivity(addIndividualWindow);
     }
@@ -77,14 +82,16 @@ public class IndividualMenuActivity extends AppCompatActivity {
 
                 int position = (int)data.getSerializableExtra("position");
                 if (position==-1) {
-                    list.add(info);
+                    list.add(0,info);
                 }
                 else {
                     list.set(position,info);
                 }
 
+                adapter = new ListViewAdapter(this,list);
+                //adapter.updateList(list);
                 adapter.notifyDataSetChanged();
-                //listView.setAdapter(adapter);
+                listView.setAdapter(adapter);
 
 
 
@@ -94,12 +101,14 @@ public class IndividualMenuActivity extends AppCompatActivity {
                     @Override
                     public void onItemClick(AdapterView<?> parent, final View view, int position, long id)
                     {
-                        int pos=position;
-                        Toast.makeText(IndividualMenuActivity.this, Integer.toString(pos)+" Clicked", Toast.LENGTH_SHORT).show();
-                        Intent intent = new Intent(IndividualMenuActivity.this,AddIndividual.class);
-                        intent.putExtra("detail",list.get(position));
-                        intent.putExtra("position",position);
-                        startActivityForResult(intent,REQEST_CODE_ADD_IND);
+                        int pos=position+1;
+                        if (pos!=list.size()) {
+                            Toast.makeText(IndividualMenuActivity.this, Integer.toString(pos) + " Clicked", Toast.LENGTH_SHORT).show();
+                            Intent intent = new Intent(IndividualMenuActivity.this, AddIndividual.class);
+                            intent.putExtra("detail", list.get(position));
+                            intent.putExtra("position", position);
+                            startActivityForResult(intent, REQEST_CODE_ADD_IND);
+                        }
                     }
 
                 });

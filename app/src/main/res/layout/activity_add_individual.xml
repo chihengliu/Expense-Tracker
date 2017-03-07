@@ -76,14 +76,14 @@
             android:layout_height="match_parent" >
 
             <EditText
+                android:id="@+id/amount"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:inputType="numberDecimal"
+                android:background="@android:color/background_light"
                 android:ems="10"
-                android:id="@+id/amount"
+                android:inputType="numberDecimal"
                 android:textColor="@android:color/black"
-                android:textSize="30sp"
-                android:background="@android:color/background_light" />
+                android:textSize="30sp" />
         </TableRow>
 
         <TableRow
