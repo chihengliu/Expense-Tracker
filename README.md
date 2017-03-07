@@ -10,7 +10,10 @@ All data displayed on this app is stored in mysql database.
 
 ## Insltall, run, and test the app
 Change to an empty directory clone this repository, run:
-'git clone git@gitlab.oit.duke.edu:ECE651_S17_PROJECTS/CaptainJava.git';  
+```
+git clone git@gitlab.oit.duke.edu:ECE651_S17_PROJECTS/CaptainJava.git
+```
+ 
 
 Open Android Studio (if not installed, install [here](https://developer.android.com/studio/index.html?gclid=CjwKEAiA0fnFBRC6g8rgmICvrw0SJADx1_zASntPtDFk4kuUeoPWy__8XLeW76pvfyuSTsSKh2FBHxoCJw7w_wcB)).
 
@@ -32,4 +35,27 @@ In file **app** there are 3 subfolders:
 <li>*res* has all activity layouts and some UI animations</li>
 </ul>
 
-##
+## Database access
+A mysql database is installed on OIT issued debian VM.
+
+To connect to VM, run:
+```
+ssh bitnami@colab-sbx-370.oit.duke.edu
+```
+in terminal.Password is bRumerern0.
+
+To connect to database, run:
+```
+mysql -u visitor -p
+```
+in VM. Password is visitors.
+
+To change to database, run:
+```
+use ExpenseTracker
+```
+
+To view data in *Personal* table, run:
+```
+select * from Personal;
+```
