@@ -1,6 +1,6 @@
 # Expense Tracker
 This is source code for Android App Expense Tracker that has a server and a mysql database set up on a Duke OIT virtual machine.
-The code submitted by March 7th on Mater branch is for Sprint 1 which has functions allowing users to:
+The code submitted by March 9th on Mater branch is for Sprint 1 which has functions allowing users to:
 <ul>
 <li>View list of individual spendings and event names</li>
 <li>Create a new individual spending</li>
