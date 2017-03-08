@@ -83,6 +83,7 @@ public class AddIndividual extends AppCompatActivity {
         spendingInfo.setDescription(description);
         spendingInfo.setAmount(amountInt);
         spendingInfo.setCategory(category);
+        spendingInfo.setId(Integer.parseInt(id));
 
         if (position==-1) {
             method = "addSpend";

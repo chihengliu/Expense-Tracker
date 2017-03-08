@@ -14,8 +14,7 @@ public class AddGroup extends AppCompatActivity {
     }
 
     public void cancelCreate(View view) {
-        Intent backtoGroupMenu = new Intent(AddGroup.this, GroupMenu.class);
-        startActivity(backtoGroupMenu);
+        finish();
         overridePendingTransition(R.animator.zoom_enter, R.animator.zoom_exit);
     }
 

@@ -14,8 +14,7 @@ public class AddEventSpending extends AppCompatActivity {
     }
 
     public void backToEvent(View view){
-        Intent backToEventPage = new Intent(AddEventSpending.this,EventPage.class);
-        startActivity(backToEventPage);
+        finish();
     }
 
 
