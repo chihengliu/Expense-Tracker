@@ -10,25 +10,22 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Locale;
 
 import static classObject.Constants.FIRST_COLUMN;
 import static classObject.Constants.SECOND_COLUMN;
 
 import classObject.*;
 
-/**
- * Created by yueweiyang on 3/3/17.
- */
 
-public class ListViewAdapter extends BaseAdapter{
+class ListViewAdapter extends BaseAdapter{
     //public ArrayList<HashMap<String, String>> list;
-    public ArrayList<Spending> list;
-    Activity activity;
-    TextView txtFirst;
-    TextView txtSecond;
+    private ArrayList<Spending> list;
+    private Activity activity;
+    private TextView txtFirst;
+    private TextView txtSecond;
 
-
-    public ListViewAdapter(Activity activity, ArrayList<Spending> list){
+    ListViewAdapter(Activity activity, ArrayList<Spending> list){
         super();
         this.activity=activity;
         this.list=list;
@@ -54,13 +51,11 @@ public class ListViewAdapter extends BaseAdapter{
 
     @Override
     public int getViewTypeCount() {
-
         return list.size();
     }
 
     @Override
     public int getItemViewType(int position) {
-
         return position;
     }
 
@@ -74,7 +69,7 @@ public class ListViewAdapter extends BaseAdapter{
 
         if(convertView == null){
 
-            convertView=inflater.inflate(R.layout.column_row, null);
+            convertView=inflater.inflate(R.layout.column_row, parent,false);
 
             txtFirst=(TextView) convertView.findViewById(R.id.catgoryview);
             txtSecond=(TextView) convertView.findViewById(R.id.amountview);
@@ -85,7 +80,7 @@ public class ListViewAdapter extends BaseAdapter{
         txtFirst.setText(temp.getCategory());
         if (temp.getAmount()!=-1) {
 
-            txtSecond.setText(String.format("%.2f",temp.getAmount()));
+            txtSecond.setText(String.format(Locale.getDefault(),"%.2f",temp.getAmount()));
         }
         else {
             txtSecond.setText(null);
