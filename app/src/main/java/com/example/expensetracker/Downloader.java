@@ -67,10 +67,6 @@ class Downloader extends AsyncTask<String, Void, String> {
             Toast.makeText(c,"Unable to download data",Toast.LENGTH_SHORT).show();
         }
 
-
-
-
-
     }
 
     private String downloadData(){
