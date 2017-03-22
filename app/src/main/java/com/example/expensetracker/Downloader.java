@@ -25,15 +25,15 @@ import java.util.ArrayList;
 import classObject.Global;
 import classObject.Spending;
 
-public class Downloader extends AsyncTask<String, Void, String> {
+class Downloader extends AsyncTask<String, Void, String> {
 
-    Context c;
-    String address;
-    ArrayList<Spending> spendings;
-    ProgressDialog pd;
-    Activity activity;
+    private Context c;
+    private String address;
+    private ArrayList<Spending> spendings;
+    private ProgressDialog pd;
+    private Activity activity;
 
-    public Downloader(Context c, String address, Activity activity){
+    Downloader(Context c, String address, Activity activity){
         this.c = c;
         this.address = address;
         this.activity = activity;
@@ -60,7 +60,7 @@ public class Downloader extends AsyncTask<String, Void, String> {
 
         pd.dismiss();
         if(s != null){
-            Parser p=new Parser(c,s,activity);
+            Parser p = new Parser(c,s,activity);
             p.execute();
 
         }else{
@@ -72,24 +72,20 @@ public class Downloader extends AsyncTask<String, Void, String> {
     private String downloadData(){
         //connect and get stream
         InputStream is = null;
-        String line = null;
+        String line;
         try {
             URL url = new URL(address);
             HttpURLConnection con = (HttpURLConnection) url.openConnection();
             is = new BufferedInputStream(con.getInputStream());
             BufferedReader br = new BufferedReader(new InputStreamReader(is));
-            StringBuffer sb = new StringBuffer();
-            if (br != null) {
+            StringBuilder sb = new StringBuilder();
+
                 while ((line = br.readLine()) != null) {
-                    sb.append(line + "n");
+                    sb.append(line).append("n");
                 }
-            } else {
-                return null;
-            }
+
             return sb.toString();
-        }catch(MalformedURLException e){
-            e.printStackTrace();
-        }catch(IOException e){
+        } catch(IOException e){
             e.printStackTrace();
         }finally {
             if(is != null){

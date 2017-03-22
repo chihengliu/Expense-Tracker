@@ -19,14 +19,14 @@ import java.util.List;
 
 import classObject.Spending;
 
-public class Parser extends AsyncTask<Void,Integer,Integer>{
-    Context c;
-    String data;
-    ArrayList<Spending> spendings = new ArrayList<>();
-    ProgressDialog pd;
-    Activity activity;
+class Parser extends AsyncTask<Void,Integer,Integer>{
+    private Context c;
+    private String data;
+    private ArrayList<Spending> spendings = new ArrayList<>();
+    private ProgressDialog pd;
+    private Activity activity;
 
-    public Parser(Context c,String data,Activity activity){
+    Parser(Context c,String data,Activity activity){
         this.c = c;
         this.data = data;
         this.activity = activity;
@@ -79,9 +79,9 @@ public class Parser extends AsyncTask<Void,Integer,Integer>{
             //Add data to JSON Array
             JSONArray ja = new JSONArray(data);
             //Create JSON object to hold a single item
-            JSONObject jo = null;
-            spendings = new ArrayList<Spending>();
-            //Loop thru array
+            JSONObject jo;
+            spendings = new ArrayList<>();
+            //Loop through array
             for(int i=0;i<ja.length();i++){
                 jo = ja.getJSONObject(i);
 
@@ -91,7 +91,7 @@ public class Parser extends AsyncTask<Void,Integer,Integer>{
                 String description = jo.getString("Description");
                 int id = jo.getInt("ID");
 
-                //Add them to arraylist
+                //Add them to list
                 Spending spending = new Spending();
                 spending.setCategory(category);
                 spending.setAmount(amount);
