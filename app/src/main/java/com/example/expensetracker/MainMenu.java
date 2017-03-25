@@ -11,19 +11,22 @@ import classObject.*;
 
 public class MainMenu extends AppCompatActivity {
 
-
+    String name;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_menu);
+        Intent intent = getIntent();
+        name = intent.getStringExtra("name");
 
     }
 
     public void individualMenu(View view){
+
         String url = "http://152.3.52.123/updateList.php";
         Downloader downloader = new Downloader(this,url,MainMenu.this);
-        downloader.execute();
+        downloader.execute(name);
 
 
         /*Intent intent = new Intent(MainMenu.this,IndividualMenuActivity.class);

@@ -16,6 +16,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.PriorityQueue;
 
 import classObject.Spending;
 
@@ -25,11 +26,13 @@ class Parser extends AsyncTask<Void,Integer,Integer>{
     private ArrayList<Spending> spendings = new ArrayList<>();
     private ProgressDialog pd;
     private Activity activity;
+    private String name;
 
-    Parser(Context c,String data,Activity activity){
+    Parser(Context c,String data,Activity activity,String name){
         this.c = c;
         this.data = data;
         this.activity = activity;
+        this.name = name;
     }
 
     @Override
@@ -53,20 +56,7 @@ class Parser extends AsyncTask<Void,Integer,Integer>{
             Intent intent = new Intent(this.activity,IndividualMenuActivity.class);
             intent.putExtra("list",spendings);
             activity.startActivity(intent);
-           /* //Adapter
-            ArrayAdapter<Spending> adapter = new ArrayAdapter<>(c,android.R.layout.simple_list_item_1,spendings);
-            //Adapt to ListView
-            lv.setAdapter(adapter);
-            //Listener
-            /*
-            lv.setOnItemClickListener(new AdapterView.OnItemClickListener(){
-                @Override
-                public void onItemClick(AdapterView<?> parent,View view,int position, long id){
-                    Snackbar.make(view,spendings.get(position),Snackbar.LENGTH_SHORT).show();
-                }
 
-            });
-            */
         }else{
             Toast.makeText(c,"Unable to Parse",Toast.LENGTH_SHORT).show();
         }
@@ -89,10 +79,11 @@ class Parser extends AsyncTask<Void,Integer,Integer>{
                 String category = jo.getString("Category");
                 double amount = jo.getDouble("Amount");
                 String description = jo.getString("Description");
-                int id = jo.getInt("ID");
+                int id = jo.getInt("sid");
 
                 //Add them to list
                 Spending spending = new Spending();
+                spending.setName(name);
                 spending.setCategory(category);
                 spending.setAmount(amount);
                 spending.setDescription(description);

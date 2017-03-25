@@ -51,6 +51,7 @@ public class IndividualMenuActivity extends AppCompatActivity {
                     Intent intent = new Intent(IndividualMenuActivity.this, AddIndividual.class);
                     intent.putExtra("detail", list.get(position));
                     intent.putExtra("position", position);
+                    intent.putExtra("name", list.get(position).getName());
                     startActivityForResult(intent, REQEST_CODE_ADD_IND);
                 }
             }
@@ -70,6 +71,7 @@ public class IndividualMenuActivity extends AppCompatActivity {
     public void addIndividualEvent(View view){
         Intent addIndividualWindow = new Intent(IndividualMenuActivity.this,AddIndividual.class);
         addIndividualWindow.putExtra("id",list.get(0).getId());
+        addIndividualWindow.putExtra("name",list.get(0).getName());
         startActivityForResult(addIndividualWindow,REQEST_CODE_ADD_IND);
         //startActivity(addIndividualWindow);
     }
@@ -107,6 +109,7 @@ public class IndividualMenuActivity extends AppCompatActivity {
                             Intent intent = new Intent(IndividualMenuActivity.this, AddIndividual.class);
                             intent.putExtra("detail", list.get(position));
                             intent.putExtra("position", position);
+                            intent.putExtra("name", list.get(position).getName());
                             startActivityForResult(intent, REQEST_CODE_ADD_IND);
                         }
                     }

@@ -14,12 +14,16 @@ import org.json.JSONObject;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.io.OutputStream;
+import java.io.OutputStreamWriter;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.net.URLEncoder;
 import java.util.ArrayList;
 
 import classObject.Global;
@@ -31,6 +35,7 @@ class Downloader extends AsyncTask<String, Void, String> {
     private String address;
     private ProgressDialog pd;
     private Activity activity;
+    private String name;
 
     Downloader(Context c, String address, Activity activity){
         this.c = c;
@@ -49,8 +54,8 @@ class Downloader extends AsyncTask<String, Void, String> {
     @Override
     protected String doInBackground(String... params) {
 
-
-        return downloadData();
+        name = params[0];
+        return downloadData(name);
 
     }
 
@@ -59,7 +64,7 @@ class Downloader extends AsyncTask<String, Void, String> {
 
         pd.dismiss();
         if(s != null){
-            Parser p = new Parser(c,s,activity);
+            Parser p = new Parser(c,s,activity,name);
             p.execute();
 
         }else{
@@ -68,13 +73,24 @@ class Downloader extends AsyncTask<String, Void, String> {
 
     }
 
-    private String downloadData(){
+    private String downloadData(String name){
         //connect and get stream
         InputStream is = null;
         String line;
         try {
+
             URL url = new URL(address);
+            String data = URLEncoder.encode("username", "UTF-8") + "=" + URLEncoder.encode(name, "UTF-8");
             HttpURLConnection con = (HttpURLConnection) url.openConnection();
+            con.setRequestMethod("POST");
+            con.setDoOutput(true);
+            con.setDoInput(true);
+            OutputStream OS = con.getOutputStream();
+            BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(OS, "UTF-8"));
+            bufferedWriter.write(data);
+            bufferedWriter.flush();
+            bufferedWriter.close();
+            OS.close();
             is = new BufferedInputStream(con.getInputStream());
             BufferedReader br = new BufferedReader(new InputStreamReader(is));
             StringBuilder sb = new StringBuilder();

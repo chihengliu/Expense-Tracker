@@ -1,11 +1,17 @@
 package com.example.expensetracker;
 
 
+        import android.app.Activity;
         import android.app.AlertDialog;
         import android.content.Context;
         import android.content.Intent;
         import android.os.AsyncTask;
         import android.widget.Toast;
+
+        import org.json.JSONArray;
+        import org.json.JSONException;
+        import org.json.JSONObject;
+
         import java.io.BufferedReader;
         import java.io.BufferedWriter;
         import java.io.IOException;
@@ -17,6 +23,9 @@ package com.example.expensetracker;
         import java.net.MalformedURLException;
         import java.net.URL;
         import java.net.URLEncoder;
+        import java.util.ArrayList;
+
+        import classObject.Spending;
 
 /**
  * Created by yueweiyang on 3/1/17.
@@ -28,9 +37,16 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
     Context ctx;
     String data;
     URL url;
+    Activity activity;
+    String password;
+    String username;
 
     BackgroundTask(Context ctx) {
         this.ctx = ctx;
+    }
+    BackgroundTask(Context ctx,Activity act) {
+        this.ctx = ctx;
+        this.activity = act;
     }
 
     @Override
@@ -57,7 +73,7 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
                     case "addSpend":
                         url = new URL(addS_url);
                         break;
-                    case "update":
+                    case "updateSpend":
                         url = new URL(update_url);
                         break;
                     case "register":
@@ -68,7 +84,7 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
                         break;
                 }
 
-                if (method.equals("addSpend") || method.equals("update")) {
+                if (method.equals("addSpend") || method.equals("updateSpend")) {
                     String name = params[1];
                     String category = params[2];
                     String description = params[3];
@@ -82,8 +98,8 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
 
                 }
                 else {
-                    String username = params[1];
-                    String password = params[2];
+                    username = params[1];
+                    password = params[2];
                     data = URLEncoder.encode("username", "UTF-8") + "=" + URLEncoder.encode(username, "UTF-8") + "&" +
                             URLEncoder.encode("password", "UTF-8") + "=" + URLEncoder.encode(password, "UTF-8");
                 }
@@ -104,7 +120,7 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
                     sb.append(line);
                 }
 
-                String result = sb.toString().trim();
+                String result = sb.toString();
 
 
 
@@ -114,10 +130,11 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
                 if (method.equals("addSpend")) {
                     return "Add Spending Success...";
                 }
-                if (method.equals("update")) {
+                if (method.equals("updateSpend")) {
                     return "Edit Spending Success...";
                 }
                 if (method.equals("register")) {
+                    result = result.trim();
                     if (result.equals("success")) {
                         return "Register Success...";
                     }
@@ -126,11 +143,31 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
                     }
                 }
                 if (method.equals("login")) {
-                    if (result.equals("success")) {
+                    result = result.trim();
+                    if (result.equals("null")) {
+                        return "Login Fail... Check User Name";
+                    }
+                    else {
+                        try {
+                            //Add data to JSON Array
+                            JSONArray ja = new JSONArray(result);
+                            //Create JSON object to hold a single item
+                            JSONObject jo = ja.getJSONObject(0);
+                            String corrPassword = jo.getString("Password");
+                            if (password.equals(corrPassword)) {
+                                Intent goMain = new Intent(this.activity, MainMenu.class);
+                                goMain.putExtra("name", username);
+                                activity.startActivity(goMain);
+                                return "Login Success...";
+                            } else {
+                                return "Login Fail... Check Password";
+                            }
 
-                        return "Login Success...";
-                    } else {
-                        return "Login Fail... \n Incorrect Password";
+
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                        }
+
                     }
                 }
             } catch (MalformedURLException e) {
@@ -165,6 +202,13 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
         else if (result.equals("Register Fail... Change User Name")){
             Toast.makeText(ctx, result, Toast.LENGTH_LONG).show();
         }
+        else if (result.equals("Login Fail... Check User Name")){
+            Toast.makeText(ctx, result, Toast.LENGTH_LONG).show();
+        }
+        else if (result.equals("Login Fail... Check Password")){
+            Toast.makeText(ctx, result, Toast.LENGTH_LONG).show();
+        }
+
         else
         {
             alertDialog.setMessage(result);

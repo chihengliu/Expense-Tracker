@@ -27,6 +27,7 @@ public class AddIndividual extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_individual);
         Intent inten1 = getIntent();
+        name = inten1.getStringExtra("name");
         spendingInfo = inten1.getParcelableExtra("detail");
         ET_CAT = (EditText)findViewById(R.id.category);
         ET_AMT = (EditText)findViewById(R.id.amount);
@@ -49,7 +50,7 @@ public class AddIndividual extends AppCompatActivity {
     }
 
     public void saveCreate(View view){
-        name = "Yuewei Yang";
+        //name = spendingInfo.getName();
 
         if (TextUtils.isEmpty(ET_CAT.getText())){
             category = "Unknown";
@@ -80,7 +81,7 @@ public class AddIndividual extends AppCompatActivity {
 
         //ArrayList<String> spendingInfo = new ArrayList<String>();
         Spending spendingInfo = new Spending();
-        //spendingInfo.(name);
+        spendingInfo.setName(name);
         spendingInfo.setDescription(description);
         spendingInfo.setAmount(amountInt);
         spendingInfo.setCategory(category);

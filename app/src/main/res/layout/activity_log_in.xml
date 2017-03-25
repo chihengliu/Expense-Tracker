@@ -14,6 +14,7 @@
         android:layout_alignStart="@+id/Log_Passwd"
         android:layout_below="@+id/Log_Passwd"
         android:layout_marginTop="72dp"
+        android:onClick="login"
         android:text="Log in"
         tools:layout_editor_absoluteX="103dp"
         tools:layout_editor_absoluteY="373dp" />
@@ -79,6 +80,7 @@
         android:layout_marginStart="49dp"
         android:layout_toEndOf="@+id/LogInButton"
         android:layout_toRightOf="@+id/LogInButton"
+        android:onClick="register"
         android:text="Register" />
 
 </RelativeLayout>

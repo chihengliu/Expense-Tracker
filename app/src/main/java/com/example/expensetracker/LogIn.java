@@ -21,26 +21,29 @@ public class LogIn extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_log_in);
-        loginButton = (Button)findViewById(R.id.LogInButton);
-        registerButton = (Button)findViewById(R.id.Login_Reg);
-        userName = (EditText)findViewById(R.id.Log_UserName);
-        passwd = (EditText)findViewById(R.id.Log_Passwd);
-
-        loginButton.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                Intent goToMain = new Intent(getApplicationContext(), MainMenu.class);
-                startActivity(goToMain);
-            }
-        });
-
-        registerButton.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                Intent goToReg = new Intent(getApplicationContext(), Register.class);
-                startActivity(goToReg);
-            }
-        });
-
+        loginButton = (Button) findViewById(R.id.LogInButton);
+        registerButton = (Button) findViewById(R.id.Login_Reg);
+        userName = (EditText) findViewById(R.id.Log_UserName);
+        passwd = (EditText) findViewById(R.id.Log_Passwd);
     }
+
+    public void login(View view) {
+        String method = "login";
+        String username = userName.getText().toString();
+        String password = passwd.getText().toString();
+        BackgroundTask backgroundTask = new BackgroundTask(this,LogIn.this);
+        backgroundTask.execute(method,username,password);
+    }
+
+
+
+    public void register(View v) {
+        Intent goToReg = new Intent(LogIn.this, Register.class);
+        startActivity(goToReg);
+    }
+
+
+
 
 
 

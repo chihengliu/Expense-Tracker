@@ -8,18 +8,19 @@ import android.os.Parcelable;
 import android.os.Parcel;
 
 public class Spending implements Parcelable {
-    private  String label;
+    private  String name;
     private double amount;
     private String date;
     private String category;
     private String description;
+
 
     //Use global variable to assign unique spending ID
     //private static int idCounter = -1;
     private int spendingId;
 
     public Spending(){
-        label = "Unknown";
+        name = "Unknown";
         amount = 0;
         date = "Unknown";
         category = "Unknown";
@@ -36,7 +37,7 @@ public class Spending implements Parcelable {
     // write your object's data to the passed-in Parcel
     @Override
     public void writeToParcel(Parcel out, int flags) {
-        out.writeString(label);
+        out.writeString(name);
         out.writeDouble(amount);
         out.writeString(date);
         out.writeString(category);
@@ -57,7 +58,7 @@ public class Spending implements Parcelable {
 
     // example constructor that takes a Parcel and gives you an object populated with it's values
     private Spending(Parcel in) {
-         label = in.readString();
+         name = in.readString();
         amount = in.readDouble();
         date = in.readString();
         category = in.readString();
@@ -65,12 +66,12 @@ public class Spending implements Parcelable {
         spendingId = in.readInt();
     }
 
-    public void setLabel(String label){
-        this.label = label;
+    public void setName(String name){
+        this.name = name;
     }
 
-    public String getLabel(){
-        return this.label;
+    public String getName(){
+        return this.name;
     }
 
     public void setAmount(double amount){
