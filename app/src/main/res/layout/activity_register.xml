@@ -68,6 +68,7 @@
         android:layout_marginLeft="11dp"
         android:layout_marginStart="11dp"
         android:layout_marginTop="54dp"
+        android:onClick="register"
         android:text="Register" />
 
     <Button
@@ -79,5 +80,6 @@
         android:layout_marginStart="48dp"
         android:layout_toEndOf="@+id/Reg_reg"
         android:layout_toRightOf="@+id/Reg_reg"
+        android:onClick="cancel"
         android:text="Cancel" />
 </RelativeLayout>

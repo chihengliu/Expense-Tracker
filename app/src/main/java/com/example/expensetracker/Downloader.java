@@ -29,7 +29,6 @@ class Downloader extends AsyncTask<String, Void, String> {
 
     private Context c;
     private String address;
-    private ArrayList<Spending> spendings;
     private ProgressDialog pd;
     private Activity activity;
 
@@ -99,7 +98,5 @@ class Downloader extends AsyncTask<String, Void, String> {
         return null;
     }
 
-    public ArrayList<Spending> getSpendings(){
-        return this.spendings;
-    }
+
 }
