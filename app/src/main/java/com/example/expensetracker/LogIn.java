@@ -22,7 +22,7 @@ public class LogIn extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_log_in);
         loginButton = (Button) findViewById(R.id.LogInButton);
-        registerButton = (Button) findViewById(R.id.Login_Reg);
+
         userName = (EditText) findViewById(R.id.Log_UserName);
         passwd = (EditText) findViewById(R.id.Log_Passwd);
     }

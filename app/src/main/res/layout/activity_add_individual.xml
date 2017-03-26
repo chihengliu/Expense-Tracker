@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_add_individual"
     android:layout_width="match_parent"
@@ -11,37 +12,25 @@
     tools:context="com.example.expensetracker.AddIndividual"
     android:background="@color/orange">
 
-    <Button
-        android:text="@android:string/cancel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="106dp"
-        android:id="@+id/cancel"
-        android:background="@android:color/holo_orange_dark"
-        android:onClick="cancelCreate"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_above="@+id/cancel">
+        android:layout_alignParentStart="true">
 
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent" >
 
             <TextView
-                android:text="Category"
+                android:id="@+id/category_label"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/category_label"
-                android:textSize="30sp"
-                android:textColor="@android:color/black" />
+                android:text="Category"
+                android:textColor="@android:color/black"
+                android:textSize="30sp" />
+
         </TableRow>
 
         <TableRow
@@ -56,6 +45,7 @@
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:textSize="30sp" />
+
         </TableRow>
 
         <TableRow
@@ -127,4 +117,17 @@
         android:background="@android:color/holo_orange_dark"
         android:onClick="saveCreate"
         android:text="save" />
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="106dp"
+        android:background="@android:color/holo_orange_dark"
+        android:onClick="cancelCreate"
+        android:text="@android:string/cancel" />
+
 </RelativeLayout>

@@ -4,83 +4,76 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_centerHorizontal="false"
     tools:context="com.example.expensetracker.LogIn">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/wallet"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/Log_UserName"
+        android:layout_width="400px"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="270dp"
+        android:background="@android:color/background_light"
+        android:ems="10"
+        android:hint="User Name"
+        android:inputType="textPersonName"
+        android:layerType="none"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="139dp" />
+
+    <EditText
+        android:id="@+id/Log_Passwd"
+        android:layout_width="400px"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Log_UserName"
+        android:layout_alignStart="@+id/Log_UserName"
+        android:layout_below="@+id/Log_UserName"
+        android:layout_marginTop="70dp"
+        android:background="@android:color/background_light"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textSize="22sp"
+        tools:layout_editor_absoluteX="68dp"
+        tools:layout_editor_absoluteY="257dp" />
+
+    <TextView
+        android:id="@+id/Login_Reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:linksClickable="true"
+        android:onClick="register"
+        android:text="Register"
+        android:textColor="@color/blue"
+        android:textSize="18sp"
+        android:layout_alignBaseline="@+id/LogInButton"
+        android:layout_alignBottom="@+id/LogInButton"
+        android:layout_toLeftOf="@+id/Log_Passwd"
+        android:layout_toStartOf="@+id/Log_Passwd" />
 
     <Button
         android:id="@+id/LogInButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/Log_Passwd"
-        android:layout_alignStart="@+id/Log_Passwd"
-        android:layout_below="@+id/Log_Passwd"
-        android:layout_marginTop="72dp"
+        android:background="@android:color/holo_green_light"
         android:onClick="login"
         android:text="Log in"
         tools:layout_editor_absoluteX="103dp"
-        tools:layout_editor_absoluteY="373dp" />
-
-    <TextView
-        android:id="@+id/UserName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="User Name"
-        tools:layout_editor_absoluteX="68dp"
-        tools:layout_editor_absoluteY="102dp"
-        android:layout_marginTop="60dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignLeft="@+id/Log_UserName"
-        android:layout_alignStart="@+id/Log_UserName" />
-
-    <EditText
-        android:id="@+id/Log_UserName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        tools:layout_editor_absoluteX="68dp"
-        tools:layout_editor_absoluteY="139dp"
-        android:layout_below="@+id/UserName"
-        android:layout_alignLeft="@+id/Pass"
-        android:layout_alignStart="@+id/Pass" />
-
-    <EditText
-        android:id="@+id/Log_Passwd"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPassword"
-        tools:layout_editor_absoluteX="68dp"
-        tools:layout_editor_absoluteY="257dp"
-        android:layout_marginTop="19dp"
-        android:layout_below="@+id/Pass"
-        android:layout_alignLeft="@+id/Pass"
-        android:layout_alignStart="@+id/Pass" />
-
-    <TextView
-        android:id="@+id/Pass"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Password"
-        tools:layout_editor_absoluteX="68dp"
-        tools:layout_editor_absoluteY="212dp"
-        android:layout_marginLeft="38dp"
-        android:layout_marginStart="38dp"
-        android:layout_marginTop="24dp"
-        android:layout_below="@+id/Log_UserName"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <Button
-        android:id="@+id/Login_Reg"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/LogInButton"
-        android:layout_marginLeft="49dp"
-        android:layout_marginStart="49dp"
-        android:layout_toEndOf="@+id/LogInButton"
-        android:layout_toRightOf="@+id/LogInButton"
-        android:onClick="register"
-        android:text="Register" />
+        tools:layout_editor_absoluteY="373dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/Log_Passwd"
+        android:layout_toEndOf="@+id/Log_Passwd"
+        android:layout_marginBottom="12dp" />
 
 </RelativeLayout>

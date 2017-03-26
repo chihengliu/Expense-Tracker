@@ -6,68 +6,43 @@
     android:layout_height="match_parent"
     tools:context="com.example.expensetracker.Register">
 
-    <TextView
-        android:id="@+id/item"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="55dp"
-        android:text="User Name"
-        tools:layout_editor_absoluteX="68dp"
-        tools:layout_editor_absoluteY="102dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignLeft="@+id/Reg_UserName"
-        android:layout_alignStart="@+id/Reg_UserName" />
-
     <EditText
         android:id="@+id/Reg_UserName"
-        android:layout_width="wrap_content"
+        android:layout_width="400px"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
         android:ems="10"
+        android:hint="User Name"
         android:inputType="textPersonName"
+        android:textSize="22sp"
         tools:layout_editor_absoluteX="68dp"
-        tools:layout_editor_absoluteY="139dp"
-        android:layout_marginTop="36dp"
-        android:layout_below="@+id/item"
-        android:layout_alignLeft="@+id/textView2"
-        android:layout_alignStart="@+id/textView2" />
+        tools:layout_editor_absoluteY="139dp" />
 
     <EditText
         android:id="@+id/Reg_Passwd"
-        android:layout_width="wrap_content"
+        android:layout_width="400px"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:ems="10"
-        android:inputType="textPassword"
-        tools:layout_editor_absoluteX="68dp"
-        tools:layout_editor_absoluteY="257dp"
-        android:layout_below="@+id/textView2"
-        android:layout_alignLeft="@+id/textView2"
-        android:layout_alignStart="@+id/textView2" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="50dp"
-        android:layout_marginStart="50dp"
-        android:text="Password"
-        tools:layout_editor_absoluteX="68dp"
-        tools:layout_editor_absoluteY="212dp"
+        android:layout_alignLeft="@+id/Reg_UserName"
+        android:layout_alignStart="@+id/Reg_UserName"
         android:layout_below="@+id/Reg_UserName"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="39dp" />
+        android:layout_marginTop="29dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textSize="22sp"
+        tools:layout_editor_absoluteX="68dp"
+        tools:layout_editor_absoluteY="257dp" />
 
     <Button
         android:id="@+id/Reg_reg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/Reg_Passwd"
-        android:layout_alignStart="@+id/Reg_Passwd"
         android:layout_below="@+id/Reg_Passwd"
-        android:layout_marginLeft="11dp"
-        android:layout_marginStart="11dp"
-        android:layout_marginTop="54dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:background="@android:color/holo_blue_light"
         android:onClick="register"
         android:text="Register" />
 
@@ -75,11 +50,18 @@
         android:id="@+id/Reg_cancel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/Reg_reg"
-        android:layout_marginLeft="48dp"
-        android:layout_marginStart="48dp"
-        android:layout_toEndOf="@+id/Reg_reg"
-        android:layout_toRightOf="@+id/Reg_reg"
+        android:background="@android:color/transparent"
         android:onClick="cancel"
-        android:text="Cancel" />
+        android:text="Cancel"
+        android:layout_below="@+id/Reg_reg"
+        android:layout_alignLeft="@+id/Reg_reg"
+        android:layout_alignStart="@+id/Reg_reg" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/register"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>
