@@ -57,6 +57,7 @@ public class AddIndividual extends AppCompatActivity {
             setResult(2, intent);
             BackgroundTask backgroundTask = new BackgroundTask(this);
             String method = "deleteSpend";
+            System.out.println(id);
             backgroundTask.execute(method,name,id);
             finish();
         }
