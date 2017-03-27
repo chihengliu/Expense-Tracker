@@ -79,23 +79,20 @@ public class IndividualMenuActivity extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (requestCode==REQEST_CODE_ADD_IND){
-            if (resultCode==RESULT_OK){
+            if (resultCode==RESULT_OK) {
                 Spending info = data.getParcelableExtra("spinfo");
+                int position = (int) data.getSerializableExtra("position");
 
-                int position = (int)data.getSerializableExtra("position");
-                if (position==-1) {
-                    list.add(0,info);
-                }
-                else {
-                    list.set(position,info);
+                if (position == -1) {
+                    list.add(0, info);
+                } else {
+                    list.set(position, info);
                 }
 
-                adapter = new ListViewAdapter(this,list);
+                adapter = new ListViewAdapter(this, list);
                 //adapter.updateList(list);
                 adapter.notifyDataSetChanged();
                 listView.setAdapter(adapter);
-
-
 
 
                 listView.setOnItemClickListener(new AdapterView.OnItemClickListener()
@@ -115,6 +112,39 @@ public class IndividualMenuActivity extends AppCompatActivity {
                     }
 
                 });
+
+            }
+            else if (resultCode == 2)
+            {
+                int position = (int) data.getSerializableExtra("position");
+                list.remove(position);
+
+                adapter = new ListViewAdapter(this, list);
+                //adapter.updateList(list);
+                adapter.notifyDataSetChanged();
+                listView.setAdapter(adapter);
+
+                listView.setOnItemClickListener(new AdapterView.OnItemClickListener()
+                {
+                    @Override
+                    public void onItemClick(AdapterView<?> parent, final View view, int position, long id)
+                    {
+                        int pos=position+1;
+                        if (pos!=list.size()) {
+                            Toast.makeText(IndividualMenuActivity.this, Integer.toString(pos) + " Clicked", Toast.LENGTH_SHORT).show();
+                            Intent intent = new Intent(IndividualMenuActivity.this, AddIndividual.class);
+                            intent.putExtra("detail", list.get(position));
+                            intent.putExtra("position", position);
+                            intent.putExtra("name", list.get(position).getName());
+                            startActivityForResult(intent, REQEST_CODE_ADD_IND);
+                        }
+                    }
+
+                });
+
+            }
+            else{
+
             }
         }
         super.onActivityResult(requestCode, resultCode, data);

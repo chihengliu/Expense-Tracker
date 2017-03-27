@@ -61,6 +61,7 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
         String update_url = "http://152.3.52.123/updateSpending.php";
         String register_url = "http://152.3.52.123/register.php";
         String login_url = "http://152.3.52.123/login.php";
+        String delete_url = "http://152.3.52.123/deleteSpending.php";
         String method = params[0];
         String line;
 
@@ -82,6 +83,9 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
                     case "login":
                         url = new URL(login_url);
                         break;
+                    case "deleteSpend":
+                        url = new URL(delete_url);
+                        break;
                 }
 
                 if (method.equals("addSpend") || method.equals("updateSpend")) {
@@ -96,6 +100,12 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
                             URLEncoder.encode("description", "UTF-8") + "=" + URLEncoder.encode(description, "UTF-8") + "&" +
                             URLEncoder.encode("amount", "UTF-8") + "=" + URLEncoder.encode(amount, "UTF-8");
 
+                }
+                else if (method.equals("deleteSpend")) {
+                    String name = params[1];
+                    String id = params[2];
+                    data = URLEncoder.encode("id", "UTF-8") + "=" + URLEncoder.encode(id, "UTF-8") + "&" +
+                            URLEncoder.encode("name", "UTF-8") + "=" + URLEncoder.encode(name, "UTF-8");
                 }
                 else {
                     username = params[1];
@@ -132,6 +142,9 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
                 }
                 if (method.equals("updateSpend")) {
                     return "Edit Spending Success...";
+                }
+                if (method.equals("deleteSpend")) {
+                    return "Delete Spending Success...";
                 }
                 if (method.equals("register")) {
                     result = result.trim();

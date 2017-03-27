@@ -49,8 +49,23 @@ public class AddIndividual extends AppCompatActivity {
         finish();
     }
 
+    public void deleteCreate(View view){
+
+        if(position != -1){
+            Intent intent = new Intent();
+            intent.putExtra("position",position);
+            setResult(2, intent);
+            BackgroundTask backgroundTask = new BackgroundTask(this);
+            String method = "deleteSpend";
+            backgroundTask.execute(method,name,id);
+            finish();
+        }
+
+    }
+
     public void saveCreate(View view){
         //name = spendingInfo.getName();
+
 
         if (TextUtils.isEmpty(ET_CAT.getText())){
             category = "Unknown";

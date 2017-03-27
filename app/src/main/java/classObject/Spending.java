@@ -14,7 +14,6 @@ public class Spending implements Parcelable {
     private String category;
     private String description;
 
-
     //Use global variable to assign unique spending ID
     //private static int idCounter = -1;
     private int spendingId;
