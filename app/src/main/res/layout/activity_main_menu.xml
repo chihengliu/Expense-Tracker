@@ -58,4 +58,15 @@
         android:textSize="24sp"
         android:textColor="@android:color/black" />
 
+    <Button
+        android:id="@+id/logout"
+        style="@android:style/Widget.Material.Button.Inset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:onClick="logout"
+        android:text="Log Out" />
+
 </RelativeLayout>
