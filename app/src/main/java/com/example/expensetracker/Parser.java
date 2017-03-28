@@ -23,7 +23,7 @@ import classObject.Spending;
 class Parser extends AsyncTask<Void,Integer,Integer>{
     private Context c;
     private String data;
-    private ArrayList<Spending> spendings = new ArrayList<>();
+    private ArrayList<Spending> spendings;
     private ProgressDialog pd;
     private Activity activity;
     private String name;
@@ -67,10 +67,25 @@ class Parser extends AsyncTask<Void,Integer,Integer>{
     private int parse(){
         try{
             //Add data to JSON Array
+
+            spendings = new ArrayList<>();
+            Spending spending = new Spending();
+            spending.setName(name);
+            spending.setCategory("");
+            spending.setAmount(-1);
+            spending.setDescription("");
+            spending.setId(0);
+            spendings.add(spending);
+
+            if (data.toString().trim().equals("nulln")){
+
+
+                return 1;
+            }
             JSONArray ja = new JSONArray(data);
             //Create JSON object to hold a single item
             JSONObject jo;
-            spendings = new ArrayList<>();
+
             //Loop through array
             for(int i=0;i<ja.length();i++){
                 jo = ja.getJSONObject(i);
@@ -82,7 +97,7 @@ class Parser extends AsyncTask<Void,Integer,Integer>{
                 int id = jo.getInt("sid");
 
                 //Add them to list
-                Spending spending = new Spending();
+                spending = new Spending();
                 spending.setName(name);
                 spending.setCategory(category);
                 spending.setAmount(amount);

@@ -25,6 +25,7 @@ package com.example.expensetracker;
         import java.net.URLEncoder;
         import java.util.ArrayList;
 
+        import classObject.Event;
         import classObject.Spending;
 
 /**
@@ -107,6 +108,10 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
                     data = URLEncoder.encode("id", "UTF-8") + "=" + URLEncoder.encode(id, "UTF-8") + "&" +
                             URLEncoder.encode("name", "UTF-8") + "=" + URLEncoder.encode(name, "UTF-8");
                 }
+                else if (method.equals("updateEventList")){
+                    username = params[1];
+                    data = URLEncoder.encode("username", "UTF-8") + "=" + URLEncoder.encode(username, "UTF-8");
+                }
                 else {
                     username = params[1];
                     password = params[2];
@@ -183,6 +188,43 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
 
                     }
                 }
+                if (method.equals("updateEventList")){
+                    ArrayList<Event> events = new ArrayList<Event>();
+                    Event event = new Event();
+                    event.setName("");
+                    event.setId(0);
+                    event.setDescription("");
+                    events.add(event);
+
+                    if (result.equals("nulln")) {
+
+                    }
+                    else {
+                        try {
+                            //Add data to JSON Array
+                            JSONArray ja = new JSONArray(result);
+                            JSONObject jo;
+                            //Create JSON object to hold a single item
+                            for(int i=0;i<ja.length();i++) {
+                                jo = ja.getJSONObject(i);
+                                String Name = jo.getString("Name");
+                                String Description = jo.getString("Description");
+                                int id = jo.getInt("EID");
+                                event = new Event();
+                                event.setDescription(Description);
+                                event.setId(id);
+                                event.setName(Name);
+                                events.add(event);
+                            }
+
+
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                        }
+
+                    }
+                    return "Download Event List Success...";
+                }
             } catch (MalformedURLException e) {
                 e.printStackTrace();
             } catch (IOException e) {
@@ -221,7 +263,9 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
         else if (result.equals("Login Fail... Check Password")){
             Toast.makeText(ctx, result, Toast.LENGTH_LONG).show();
         }
-
+        else if (result.equals("Delete Spending Success...")){
+            Toast.makeText(ctx, result, Toast.LENGTH_LONG).show();
+        }
         else
         {
             alertDialog.setMessage(result);

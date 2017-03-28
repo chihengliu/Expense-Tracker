@@ -27,22 +27,16 @@ public class MainMenu extends AppCompatActivity {
         String url = "http://152.3.52.123/updateList.php";
         Downloader downloader = new Downloader(this,url,MainMenu.this);
         downloader.execute(name);
-
-
-        /*Intent intent = new Intent(MainMenu.this,IndividualMenuActivity.class);
-        ArrayList<Spending> list = downloader.getSpendings();
-        intent.putExtra("list",list);
-        startActivity(intent);
-
-        /*Intent startIndividualMenu = new Intent(MainMenu.this, IndividualMenuActivity.class);
-        startActivity(startIndividualMenu);
-        overridePendingTransition(R.animator.zoom_enter,R.animator.zoom_exit);*/
     }
 
     public void groupMenu(View view){
-        Intent startGroupMenu = new Intent(MainMenu.this, GroupMenu.class);
+        String url = "http://152.3.52.123/updateEventList.php";
+        String method = "updateEventList";
+        BackgroundTask backgroundTask = new BackgroundTask(this,MainMenu.this);
+        backgroundTask.execute(method,name);
+        /*Intent startGroupMenu = new Intent(MainMenu.this, GroupMenu.class);
         startActivity(startGroupMenu);
-        overridePendingTransition(R.animator.zoom_enter,R.animator.zoom_exit);
+        overridePendingTransition(R.animator.zoom_enter,R.animator.zoom_exit);*/
     }
 
 
