@@ -39,5 +39,10 @@ public class MainMenu extends AppCompatActivity {
         overridePendingTransition(R.animator.zoom_enter,R.animator.zoom_exit);*/
     }
 
+    public void logout(View view){
+        Intent logout = new Intent(MainMenu.this, LogIn.class);
+        startActivity(logout);
+    }
+
 
 }
