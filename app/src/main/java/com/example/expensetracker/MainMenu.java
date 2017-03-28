@@ -30,7 +30,7 @@ public class MainMenu extends AppCompatActivity {
     }
 
     public void groupMenu(View view){
-        String url = "http://152.3.52.123/updateEventList.php";
+
         String method = "updateEventList";
         BackgroundTask backgroundTask = new BackgroundTask(this,MainMenu.this);
         backgroundTask.execute(method,name);

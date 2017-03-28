@@ -5,113 +5,113 @@
     android:id="@+id/activity_event_page"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_light"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.expensetracker.EventPage"
-    android:background="@color/blue">
+    tools:context="com.example.expensetracker.EventPage">
 
     <ImageButton
+        android:id="@+id/add_event_spending"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/plus"
-        android:id="@+id/add_event_spending"
-        android:background="@color/blue"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:onClick="addEventSpending" />
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/holo_blue_light"
+        android:onClick="addEventSpending"
+        app:srcCompat="@drawable/plus" />
 
     <Button
-        android:text="@string/month"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:id="@+id/btn_mon"
         style="@style/Widget.AppCompat.Button.Colored"
-        android:background="@android:color/holo_blue_dark"
-        android:layout_below="@+id/back_group"
-        android:layout_toRightOf="@+id/week_event"
-        android:layout_toEndOf="@+id/week_event" />
-
-    <Button
-        android:text="@string/week"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/week_event"
+        android:layout_below="@+id/back_group"
+        android:layout_toEndOf="@+id/week_event"
+        android:layout_toRightOf="@+id/week_event"
         android:background="@android:color/holo_blue_dark"
+        android:text="@string/month" />
+
+    <Button
+        android:id="@+id/week_event"
         style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/btn_mon"
         android:layout_alignBottom="@+id/btn_mon"
+        android:layout_toEndOf="@+id/day_event"
         android:layout_toRightOf="@+id/day_event"
-        android:layout_toEndOf="@+id/day_event" />
+        android:background="@android:color/holo_blue_dark"
+        android:text="@string/week" />
 
     <Button
-        android:text="@string/day"
+        android:id="@+id/day_event"
+        style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="7dp"
-        android:layout_marginStart="7dp"
-        android:id="@+id/day_event"
-        android:background="@android:color/holo_blue_dark"
-        style="@style/Widget.AppCompat.Button.Colored"
         android:layout_alignBaseline="@+id/week_event"
         android:layout_alignBottom="@+id/week_event"
+        android:layout_marginLeft="7dp"
+        android:layout_marginStart="7dp"
+        android:layout_toEndOf="@+id/back_group"
         android:layout_toRightOf="@+id/back_group"
-        android:layout_toEndOf="@+id/back_group" />
+        android:background="@android:color/holo_blue_dark"
+        android:text="@string/day" />
 
     <Button
-        android:text="@string/list"
+        android:id="@+id/list_event"
+        style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/list_event"
-        android:background="@android:color/holo_blue_dark"
-        style="@style/Widget.AppCompat.Button.Colored"
-        android:layout_alignParentBottom="true"
         android:layout_alignLeft="@+id/day_event"
-        android:layout_alignStart="@+id/day_event" />
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/day_event"
+        android:background="@android:color/holo_blue_dark"
+        android:text="@string/list" />
 
     <ImageButton
+        android:id="@+id/back_group"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="?attr/actionModeCloseDrawable"
-        android:id="@+id/back_group"
-        android:background="@color/blue"
-        android:onClick="backtoGroupMenu"
-        android:contentDescription=""
-        android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/holo_blue_light"
+        android:contentDescription=""
+        android:onClick="backtoGroupMenu"
+        app:srcCompat="?attr/actionModeCloseDrawable" />
 
     <Button
-        android:text="Member"
+        android:id="@+id/memeber_select"
+        style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/list_event"
         android:layout_toLeftOf="@+id/pie_event"
         android:layout_toStartOf="@+id/pie_event"
-        android:id="@+id/memeber_select"
         android:background="@android:color/holo_blue_dark"
-        style="@style/Widget.AppCompat.Button.Colored" />
+        android:text="Member" />
 
     <Button
-        android:text="@string/pie"
+        android:id="@+id/pie_event"
+        style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/pie_event"
-        android:background="@android:color/holo_blue_dark"
-        style="@style/Widget.AppCompat.Button.Colored"
         android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/week_event"
         android:layout_toRightOf="@+id/week_event"
-        android:layout_toEndOf="@+id/week_event" />
+        android:background="@android:color/holo_blue_dark"
+        android:text="@string/pie" />
 
     <TextView
-        android:text="@string/event_name"
+        android:id="@+id/event_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/event_label"
-        android:textSize="18sp"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:text="@string/event_name"
+        android:textSize="18sp" />
 
 </RelativeLayout>

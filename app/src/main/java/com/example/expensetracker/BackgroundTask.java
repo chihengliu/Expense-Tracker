@@ -63,6 +63,7 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
         String register_url = "http://152.3.52.123/register.php";
         String login_url = "http://152.3.52.123/login.php";
         String delete_url = "http://152.3.52.123/deleteSpending.php";
+        String updateEvent_url = "http://152.3.52.123/updateEventList.php";
         String method = params[0];
         String line;
 
@@ -86,6 +87,9 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
                         break;
                     case "deleteSpend":
                         url = new URL(delete_url);
+                        break;
+                    case "updateEventList":
+                        url = new URL(updateEvent_url);
                         break;
                 }
 
@@ -223,6 +227,9 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
                         }
 
                     }
+                    Intent goGroup = new Intent(this.activity,GroupMenu.class);
+                    goGroup.putExtra("eventlist",events);
+                    activity.startActivity(goGroup);
                     return "Download Event List Success...";
                 }
             } catch (MalformedURLException e) {
