@@ -7,6 +7,8 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import classObject.Event;
+
 public class EventPage extends AppCompatActivity {
 
 
@@ -26,5 +28,10 @@ public class EventPage extends AppCompatActivity {
     public void addEventSpending(View view){
         Intent addEventSpending = new Intent(EventPage.this,AddEventSpending.class);
         startActivity(addEventSpending);
+    }
+
+    public void editEvent(View view) {
+        Intent editevent = new Intent(EventPage.this,AddGroup.class);
+        startActivity(editevent);
     }
 }

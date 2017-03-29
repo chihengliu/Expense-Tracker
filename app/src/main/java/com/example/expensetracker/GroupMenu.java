@@ -45,7 +45,6 @@ public class GroupMenu extends AppCompatActivity {
                     Intent intent = new Intent(GroupMenu.this, EventPage.class);
                     intent.putExtra("detail", events.get(position));
                     intent.putExtra("position", position);
-                    intent.putExtra("name", events.get(position).getName());
                     startActivityForResult(intent, REQEST_CODE_ADD_IND);
                 }
             }
@@ -64,6 +63,57 @@ public class GroupMenu extends AppCompatActivity {
 
     public void addGroupEvent(View view){
         Intent addGroupWindow = new Intent(GroupMenu.this,AddGroup.class);
-        startActivity(addGroupWindow);
+        startActivityForResult(addGroupWindow,REQEST_CODE_ADD_IND);
     }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if (requestCode==REQEST_CODE_ADD_IND){
+            if (resultCode==RESULT_OK) {
+                Event info = data.getParcelableExtra("eventInfo");
+                int position = (int) data.getSerializableExtra("position");
+
+                if (position == -1) {
+                    events.add(0, info);
+                } else {
+                    events.set(position, info);
+                }
+
+
+            }
+            else if (resultCode == 2)
+            {
+                int position = (int) data.getSerializableExtra("position");
+                events.remove(position);
+
+            }
+
+            adapter = new ListViewAdapterEvent(this, events);
+            //adapter.updateList(list);
+            adapter.notifyDataSetChanged();
+            listView.setAdapter(adapter);
+
+
+            listView.setOnItemClickListener(new AdapterView.OnItemClickListener()
+            {
+                @Override
+                public void onItemClick(AdapterView<?> parent, final View view, int position, long id)
+                {
+                    int pos=position+1;
+                    if (pos!=events.size()) {
+                        Intent intent = new Intent(GroupMenu.this, EventPage.class);
+                        intent.putExtra("detail", events.get(position));
+                        intent.putExtra("position", position);
+                        startActivityForResult(intent, REQEST_CODE_ADD_IND);
+                    }
+                }
+
+            });
+
+
+        }
+        super.onActivityResult(requestCode, resultCode, data);
+    }
+
+
 }

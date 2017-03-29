@@ -114,4 +114,16 @@
         android:text="@string/event_name"
         android:textSize="18sp" />
 
+    <ImageButton
+        android:id="@+id/eventSetting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/pie_event"
+        android:layout_marginTop="11dp"
+        android:background="@android:color/holo_blue_light"
+        android:onClick="editEvent"
+        app:srcCompat="@drawable/setting" />
+
 </RelativeLayout>

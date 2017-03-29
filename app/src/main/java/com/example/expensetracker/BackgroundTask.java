@@ -42,9 +42,17 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
     String password;
     String username;
 
+    Event event;
+
     BackgroundTask(Context ctx) {
         this.ctx = ctx;
     }
+    BackgroundTask(Context ctx,Activity act, Event event){
+        this.ctx = ctx;
+        this.activity = act;
+        this.event = event;
+    }
+
     BackgroundTask(Context ctx,Activity act) {
         this.ctx = ctx;
         this.activity = act;
@@ -64,6 +72,9 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
         String login_url = "http://152.3.52.123/login.php";
         String delete_url = "http://152.3.52.123/deleteSpending.php";
         String updateEvent_url = "http://152.3.52.123/updateEventList.php";
+        String updateMember_url = "http://152.3.52.123/updateMembers.php";
+        String addEvent_url = "http://152.3.52.123/addEvent.php";
+        String updateE_url = "http://152.3.52.123/updateEvent.php";
         String method = params[0];
         String line;
 
@@ -91,6 +102,16 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
                     case "updateEventList":
                         url = new URL(updateEvent_url);
                         break;
+                    case "updateMembers":
+                        url = new URL(updateMember_url);
+                        break;
+                    case "addEvent":
+                        url = new URL(addEvent_url);
+                        break;
+                    case "updateEvent":
+                        url = new URL(updateE_url);
+                        break;
+
                 }
 
                 if (method.equals("addSpend") || method.equals("updateSpend")) {
@@ -106,6 +127,9 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
                             URLEncoder.encode("amount", "UTF-8") + "=" + URLEncoder.encode(amount, "UTF-8");
 
                 }
+                else if (method.equals("addEvent") || method.equals("updateEvent")){
+
+                }
                 else if (method.equals("deleteSpend")) {
                     String name = params[1];
                     String id = params[2];
@@ -116,22 +140,33 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
                     username = params[1];
                     data = URLEncoder.encode("username", "UTF-8") + "=" + URLEncoder.encode(username, "UTF-8");
                 }
+                else if (method.equals("updateMembers")){
+
+                }
                 else {
                     username = params[1];
                     password = params[2];
                     data = URLEncoder.encode("username", "UTF-8") + "=" + URLEncoder.encode(username, "UTF-8") + "&" +
                             URLEncoder.encode("password", "UTF-8") + "=" + URLEncoder.encode(password, "UTF-8");
                 }
+
+
                 HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
                 httpURLConnection.setRequestMethod("POST");
                 httpURLConnection.setDoOutput(true);
                 httpURLConnection.setDoInput(true);
-                OutputStream OS = httpURLConnection.getOutputStream();
-                BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(OS, "UTF-8"));
-                bufferedWriter.write(data);
-                bufferedWriter.flush();
-                bufferedWriter.close();
-                OS.close();
+                if (method.equals("updateMembers")){
+
+                }
+                else{
+                    OutputStream OS = httpURLConnection.getOutputStream();
+                    BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(OS, "UTF-8"));
+                    bufferedWriter.write(data);
+                    bufferedWriter.flush();
+                    bufferedWriter.close();
+                    OS.close();
+                }
+
                 InputStream IS = httpURLConnection.getInputStream();
                 BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(IS));
                 StringBuilder sb = new StringBuilder();
@@ -232,6 +267,34 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
                     activity.startActivity(goGroup);
                     return "Download Event List Success...";
                 }
+                if (method.equals("updateMembers")){
+
+                    ArrayList<String> allmembers = new ArrayList<String>();
+
+                        try {
+                            //Add data to JSON Array
+                            JSONArray ja = new JSONArray(result);
+                            JSONObject jo;
+
+                            //Create JSON object to hold a single item
+                            for(int i=0;i<ja.length();i++) {
+                                jo = ja.getJSONObject(i);
+                                String Name = jo.getString("Name");
+                                allmembers.add(Name);
+                            }
+
+
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                        }
+
+
+                    Intent goMember = new Intent(this.activity,ManageMember.class);
+                    goMember.putExtra("memberlist",allmembers);
+                    goMember.putExtra("event",event);
+                    activity.startActivity(goMember);
+                    return "Download Members Success...";
+                }
             } catch (MalformedURLException e) {
                 e.printStackTrace();
             } catch (IOException e) {
@@ -272,6 +335,12 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
         }
         else if (result.equals("Delete Spending Success...")){
             Toast.makeText(ctx, result, Toast.LENGTH_LONG).show();
+        }
+        else if (result.equals("Download Event List Success...")){
+
+        }
+        else if (result.equals("Download Members Success...")){
+
         }
         else
         {

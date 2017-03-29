@@ -58,9 +58,6 @@ public class IndividualMenuActivity extends AppCompatActivity {
 
         });
 
-
-
-
     }
 
     public void mainMenu(View view) {
@@ -89,29 +86,6 @@ public class IndividualMenuActivity extends AppCompatActivity {
                     list.set(position, info);
                 }
 
-                adapter = new ListViewAdapter(this, list);
-                //adapter.updateList(list);
-                adapter.notifyDataSetChanged();
-                listView.setAdapter(adapter);
-
-
-                listView.setOnItemClickListener(new AdapterView.OnItemClickListener()
-                {
-                    @Override
-                    public void onItemClick(AdapterView<?> parent, final View view, int position, long id)
-                    {
-                        int pos=position+1;
-                        if (pos!=list.size()) {
-                            Toast.makeText(IndividualMenuActivity.this, Integer.toString(pos) + " Clicked", Toast.LENGTH_SHORT).show();
-                            Intent intent = new Intent(IndividualMenuActivity.this, AddIndividual.class);
-                            intent.putExtra("detail", list.get(position));
-                            intent.putExtra("position", position);
-                            intent.putExtra("name", list.get(position).getName());
-                            startActivityForResult(intent, REQEST_CODE_ADD_IND);
-                        }
-                    }
-
-                });
 
             }
             else if (resultCode == 2)
@@ -119,33 +93,32 @@ public class IndividualMenuActivity extends AppCompatActivity {
                 int position = (int) data.getSerializableExtra("position");
                 list.remove(position);
 
-                adapter = new ListViewAdapter(this, list);
-                //adapter.updateList(list);
-                adapter.notifyDataSetChanged();
-                listView.setAdapter(adapter);
+            }
 
-                listView.setOnItemClickListener(new AdapterView.OnItemClickListener()
+            adapter = new ListViewAdapter(this, list);
+            //adapter.updateList(list);
+            adapter.notifyDataSetChanged();
+            listView.setAdapter(adapter);
+
+
+            listView.setOnItemClickListener(new AdapterView.OnItemClickListener()
+            {
+                @Override
+                public void onItemClick(AdapterView<?> parent, final View view, int position, long id)
                 {
-                    @Override
-                    public void onItemClick(AdapterView<?> parent, final View view, int position, long id)
-                    {
-                        int pos=position+1;
-                        if (pos!=list.size()) {
-                            Toast.makeText(IndividualMenuActivity.this, Integer.toString(pos) + " Clicked", Toast.LENGTH_SHORT).show();
-                            Intent intent = new Intent(IndividualMenuActivity.this, AddIndividual.class);
-                            intent.putExtra("detail", list.get(position));
-                            intent.putExtra("position", position);
-                            intent.putExtra("name", list.get(position).getName());
-                            startActivityForResult(intent, REQEST_CODE_ADD_IND);
-                        }
+                    int pos=position+1;
+                    if (pos!=list.size()) {
+                        Intent intent = new Intent(IndividualMenuActivity.this, AddIndividual.class);
+                        intent.putExtra("detail", list.get(position));
+                        intent.putExtra("position", position);
+                        intent.putExtra("name", list.get(position).getName());
+                        startActivityForResult(intent, REQEST_CODE_ADD_IND);
                     }
+                }
 
-                });
+            });
 
-            }
-            else{
 
-            }
         }
         super.onActivityResult(requestCode, resultCode, data);
     }

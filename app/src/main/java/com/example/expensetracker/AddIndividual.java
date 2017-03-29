@@ -38,6 +38,7 @@ public class AddIndividual extends AppCompatActivity {
             ET_DES.setText(spendingInfo.getDescription());
             position = (int)inten1.getSerializableExtra("position");
             id = Integer.toString(spendingInfo.getId());
+
         }
         else {
             position = -1;
@@ -57,7 +58,6 @@ public class AddIndividual extends AppCompatActivity {
             setResult(2, intent);
             BackgroundTask backgroundTask = new BackgroundTask(this);
             String method = "deleteSpend";
-            System.out.println(id);
             backgroundTask.execute(method,name,id);
             finish();
         }
@@ -96,7 +96,7 @@ public class AddIndividual extends AppCompatActivity {
 
 
         //ArrayList<String> spendingInfo = new ArrayList<String>();
-        Spending spendingInfo = new Spending();
+        spendingInfo = new Spending();
         spendingInfo.setName(name);
         spendingInfo.setDescription(description);
         spendingInfo.setAmount(amountInt);

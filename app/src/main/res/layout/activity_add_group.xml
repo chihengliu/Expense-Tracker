@@ -11,66 +11,13 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.expensetracker.AddGroup">
 
-    <Button
-        android:id="@+id/cancel_add"
-        style="@style/Widget.AppCompat.Button.Colored"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="99dp"
-        android:background="@android:color/holo_blue_dark"
-        android:onClick="cancelCreate"
-        android:text="Cancel" />
-
-    <Button
-        android:id="@+id/save_add"
-        style="@style/Widget.AppCompat.Button.Colored"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignTop="@+id/cancel_add"
-        android:background="@android:color/holo_blue_dark"
-        android:onClick="saveGroup"
-        android:text="save" />
-
     <TableLayout
-        android:id="@+id/add_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_above="@+id/cancel_add"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true">
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <TextView
-                android:id="@+id/add_member"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Members"
-                android:textSize="30dp" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <EditText
-                android:id="@+id/member"
-                style="@style/Widget.AppCompat.EditText"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@android:color/background_light"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:textSize="30sp" />
-
-        </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
@@ -128,5 +75,78 @@
                 android:textSize="30sp" />
         </TableRow>
 
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/add_member"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Members"
+                android:textSize="30dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ListView
+                android:id="@+id/member_list"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:isScrollContainer="false" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/memeber_manage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/holo_blue_dark"
+                android:onClick="setMembers"
+                android:text="Manage Members" />
+        </TableRow>
+
     </TableLayout>
+
+    <Button
+        android:id="@+id/cancel_add"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="38dp"
+        android:background="@android:color/holo_blue_dark"
+        android:onClick="cancelCreate"
+        android:text="Cancel"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/delete_event"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/save_add"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/holo_blue_dark"
+        android:onClick="deleteGroup"
+        android:text="Delete"
+        android:textColor="@android:color/background_light" />
+
+    <Button
+        android:id="@+id/save_add"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/cancel_add"
+        android:background="@android:color/holo_blue_dark"
+        android:onClick="saveGroup"
+        android:text="save" />
+
 </RelativeLayout>
