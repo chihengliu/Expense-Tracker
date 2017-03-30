@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_light"
     tools:context="com.example.expensetracker.Register">
 
 
@@ -33,11 +34,11 @@
         android:text="Save" />
 
     <ListView
+        android:id="@+id/allmember"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_alignParentTop="true"
+        android:layout_above="@+id/member_cancel"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_above="@+id/member_cancel"
-        android:id="@+id/allmember" />
+        android:layout_alignParentTop="true" />
 </RelativeLayout>

@@ -43,6 +43,7 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
     String username;
 
     ArrayList<Event> events;
+    ArrayList<String> members;
 
     BackgroundTask(Context ctx) {
         this.ctx = ctx;
@@ -156,7 +157,7 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
                 httpURLConnection.setDoOutput(true);
                 httpURLConnection.setDoInput(true);
                 if (method.equals("updateMembers")){
-
+                    username = params[1];
                 }
                 else{
                     OutputStream OS = httpURLConnection.getOutputStream();
@@ -243,8 +244,11 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
                             //Add data to JSON Array
                             JSONArray ja = new JSONArray(result);
                             JSONObject jo;
+
+                            int numEvents = ja.getJSONObject(ja.length()-1).getInt("numEvent");
+
                             //Create JSON object to hold a single item
-                            for(int i=0;i<ja.length();i++) {
+                            for(int i=0;i<numEvents;i++) {
                                 jo = ja.getJSONObject(i);
                                 String Name = jo.getString("Name");
                                 String Description = jo.getString("Description");
@@ -256,6 +260,12 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
                                 events.add(event);
                             }
 
+                            members = new ArrayList<>();
+                            for(int i=numEvents;i<ja.length()-1;i++){
+                                String membername = ja.getJSONObject(i).getString("Name");
+                                members.add(membername);
+                            }
+
 
                         } catch (JSONException e) {
                             e.printStackTrace();
@@ -264,6 +274,7 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
                     }
                     Intent goGroup = new Intent(this.activity,GroupMenu.class);
                     goGroup.putExtra("eventlist",events);
+                    goGroup.putExtra("allmembers",members);
                     activity.startActivity(goGroup);
                     return "Download Event List Success...";
                 }
@@ -295,6 +306,7 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
                     Intent goMember = new Intent(this.activity,AddGroup.class);
                     goMember.putExtra("memberlist",allmembers);
                     goMember.putExtra("allevents",events);
+                    goMember.putExtra("name",username);
                     activity.startActivity(goMember);
                     return "Download Members Success...";
                 }
