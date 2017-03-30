@@ -43,6 +43,8 @@ class Downloader extends AsyncTask<String, Void, String> {
         this.activity = activity;
 
     }
+
+
     @Override
     protected void onPreExecute(){
         pd=new ProgressDialog(c);

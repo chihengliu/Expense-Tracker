@@ -41,6 +41,7 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
     Activity activity;
     String password;
     String username;
+    ArrayList<String> array;
 
     ArrayList<Event> events;
 
@@ -56,6 +57,11 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
     BackgroundTask(Context ctx,Activity act) {
         this.ctx = ctx;
         this.activity = act;
+    }
+
+    BackgroundTask(Context ctx, ArrayList<String> array) {
+        this.ctx = ctx;
+        this.array = array;
     }
 
     @Override
@@ -75,6 +81,7 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
         String updateMember_url = "http://152.3.52.123/updateMembers.php";
         String addEvent_url = "http://152.3.52.123/addEvent.php";
         String updateE_url = "http://152.3.52.123/updateEvent.php";
+        String addEventMember_url = "http://152.3.52.123/addEventAndMember.php";
         String method = params[0];
         String line;
 
@@ -111,7 +118,8 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
                     case "updateEvent":
                         url = new URL(updateE_url);
                         break;
-
+                    case "addEventAndMember" :
+                        url = new URL(addEventMember_url);
                 }
 
                 if (method.equals("addSpend") || method.equals("updateSpend")) {
