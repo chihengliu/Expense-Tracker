@@ -62,8 +62,13 @@ public class GroupMenu extends AppCompatActivity {
     }
 
     public void addGroupEvent(View view){
-        Intent addGroupWindow = new Intent(GroupMenu.this,AddGroup.class);
-        startActivityForResult(addGroupWindow,REQEST_CODE_ADD_IND);
+        String method = "updateMembers";
+        Collections.reverse(events);
+        BackgroundTask backgroundTask = new BackgroundTask(this,GroupMenu.this,events);
+        backgroundTask.execute(method);
+
+        //Intent addGroupWindow = new Intent(GroupMenu.this,AddGroup.class);
+        //startActivityForResult(addGroupWindow,REQEST_CODE_ADD_IND);
     }
 
     @Override

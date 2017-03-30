@@ -42,15 +42,15 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
     String password;
     String username;
 
-    Event event;
+    ArrayList<Event> events;
 
     BackgroundTask(Context ctx) {
         this.ctx = ctx;
     }
-    BackgroundTask(Context ctx,Activity act, Event event){
+    BackgroundTask(Context ctx,Activity act, ArrayList<Event> events){
         this.ctx = ctx;
         this.activity = act;
-        this.event = event;
+        this.events = events;
     }
 
     BackgroundTask(Context ctx,Activity act) {
@@ -271,17 +271,20 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
 
                     ArrayList<String> allmembers = new ArrayList<String>();
 
+
                         try {
                             //Add data to JSON Array
                             JSONArray ja = new JSONArray(result);
                             JSONObject jo;
 
                             //Create JSON object to hold a single item
-                            for(int i=0;i<ja.length();i++) {
+                            for(int i=0;i<ja.length()-1;i++) {
                                 jo = ja.getJSONObject(i);
                                 String Name = jo.getString("Name");
                                 allmembers.add(Name);
                             }
+
+
 
 
                         } catch (JSONException e) {
@@ -289,9 +292,9 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
                         }
 
 
-                    Intent goMember = new Intent(this.activity,ManageMember.class);
+                    Intent goMember = new Intent(this.activity,AddGroup.class);
                     goMember.putExtra("memberlist",allmembers);
-                    goMember.putExtra("event",event);
+                    goMember.putExtra("allevents",events);
                     activity.startActivity(goMember);
                     return "Download Members Success...";
                 }

@@ -29,8 +29,7 @@ public class ManageMember extends AppCompatActivity {
         setContentView(R.layout.activity_manage_member);
         Intent intent = getIntent();
         allmembers = intent.getStringArrayListExtra("memberlist");
-        event = intent.getParcelableExtra("event");
-        members = event.getMembers();
+        members = intent.getStringArrayListExtra("member");
         adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_checked,allmembers);
         listView = (ListView)findViewById(R.id.allmember);
         listView.setChoiceMode(listView.CHOICE_MODE_MULTIPLE);
@@ -62,11 +61,9 @@ public class ManageMember extends AppCompatActivity {
             }
         }
         Intent intent = new Intent(ManageMember.this,AddGroup.class);
-        event.setMembers(members);
-        intent.putExtra("detail",event);
-        intent.putExtra("position",-1);
-        startActivity(intent);
-
+        intent.putExtra("checkmembers",members);
+        setResult(RESULT_OK,intent);
+        finish();
     }
 
     public void cancel (View view) {

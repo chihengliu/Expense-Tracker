@@ -26,6 +26,9 @@ public class AddGroup extends AppCompatActivity {
     int position;
     ArrayAdapter<String> adapter;
     ListView listView;
+    ArrayList<Event> allevents;
+    ArrayList<String> allmembers;
+    private static final int REQEST_CODE_ADD_IND = 102;
 
 
 
@@ -37,6 +40,8 @@ public class AddGroup extends AppCompatActivity {
         ET_NAME = (EditText)findViewById(R.id.event);
         ET_DES = (EditText)findViewById(R.id.event_description);
         eventinfo = intent.getParcelableExtra("detail");
+        allevents = intent.getParcelableArrayListExtra("allevents");
+        allmembers = intent.getStringArrayListExtra("memberlist");
         if (eventinfo!=null){
             ET_NAME.setText(eventinfo.getName());
             ET_DES.setText(eventinfo.getDescription());
@@ -83,12 +88,12 @@ public class AddGroup extends AppCompatActivity {
         }
 
         eventinfo = new Event();
-        eventinfo.setId(Integer.parseInt(id));
+        //eventinfo.setId(Integer.parseInt(id));
         eventinfo.setName(name);
         eventinfo.setDescription(description);
         eventinfo.setMembers(members);
 
-        if (position==-1){
+        /*if (position==-1){
             method = "addEvent";
         }
         else
@@ -96,13 +101,12 @@ public class AddGroup extends AppCompatActivity {
             method = "updateEvent";
         }
         BackgroundTask backgroundTask = new BackgroundTask(this);
-        backgroundTask.execute(method,name,description,id);
+        backgroundTask.execute(method,name,description,id);*/
 
-        Intent intent = new Intent();
-        intent.putExtra("eventInfo",eventinfo);
-        intent.putExtra("position",position);
-        setResult(RESULT_OK,intent);
-        finish();
+        allevents.add(eventinfo);
+        Intent intent = new Intent(AddGroup.this,GroupMenu.class);
+        intent.putExtra("eventlist",allevents);
+        startActivity(intent);
 
     }
 
@@ -118,26 +122,35 @@ public class AddGroup extends AppCompatActivity {
     }
 
     public void setMembers(View view) {
-        if (TextUtils.isEmpty(ET_NAME.getText())){
-            name = "";
-        }
-        else{
-            name = ET_NAME.getText().toString();
-        }
+        Intent intent = new Intent(AddGroup.this,ManageMember.class);
+        intent.putExtra("memberlist",allmembers);
+        intent.putExtra("member",members);
+        startActivityForResult(intent,REQEST_CODE_ADD_IND);
 
-        if (TextUtils.isEmpty(ET_DES.getText())){
-            description = "";
-        }
-        else{
-            description = ET_DES.getText().toString();
-        }
-        method = "updateMembers";
+        /*method = "updateMembers";
         eventinfo = new Event();
         eventinfo.setName(name);
         eventinfo.setDescription(description);
         eventinfo.setMembers(members);
         BackgroundTask backgroundTask = new BackgroundTask(this,AddGroup.this,eventinfo);
-        backgroundTask.execute(method,name,description);
+        backgroundTask.execute(method,name,description);*/
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if (requestCode==REQEST_CODE_ADD_IND){
+            if (resultCode==RESULT_OK) {
+                members = data.getStringArrayListExtra("checkmembers");
+                adapter=new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,members);
+                listView = (ListView)findViewById(R.id.member_list);
+                listView.setAdapter(adapter);
+            }
+
+
+
+
+        }
+        super.onActivityResult(requestCode, resultCode, data);
     }
 
 
