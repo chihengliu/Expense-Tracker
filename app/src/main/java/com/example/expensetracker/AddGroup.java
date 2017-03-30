@@ -40,8 +40,7 @@ public class AddGroup extends AppCompatActivity {
         ET_NAME = (EditText)findViewById(R.id.event);
         ET_DES = (EditText)findViewById(R.id.event_description);
         eventinfo = intent.getParcelableExtra("detail");
-        allevents = intent.getParcelableArrayListExtra("allevents");
-        allmembers = intent.getStringArrayListExtra("memberlist");
+        allmembers = intent.getStringArrayListExtra("allmembers");
         if (eventinfo!=null){
             ET_NAME.setText(eventinfo.getName());
             ET_DES.setText(eventinfo.getDescription());
@@ -88,7 +87,6 @@ public class AddGroup extends AppCompatActivity {
         }
 
         eventinfo = new Event();
-        //eventinfo.setId(Integer.parseInt(id));
         eventinfo.setName(name);
         eventinfo.setDescription(description);
         eventinfo.setMembers(members);
@@ -103,10 +101,11 @@ public class AddGroup extends AppCompatActivity {
         BackgroundTask backgroundTask = new BackgroundTask(this);
         backgroundTask.execute(method,name,description,id);*/
 
-        allevents.add(eventinfo);
         Intent intent = new Intent(AddGroup.this,GroupMenu.class);
-        intent.putExtra("eventlist",allevents);
-        startActivity(intent);
+        intent.putExtra("newevent",eventinfo);
+        intent.putExtra("position",position);
+        setResult(RESULT_OK,intent);
+        finish();
 
     }
 
@@ -115,9 +114,10 @@ public class AddGroup extends AppCompatActivity {
             Intent intent = new Intent();
             intent.putExtra("position",position);
             setResult(2,intent);
-            BackgroundTask backgroundTask = new BackgroundTask(this);
+            /*BackgroundTask backgroundTask = new BackgroundTask(this);
             method = "deleteEvent";
-            backgroundTask.execute(method,id);
+            backgroundTask.execute(method,id);*/
+            finish();
         }
     }
 

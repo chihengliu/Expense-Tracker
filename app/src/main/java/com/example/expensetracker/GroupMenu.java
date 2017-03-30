@@ -19,6 +19,7 @@ public class GroupMenu extends AppCompatActivity {
     ListViewAdapterEvent adapter;
     ListView listView;
     private static final int REQEST_CODE_ADD_IND = 100;
+    ArrayList<String> allmembers;
 
 
     @Override
@@ -28,11 +29,11 @@ public class GroupMenu extends AppCompatActivity {
 
         Intent intent2 = getIntent();
         events = intent2.getParcelableArrayListExtra("eventlist");
+        allmembers = intent2.getStringArrayListExtra("allmembers");
         Collections.reverse(events);
         adapter=new ListViewAdapterEvent(this, events);
         listView = (ListView) findViewById(R.id.event_list);
         listView.setAdapter(adapter);
-        //adapter.notifyDataSetChanged();
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener()
         {
@@ -45,6 +46,7 @@ public class GroupMenu extends AppCompatActivity {
                     Intent intent = new Intent(GroupMenu.this, EventPage.class);
                     intent.putExtra("detail", events.get(position));
                     intent.putExtra("position", position);
+                    intent.putExtra("allmembers",allmembers);
                     startActivityForResult(intent, REQEST_CODE_ADD_IND);
                 }
             }
@@ -62,20 +64,17 @@ public class GroupMenu extends AppCompatActivity {
     }
 
     public void addGroupEvent(View view){
-        String method = "updateMembers";
-        Collections.reverse(events);
-        BackgroundTask backgroundTask = new BackgroundTask(this,GroupMenu.this,events);
-        backgroundTask.execute(method);
 
-        //Intent addGroupWindow = new Intent(GroupMenu.this,AddGroup.class);
-        //startActivityForResult(addGroupWindow,REQEST_CODE_ADD_IND);
+        Intent addGroupWindow = new Intent(GroupMenu.this,AddGroup.class);
+        addGroupWindow.putExtra("allmembers",allmembers);
+        startActivityForResult(addGroupWindow,REQEST_CODE_ADD_IND);
     }
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (requestCode==REQEST_CODE_ADD_IND){
             if (resultCode==RESULT_OK) {
-                Event info = data.getParcelableExtra("eventInfo");
+                Event info = data.getParcelableExtra("newevent");
                 int position = (int) data.getSerializableExtra("position");
 
                 if (position == -1) {
@@ -109,6 +108,7 @@ public class GroupMenu extends AppCompatActivity {
                         Intent intent = new Intent(GroupMenu.this, EventPage.class);
                         intent.putExtra("detail", events.get(position));
                         intent.putExtra("position", position);
+                        intent.putExtra("allmembers",allmembers);
                         startActivityForResult(intent, REQEST_CODE_ADD_IND);
                     }
                 }
