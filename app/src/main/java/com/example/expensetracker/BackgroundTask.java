@@ -91,6 +91,8 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
             try {
 
 
+
+
                 switch (method){
                     case "addSpend":
                         url = new URL(addS_url);
@@ -123,6 +125,8 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
                         url = new URL(addEventMember_url);
                 }
 
+                HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
+
                 if (method.equals("addSpend") || method.equals("updateSpend")) {
                     String name = params[1];
                     String category = params[2];
@@ -152,6 +156,24 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
                 else if (method.equals("updateMembers")){
 
                 }
+                else if (method.equals("addEventAndMember")){
+                    //String eventId = params[1];
+                    String name = params[1];
+                    String description = params[2];
+
+                    // here you are setting the 'Content-Type' for the data you are sending which is 'application/json'
+                    httpURLConnection.setRequestProperty("Content-Type", "application/json");
+
+                    JSONObject jsonObject = new JSONObject();
+                    jsonObject.put("name", name);
+                    jsonObject.put("description", description);
+
+                    //JSONArray memberList = new JSONArray();
+                    jsonObject.put("members", new JSONArray(array));
+
+                    data = jsonObject.toString();
+
+                }
                 else {
                     username = params[1];
                     password = params[2];
@@ -160,7 +182,6 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
                 }
 
 
-                HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
                 httpURLConnection.setRequestMethod("POST");
                 httpURLConnection.setDoOutput(true);
                 httpURLConnection.setDoInput(true);
@@ -318,9 +339,14 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
                     activity.startActivity(goMember);
                     return "Download Members Success...";
                 }
+                if (method.equals("addEventAndMember")) {
+                    return "Add Members Success...";
+                }
             } catch (MalformedURLException e) {
                 e.printStackTrace();
             } catch (IOException e) {
+                e.printStackTrace();
+            } catch (JSONException e) {
                 e.printStackTrace();
             }
 
@@ -363,6 +389,9 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
 
         }
         else if (result.equals("Download Members Success...")){
+
+        }
+        else if (result.equals("Add Members Success...")){
 
         }
         else
