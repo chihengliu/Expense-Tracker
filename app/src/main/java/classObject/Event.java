@@ -98,5 +98,9 @@ public class Event implements Parcelable {
         this.members = members;
     }
 
+    public void addMember(String newMember) {
+        this.members.add(newMember);
+    }
+
     public ArrayList<String> getMembers() {return this.members;}
 }

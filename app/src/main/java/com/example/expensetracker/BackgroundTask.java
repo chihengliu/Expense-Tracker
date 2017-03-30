@@ -115,12 +115,6 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
                     case "updateMembers":
                         url = new URL(updateMember_url);
                         break;
-                    case "addEvent":
-                        url = new URL(addEvent_url);
-                        break;
-                    case "updateEvent":
-                        url = new URL(updateE_url);
-                        break;
                     case "addEventAndMember" :
                         url = new URL(addEventMember_url);
                 }
@@ -151,7 +145,13 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
                 }
                 else if (method.equals("updateEventList")){
                     username = params[1];
-                    data = URLEncoder.encode("username", "UTF-8") + "=" + URLEncoder.encode(username, "UTF-8");
+                    httpURLConnection.setRequestProperty("Content-Type", "application/json");
+
+                    JSONObject jsonObject = new JSONObject();
+                    jsonObject.put("username", username);
+                    data = jsonObject.toString();
+
+                    //data = URLEncoder.encode("username", "UTF-8") + "=" + URLEncoder.encode(username, "UTF-8");
                 }
                 else if (method.equals("updateMembers")){
 
@@ -274,23 +274,31 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
                             JSONArray ja = new JSONArray(result);
                             JSONObject jo;
 
-                            int numEvents = ja.getJSONObject(ja.length()-1).getInt("numEvent");
+                            int totalNum = ja.getJSONObject(ja.length()-1).getInt("totalNum");
+                            Event tempEvent = new Event();
 
                             //Create JSON object to hold a single item
-                            for(int i=0;i<numEvents;i++) {
+                            for(int i=0; i < ja.length() - totalNum; i++) {
                                 jo = ja.getJSONObject(i);
-                                String Name = jo.getString("Name");
-                                String Description = jo.getString("Description");
-                                int id = jo.getInt("EID");
-                                event = new Event();
-                                event.setDescription(Description);
-                                event.setId(id);
-                                event.setName(Name);
-                                events.add(event);
+                                if (jo.length() > 4) {
+                                    String Name = jo.getString("Name");
+                                    String Description = jo.getString("Description");
+                                    int id = jo.getInt("EID");
+                                    event = new Event();
+                                    event.setDescription(Description);
+                                    event.setId(id);
+                                    event.setName(Name);
+                                    events.add(event);
+                                    tempEvent = event;
+                                }
+                                else {
+                                    String memberName = jo.getString("User_Name");
+                                    tempEvent.addMember(memberName);
+                                }
                             }
 
                             members = new ArrayList<>();
-                            for(int i=numEvents;i<ja.length()-1;i++){
+                            for(int i=ja.length() - totalNum;i<ja.length()-1;i++){
                                 String membername = ja.getJSONObject(i).getString("Name");
                                 members.add(membername);
                             }
