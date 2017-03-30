@@ -104,8 +104,14 @@ public class AddGroup extends AppCompatActivity {
         Intent intent = new Intent(AddGroup.this,GroupMenu.class);
         intent.putExtra("newevent",eventinfo);
         intent.putExtra("position",position);
-        BackgroundTask addEventAndMember = new BackgroundTask(this, eventinfo.getMembers());
-        addEventAndMember.execute("addEventAndMember", eventinfo.getName(), eventinfo.getDescription());
+        BackgroundTask backgroundTask = new BackgroundTask(this, eventinfo.getMembers());
+        if (position == -1){
+            backgroundTask.execute("addEventAndMember", eventinfo.getName(), eventinfo.getDescription());
+        }
+        else {
+            backgroundTask.execute("updateEventAndMember", Integer.toString(eventinfo.getId()), eventinfo.getName(), eventinfo.getDescription());
+        }
+
 
         setResult(RESULT_OK,intent);
         finish();

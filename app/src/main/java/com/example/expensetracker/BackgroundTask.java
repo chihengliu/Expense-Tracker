@@ -79,10 +79,11 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
         String login_url = "http://152.3.52.123/login.php";
         String delete_url = "http://152.3.52.123/deleteSpending.php";
         String updateEvent_url = "http://152.3.52.123/updateEventList.php";
-        String updateMember_url = "http://152.3.52.123/updateMembers.php";
-        String addEvent_url = "http://152.3.52.123/addEvent.php";
-        String updateE_url = "http://152.3.52.123/updateEvent.php";
-        String addEventMember_url = "http://152.3.52.123/addEventAndMember.php";
+        //String updateMember_url = "http://152.3.52.123/updateMembers.php";
+        //String addEvent_url = "http://152.3.52.123/addEvent.php";
+        //String updateE_url = "http://152.3.52.123/updateEvent.php";
+        String addEventAndMember_url = "http://152.3.52.123/addEventAndMember.php";
+        String updateEventAndMember_url = "http://152.3.52.123/updateEventAndMember.php";
         String method = params[0];
         String line;
 
@@ -112,11 +113,12 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
                     case "updateEventList":
                         url = new URL(updateEvent_url);
                         break;
-                    case "updateMembers":
-                        url = new URL(updateMember_url);
-                        break;
                     case "addEventAndMember" :
-                        url = new URL(addEventMember_url);
+                        url = new URL(addEventAndMember_url);
+                        break;
+                    case "updateEventAndMember" :
+                        url = new URL(updateEventAndMember_url);
+                        break;
                 }
 
                 HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
@@ -134,9 +136,6 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
                             URLEncoder.encode("amount", "UTF-8") + "=" + URLEncoder.encode(amount, "UTF-8");
 
                 }
-                else if (method.equals("addEvent") || method.equals("updateEvent")){
-
-                }
                 else if (method.equals("deleteSpend")) {
                     String name = params[1];
                     String id = params[2];
@@ -152,9 +151,6 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
                     data = jsonObject.toString();
 
                     //data = URLEncoder.encode("username", "UTF-8") + "=" + URLEncoder.encode(username, "UTF-8");
-                }
-                else if (method.equals("updateMembers")){
-
                 }
                 else if (method.equals("addEventAndMember")){
                     //String eventId = params[1];
@@ -174,6 +170,28 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
                     data = jsonObject.toString();
 
                 }
+                else if (method.equals("updateEventAndMember")){
+                    String eventId = params[1];
+                    int EventID = Integer.valueOf(eventId);
+                    String name = params[2];
+                    String description = params[3];
+
+                    // here you are setting the 'Content-Type' for the data you are sending which is 'application/json'
+                    httpURLConnection.setRequestProperty("Content-Type", "application/json");
+
+                    JSONObject jsonObject = new JSONObject();
+                    jsonObject.put("id", EventID);
+                    jsonObject.put("name", name);
+                    jsonObject.put("description", description);
+
+                    System.out.println(EventID);
+
+                    //JSONArray memberList = new JSONArray();
+                    jsonObject.put("members", new JSONArray(array));
+
+                    data = jsonObject.toString();
+
+                }
                 else {
                     username = params[1];
                     password = params[2];
@@ -185,17 +203,14 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
                 httpURLConnection.setRequestMethod("POST");
                 httpURLConnection.setDoOutput(true);
                 httpURLConnection.setDoInput(true);
-                if (method.equals("updateMembers")){
-                    username = params[1];
-                }
-                else{
-                    OutputStream OS = httpURLConnection.getOutputStream();
-                    BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(OS, "UTF-8"));
-                    bufferedWriter.write(data);
-                    bufferedWriter.flush();
-                    bufferedWriter.close();
-                    OS.close();
-                }
+
+                OutputStream OS = httpURLConnection.getOutputStream();
+                BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(OS, "UTF-8"));
+                bufferedWriter.write(data);
+                bufferedWriter.flush();
+                bufferedWriter.close();
+                OS.close();
+
 
                 InputStream IS = httpURLConnection.getInputStream();
                 BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(IS));
@@ -315,6 +330,7 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
                     activity.startActivity(goGroup);
                     return "Download Event List Success...";
                 }
+                /*
                 if (method.equals("updateMembers")){
 
                     ArrayList<String> allmembers = new ArrayList<String>();
@@ -346,9 +362,12 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
                     goMember.putExtra("name",username);
                     activity.startActivity(goMember);
                     return "Download Members Success...";
-                }
+                }*/
                 if (method.equals("addEventAndMember")) {
-                    return "Add Members Success...";
+                    return "Add Event Success...";
+                }
+                if (method.equals("updateEventAndMember")) {
+                    return "Update Event Success...";
                 }
             } catch (MalformedURLException e) {
                 e.printStackTrace();
@@ -399,8 +418,11 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
         else if (result.equals("Download Members Success...")){
 
         }
-        else if (result.equals("Add Members Success...")){
-
+        else if (result.equals("Add Event Success...")){
+            Toast.makeText(ctx, result, Toast.LENGTH_LONG).show();
+        }
+        else if (result.equals("Update Event Success...")){
+            Toast.makeText(ctx, result, Toast.LENGTH_LONG).show();
         }
         else
         {
