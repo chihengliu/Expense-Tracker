@@ -293,7 +293,11 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
                             Event tempEvent = new Event();
 
                             //Create JSON object to hold a single item
+<<<<<<< HEAD
                             for(int i=0; i < ja.length() - totalNum-1; i++) {
+=======
+                            for(int i=0; i < ja.length() - totalNum; i++) {
+>>>>>>> parent of 56b9b52... fix add event bug
                                 jo = ja.getJSONObject(i);
                                 if (jo.length() > 4) {
                                     String Name = jo.getString("Name");
@@ -364,8 +368,12 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
                     return "Download Members Success...";
                 }*/
                 if (method.equals("addEventAndMember")) {
+<<<<<<< HEAD
                     String eventid = result.trim();
                     return eventid;
+=======
+                    return "Add Event Success...";
+>>>>>>> parent of 56b9b52... fix add event bug
                 }
                 if (method.equals("updateEventAndMember")) {
                     return "Update Event Success...";
@@ -419,8 +427,13 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
         else if (result.equals("Download Members Success...")){
 
         }
+<<<<<<< HEAD
         else if (result.equals("24")){
             Toast.makeText(ctx, "Add Event Success...", Toast.LENGTH_LONG).show();
+=======
+        else if (result.equals("Add Event Success...")){
+            Toast.makeText(ctx, result, Toast.LENGTH_LONG).show();
+>>>>>>> parent of 56b9b52... fix add event bug
         }
         else if (result.equals("Update Event Success...")){
             Toast.makeText(ctx, result, Toast.LENGTH_LONG).show();

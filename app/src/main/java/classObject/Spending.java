@@ -13,7 +13,13 @@ public class Spending implements Parcelable {
     private String date;
     private String category;
     private String description;
+<<<<<<< HEAD
     private int eventId;
+=======
+
+    //Use global variable to assign unique spending ID
+    //private static int idCounter = -1;
+>>>>>>> parent of 56b9b52... fix add event bug
     private int spendingId;
 
     public Spending(){
@@ -23,7 +29,10 @@ public class Spending implements Parcelable {
         category = "Unknown";
         description = "Unknown";
         this.spendingId = 0;
+<<<<<<< HEAD
         this.eventId = 0;
+=======
+>>>>>>> parent of 56b9b52... fix add event bug
     }
 
     // 99.9% of the time you can just ignore this
@@ -41,7 +50,10 @@ public class Spending implements Parcelable {
         out.writeString(category);
         out.writeString(description);
         out.writeInt(spendingId);
+<<<<<<< HEAD
         out.writeInt(eventId);
+=======
+>>>>>>> parent of 56b9b52... fix add event bug
     }
 
     // this is used to regenerate your object. All Parcelables must have a CREATOR that implements these two methods
@@ -63,7 +75,10 @@ public class Spending implements Parcelable {
         category = in.readString();
         description = in.readString();
         spendingId = in.readInt();
+<<<<<<< HEAD
         eventId = in.readInt();
+=======
+>>>>>>> parent of 56b9b52... fix add event bug
     }
 
     public void setName(String name){
@@ -111,6 +126,7 @@ public class Spending implements Parcelable {
     public int getId(){
         return this.spendingId;
     }
+<<<<<<< HEAD
 
     public void setEventId(int id){
         this.eventId = id;
@@ -120,4 +136,6 @@ public class Spending implements Parcelable {
         return this.eventId;
     }
 
+=======
+>>>>>>> parent of 56b9b52... fix add event bug
 }

@@ -42,10 +42,21 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
+
             <Spinner
                 android:id="@+id/Member_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/Member_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/background_light"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textSize="30sp" />
+
         </TableRow>
 
         <TableRow
@@ -156,6 +167,6 @@
         android:layout_alignParentRight="true"
         android:background="@android:color/holo_blue_dark"
         android:onClick="saveEventSpend"
-        android:text="@string/save" />
+
 
 </RelativeLayout>

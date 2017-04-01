@@ -14,19 +14,30 @@ import android.widget.Toast;
 
 
 import java.util.ArrayList;
+<<<<<<< HEAD
 import java.util.concurrent.ExecutionException;
+=======
+>>>>>>> parent of 56b9b52... fix add event bug
 
 import classObject.Event;
 
 
 public class AddGroup extends AppCompatActivity {
     EditText ET_NAME,ET_DES;
+<<<<<<< HEAD
     String name, description,id;
+=======
+    String name, description,method,id;
+>>>>>>> parent of 56b9b52... fix add event bug
     ArrayList<String> members;
     Event eventinfo;
     int position;
     ArrayAdapter<String> adapter;
     ListView listView;
+<<<<<<< HEAD
+=======
+    ArrayList<Event> allevents;
+>>>>>>> parent of 56b9b52... fix add event bug
     ArrayList<String> allmembers;
     private static final int REQEST_CODE_ADD_IND = 102;
 
@@ -44,14 +55,21 @@ public class AddGroup extends AppCompatActivity {
         if (eventinfo!=null){
             ET_NAME.setText(eventinfo.getName());
             ET_DES.setText(eventinfo.getDescription());
+<<<<<<< HEAD
             position = (int)intent.getSerializableExtra("addposition");
+=======
+            position = (int)intent.getSerializableExtra("position");
+>>>>>>> parent of 56b9b52... fix add event bug
             id = Integer.toString(eventinfo.getId());
             members = eventinfo.getMembers();
         }
         else {
             position = -1;
             members = new ArrayList<String>();
+<<<<<<< HEAD
             id = "0";
+=======
+>>>>>>> parent of 56b9b52... fix add event bug
         }
 
 
@@ -88,7 +106,10 @@ public class AddGroup extends AppCompatActivity {
         }
 
         eventinfo = new Event();
+<<<<<<< HEAD
         eventinfo.setId(Integer.parseInt(id));
+=======
+>>>>>>> parent of 56b9b52... fix add event bug
         eventinfo.setName(name);
         eventinfo.setDescription(description);
         eventinfo.setMembers(members);
@@ -103,6 +124,7 @@ public class AddGroup extends AppCompatActivity {
         BackgroundTask backgroundTask = new BackgroundTask(this);
         backgroundTask.execute(method,name,description,id);*/
 
+<<<<<<< HEAD
 
         BackgroundTask backgroundTask = new BackgroundTask(this, eventinfo.getMembers());
         if (position == -1){
@@ -113,14 +135,26 @@ public class AddGroup extends AppCompatActivity {
             }catch (ExecutionException e){
                 e.printStackTrace();
             }
+=======
+        Intent intent = new Intent(AddGroup.this,GroupMenu.class);
+        intent.putExtra("newevent",eventinfo);
+        intent.putExtra("position",position);
+        BackgroundTask backgroundTask = new BackgroundTask(this, eventinfo.getMembers());
+        if (position == -1){
+            backgroundTask.execute("addEventAndMember", eventinfo.getName(), eventinfo.getDescription());
+>>>>>>> parent of 56b9b52... fix add event bug
         }
         else {
             backgroundTask.execute("updateEventAndMember", Integer.toString(eventinfo.getId()), eventinfo.getName(), eventinfo.getDescription());
         }
+<<<<<<< HEAD
         eventinfo.setId(Integer.parseInt(id));
         Intent intent = new Intent(AddGroup.this,GroupMenu.class);
         intent.putExtra("detail",eventinfo);
         intent.putExtra("eventposition",position);
+=======
+
+>>>>>>> parent of 56b9b52... fix add event bug
 
         setResult(RESULT_OK,intent);
         finish();
@@ -130,7 +164,11 @@ public class AddGroup extends AppCompatActivity {
     public void deleteGroup(View view) {
         if (position!=-1){
             Intent intent = new Intent();
+<<<<<<< HEAD
             intent.putExtra("eventposition",position);
+=======
+            intent.putExtra("position",position);
+>>>>>>> parent of 56b9b52... fix add event bug
             setResult(2,intent);
             /*BackgroundTask backgroundTask = new BackgroundTask(this);
             method = "deleteEvent";
