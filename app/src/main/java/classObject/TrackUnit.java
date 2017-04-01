@@ -13,7 +13,7 @@ public abstract class TrackUnit {
         spendingList = new ArrayList<Spending>();
     }
 
-    public void addSpending(Spending s){
+    public void AddSpending(Spending s){
         spendingList.add(s);
     }
 
