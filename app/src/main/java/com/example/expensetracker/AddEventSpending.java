@@ -27,10 +27,6 @@ public class AddEventSpending extends AppCompatActivity {
     Spinner spinner;
     ArrayAdapter<String> adapter;
 
-import android.view.View;
-
-public class AddEventSpending extends AppCompatActivity {
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -120,13 +116,5 @@ public class AddEventSpending extends AppCompatActivity {
         setResult(RESULT_OK,intent);
         finish();
     }
-
-    }
-
-    public void backToEvent(View view){
-        finish();
-    }
-
-
 
 }

@@ -38,7 +38,6 @@ public class GroupMenu extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener()
         {
             @Override
-<<<<<<< HEAD
             public void onItemClick(AdapterView<?> parent, final View view, int positions, long id)
             {
                 int pos=positions+1;
@@ -47,16 +46,6 @@ public class GroupMenu extends AppCompatActivity {
                     Intent intent = new Intent(GroupMenu.this, EventPage.class);
                     intent.putExtra("detail", events.get(positions));
                     intent.putExtra("eventposition", positions);
-=======
-            public void onItemClick(AdapterView<?> parent, final View view, int position, long id)
-            {
-                int pos=position+1;
-                if (pos!=events.size()) {
-                    Toast.makeText(GroupMenu.this, Integer.toString(pos) + " Clicked", Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(GroupMenu.this, EventPage.class);
-                    intent.putExtra("detail", events.get(position));
-                    intent.putExtra("position", position);
->>>>>>> parent of 56b9b52... fix add event bug
                     intent.putExtra("allmembers",allmembers);
                     startActivityForResult(intent, REQEST_CODE_ADD_IND);
                 }
@@ -85,13 +74,8 @@ public class GroupMenu extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (requestCode==REQEST_CODE_ADD_IND){
             if (resultCode==RESULT_OK) {
-<<<<<<< HEAD
                 Event info = data.getParcelableExtra("detail");
                 int position = (int) data.getSerializableExtra("groupposition");
-=======
-                Event info = data.getParcelableExtra("newevent");
-                int position = (int) data.getSerializableExtra("position");
->>>>>>> parent of 56b9b52... fix add event bug
 
                 if (position == -1) {
                     events.add(0, info);
@@ -103,11 +87,7 @@ public class GroupMenu extends AppCompatActivity {
             }
             else if (resultCode == 2)
             {
-<<<<<<< HEAD
                 int position = (int) data.getSerializableExtra("groupposition");
-=======
-                int position = (int) data.getSerializableExtra("position");
->>>>>>> parent of 56b9b52... fix add event bug
                 events.remove(position);
 
             }
@@ -121,7 +101,6 @@ public class GroupMenu extends AppCompatActivity {
             listView.setOnItemClickListener(new AdapterView.OnItemClickListener()
             {
                 @Override
-<<<<<<< HEAD
                 public void onItemClick(AdapterView<?> parent, final View view, int positions, long id)
                 {
                     int pos=positions+1;
@@ -129,15 +108,6 @@ public class GroupMenu extends AppCompatActivity {
                         Intent intent = new Intent(GroupMenu.this, EventPage.class);
                         intent.putExtra("detail", events.get(positions));
                         intent.putExtra("eventposition", positions);
-=======
-                public void onItemClick(AdapterView<?> parent, final View view, int position, long id)
-                {
-                    int pos=position+1;
-                    if (pos!=events.size()) {
-                        Intent intent = new Intent(GroupMenu.this, EventPage.class);
-                        intent.putExtra("detail", events.get(position));
-                        intent.putExtra("position", position);
->>>>>>> parent of 56b9b52... fix add event bug
                         intent.putExtra("allmembers",allmembers);
                         startActivityForResult(intent, REQEST_CODE_ADD_IND);
                     }

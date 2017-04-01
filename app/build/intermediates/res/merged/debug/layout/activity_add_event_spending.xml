@@ -167,6 +167,7 @@
         android:layout_alignParentRight="true"
         android:background="@android:color/holo_blue_dark"
         android:onClick="saveEventSpend"
+        />
 
 
 </RelativeLayout>
