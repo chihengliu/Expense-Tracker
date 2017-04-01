@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.expensetracker.Register">
+
+    <EditText
+        android:id="@+id/Reg_UserName"
+        android:layout_width="400px"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="User Name"
+        android:inputType="textPersonName"
+        android:textSize="22sp"
+        tools:layout_editor_absoluteX="68dp"
+        tools:layout_editor_absoluteY="139dp" />
+
+    <EditText
+        android:id="@+id/Reg_Passwd"
+        android:layout_width="400px"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Reg_UserName"
+        android:layout_alignStart="@+id/Reg_UserName"
+        android:layout_below="@+id/Reg_UserName"
+        android:layout_marginTop="29dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textSize="22sp"
+        tools:layout_editor_absoluteX="68dp"
+        tools:layout_editor_absoluteY="257dp" />
+
+    <Button
+        android:id="@+id/Reg_reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Reg_Passwd"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:background="@android:color/holo_blue_light"
+        android:onClick="register"
+        android:text="Register" />
+
+    <Button
+        android:id="@+id/Reg_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:onClick="cancel"
+        android:text="Cancel"
+        android:layout_below="@+id/Reg_reg"
+        android:layout_alignLeft="@+id/Reg_reg"
+        android:layout_alignStart="@+id/Reg_reg" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/register"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
