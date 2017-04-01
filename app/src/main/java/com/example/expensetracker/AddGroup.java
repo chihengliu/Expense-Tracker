@@ -14,19 +14,19 @@ import android.widget.Toast;
 
 
 import java.util.ArrayList;
+import java.util.concurrent.ExecutionException;
 
 import classObject.Event;
 
 
 public class AddGroup extends AppCompatActivity {
     EditText ET_NAME,ET_DES;
-    String name, description,method,id;
+    String name, description,id;
     ArrayList<String> members;
     Event eventinfo;
     int position;
     ArrayAdapter<String> adapter;
     ListView listView;
-    ArrayList<Event> allevents;
     ArrayList<String> allmembers;
     private static final int REQEST_CODE_ADD_IND = 102;
 
@@ -44,13 +44,14 @@ public class AddGroup extends AppCompatActivity {
         if (eventinfo!=null){
             ET_NAME.setText(eventinfo.getName());
             ET_DES.setText(eventinfo.getDescription());
-            position = (int)intent.getSerializableExtra("position");
+            position = (int)intent.getSerializableExtra("addposition");
             id = Integer.toString(eventinfo.getId());
             members = eventinfo.getMembers();
         }
         else {
             position = -1;
             members = new ArrayList<String>();
+            id = "0";
         }
 
 
@@ -87,6 +88,7 @@ public class AddGroup extends AppCompatActivity {
         }
 
         eventinfo = new Event();
+        eventinfo.setId(Integer.parseInt(id));
         eventinfo.setName(name);
         eventinfo.setDescription(description);
         eventinfo.setMembers(members);
@@ -101,17 +103,24 @@ public class AddGroup extends AppCompatActivity {
         BackgroundTask backgroundTask = new BackgroundTask(this);
         backgroundTask.execute(method,name,description,id);*/
 
-        Intent intent = new Intent(AddGroup.this,GroupMenu.class);
-        intent.putExtra("newevent",eventinfo);
-        intent.putExtra("position",position);
+
         BackgroundTask backgroundTask = new BackgroundTask(this, eventinfo.getMembers());
         if (position == -1){
-            backgroundTask.execute("addEventAndMember", eventinfo.getName(), eventinfo.getDescription());
+            try {
+                id = backgroundTask.execute("addEventAndMember", eventinfo.getName(), eventinfo.getDescription()).get();
+            }catch (InterruptedException e){
+                e.printStackTrace();
+            }catch (ExecutionException e){
+                e.printStackTrace();
+            }
         }
         else {
             backgroundTask.execute("updateEventAndMember", Integer.toString(eventinfo.getId()), eventinfo.getName(), eventinfo.getDescription());
         }
-
+        eventinfo.setId(Integer.parseInt(id));
+        Intent intent = new Intent(AddGroup.this,GroupMenu.class);
+        intent.putExtra("detail",eventinfo);
+        intent.putExtra("eventposition",position);
 
         setResult(RESULT_OK,intent);
         finish();
@@ -121,7 +130,7 @@ public class AddGroup extends AppCompatActivity {
     public void deleteGroup(View view) {
         if (position!=-1){
             Intent intent = new Intent();
-            intent.putExtra("position",position);
+            intent.putExtra("eventposition",position);
             setResult(2,intent);
             /*BackgroundTask backgroundTask = new BackgroundTask(this);
             method = "deleteEvent";

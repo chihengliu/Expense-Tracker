@@ -13,9 +13,7 @@ public class Spending implements Parcelable {
     private String date;
     private String category;
     private String description;
-
-    //Use global variable to assign unique spending ID
-    //private static int idCounter = -1;
+    private int eventId;
     private int spendingId;
 
     public Spending(){
@@ -25,6 +23,7 @@ public class Spending implements Parcelable {
         category = "Unknown";
         description = "Unknown";
         this.spendingId = 0;
+        this.eventId = 0;
     }
 
     // 99.9% of the time you can just ignore this
@@ -42,6 +41,7 @@ public class Spending implements Parcelable {
         out.writeString(category);
         out.writeString(description);
         out.writeInt(spendingId);
+        out.writeInt(eventId);
     }
 
     // this is used to regenerate your object. All Parcelables must have a CREATOR that implements these two methods
@@ -63,6 +63,7 @@ public class Spending implements Parcelable {
         category = in.readString();
         description = in.readString();
         spendingId = in.readInt();
+        eventId = in.readInt();
     }
 
     public void setName(String name){
@@ -110,4 +111,13 @@ public class Spending implements Parcelable {
     public int getId(){
         return this.spendingId;
     }
+
+    public void setEventId(int id){
+        this.eventId = id;
+    }
+
+    public int getEventId(){
+        return this.eventId;
+    }
+
 }

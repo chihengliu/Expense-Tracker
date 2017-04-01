@@ -18,10 +18,9 @@ import classObject.Event;
 public class ManageMember extends AppCompatActivity {
     ArrayList<String> members;
     ArrayList<String> allmembers;
-    Event event;
     ArrayAdapter<String> adapter;
     ListView listView;
-    String name;
+
 
 
     @Override
@@ -31,7 +30,6 @@ public class ManageMember extends AppCompatActivity {
         Intent intent = getIntent();
         allmembers = intent.getStringArrayListExtra("memberlist");
         members = intent.getStringArrayListExtra("member");
-        name = intent.getStringExtra("name");
         adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_checked,allmembers);
         listView = (ListView)findViewById(R.id.allmember);
         listView.setChoiceMode(listView.CHOICE_MODE_MULTIPLE);
