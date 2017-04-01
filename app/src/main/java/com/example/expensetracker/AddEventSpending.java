@@ -22,7 +22,7 @@ public class AddEventSpending extends AppCompatActivity {
     String id,name,category,description,amount,method;
     int eid;
     Spending spendingInfo;
-    int position;
+    int spendposition;
     ArrayList<String> members;
     Spinner spinner;
     ArrayAdapter<String> adapter;
@@ -41,14 +41,14 @@ public class AddEventSpending extends AppCompatActivity {
             ET_CAT.setText(spendingInfo.getCategory());
             ET_AMT.setText(Double.toString(spendingInfo.getAmount() ) );
             ET_DES.setText(spendingInfo.getDescription());
-            position = (int)inten1.getSerializableExtra("spendposition");
+            spendposition = (int)inten1.getSerializableExtra("spendposition");
             id = Integer.toString(spendingInfo.getId());
             eid = spendingInfo.getEventId();
             int owner = members.indexOf(spendingInfo.getName());
             Collections.swap(members,owner,0);
         }
         else {
-            position = -1;
+            spendposition = -1;
             id = Integer.toString(inten1.getIntExtra("id",0)+1);
             eid = inten1.getIntExtra("eid",0);
 
@@ -102,7 +102,7 @@ public class AddEventSpending extends AppCompatActivity {
         spendingInfo.setName(name);
         spendingInfo.setEventId(eid);
 
-        if (position==-1) {
+        if (spendposition==-1) {
             method = "addEventSpend";
         }
         else method = "updateEventSpend";
@@ -111,10 +111,22 @@ public class AddEventSpending extends AppCompatActivity {
         eventSpendingBackgroundTask.execute(method,id,amount,name,category,description,Integer.toString(eid));
 
         Intent intent = new Intent();
+        intent.putExtra("spendposition",spendposition);
         intent.putExtra("spending",spendingInfo);
-        intent.putExtra("eventposition",position);
         setResult(RESULT_OK,intent);
         finish();
+    }
+
+    public void deleteSpending(View view){
+        if (spendposition!=-1){
+            String method = "deleteEventSpend";
+            EventSpendingBackgroundTask eventSpendingBackgroundTask = new EventSpendingBackgroundTask(this);
+            eventSpendingBackgroundTask.execute(method,id,Integer.toString(eid));
+            Intent intent = new Intent();
+            intent.putExtra("spendposition",spendposition);
+            setResult(2,intent);
+            finish();
+        }
     }
 
 }

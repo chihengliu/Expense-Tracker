@@ -49,6 +49,7 @@ public class EventSpendingBackgroundTask extends AsyncTask<String,Void,ArrayList
         String downEventSpend_url = "http://152.3.52.123/downEventSpend.php";
         String addEventSpen_url = "http://152.3.52.123/addEventSpend.php";
         String updateEventSpen_erl = "http://152.3.52.123/updateEventSpend.php";
+        String deleteEventSpen_erl = "http://152.3.52.123/deleteEventSpend.php";
         String method = params[0];
         String line;
 
@@ -65,6 +66,10 @@ public class EventSpendingBackgroundTask extends AsyncTask<String,Void,ArrayList
                     break;
                 case "updateEventSpend":
                     url = new URL(updateEventSpen_erl);
+                    break;
+                case "deleteEventSpend":
+                    url = new URL(deleteEventSpen_erl);
+                    break;
             }
 
             HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
@@ -94,6 +99,17 @@ public class EventSpendingBackgroundTask extends AsyncTask<String,Void,ArrayList
 
             JSONObject jsonObject = new JSONObject();
             jsonObject.put("eid", id);
+            data = jsonObject.toString();
+        }
+
+        if (method.equals("deleteEventSpend")){
+            String sid = params[1];
+            String eid = params[2];
+            httpURLConnection.setRequestProperty("Content-Type", "application/json");
+
+            JSONObject jsonObject = new JSONObject();
+            jsonObject.put("sid", sid);
+            jsonObject.put("eid",eid);
             data = jsonObject.toString();
         }
 

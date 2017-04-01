@@ -78,7 +78,7 @@ public class EventPage extends AppCompatActivity {
 
     public void backtoGroupMenu(View veiw){
         Intent intent = new Intent();
-        intent.putExtra("groupposition",eventposition);
+        intent.putExtra("eventposition",eventposition);
         intent.putExtra("detail",event);
         setResult(RESULT_OK,intent);
         finish();
@@ -96,7 +96,7 @@ public class EventPage extends AppCompatActivity {
         Intent editevent = new Intent(EventPage.this,AddGroup.class);
         editevent.putExtra("detail",event);
         editevent.putExtra("allmembers",allmembers);
-        editevent.putExtra("addposition",eventposition);
+        editevent.putExtra("eventposition",eventposition);
         startActivityForResult(editevent,REQEST_CODE_ADD_IND);
     }
 
@@ -119,7 +119,7 @@ public class EventPage extends AppCompatActivity {
         else if (requestCode == REQEST_CODE_ADD_EVT_SP){
             if (resultCode == RESULT_OK){
                 Spending spending = data.getParcelableExtra("spending");
-                spendposition = (int)data.getSerializableExtra("eventposition");
+                spendposition = (int)data.getSerializableExtra("spendposition");
 
                 if (spendposition==-1){
                     list.add(0,spending);
@@ -128,8 +128,8 @@ public class EventPage extends AppCompatActivity {
                     list.set(spendposition,spending);
                 }
             }
-            else if (requestCode==2){
-                spendposition = (int)data.getSerializableExtra("eventposition");
+            else if (resultCode==2){
+                spendposition = (int)data.getSerializableExtra("spendposition");
                 list.remove(spendposition);
             }
         }

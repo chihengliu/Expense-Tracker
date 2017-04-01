@@ -84,6 +84,7 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
         //String updateE_url = "http://152.3.52.123/updateEvent.php";
         String addEventAndMember_url = "http://152.3.52.123/addEventAndMember.php";
         String updateEventAndMember_url = "http://152.3.52.123/updateEventAndMember.php";
+        String deleteEvent_url = "http://152.3.52.123/deleteEvent.php";
         String method = params[0];
         String line;
 
@@ -119,6 +120,9 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
                 case "updateEventAndMember" :
                     url = new URL(updateEventAndMember_url);
                     break;
+                case "deleteEvent":
+                    url = new URL(deleteEvent_url);
+                    break;
             }
 
             HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
@@ -151,6 +155,14 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
                 data = jsonObject.toString();
 
                 //data = URLEncoder.encode("username", "UTF-8") + "=" + URLEncoder.encode(username, "UTF-8");
+            }
+            else if (method.equals("deleteEvent")){
+                String id = params[1];
+                httpURLConnection.setRequestProperty("Content-Type", "application/json");
+
+                JSONObject jsonObject = new JSONObject();
+                jsonObject.put("id", id);
+                data = jsonObject.toString();
             }
             else if (method.equals("addEventAndMember")){
                 //String eventId = params[1];
@@ -243,6 +255,9 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
                 else {
                     return "Register Fail... Change User Name";
                 }
+            }
+            if (method.equals("deleteEvent")){
+                return "Event Deleted...";
             }
             if (method.equals("login")) {
                 result = result.trim();
@@ -423,6 +438,9 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
             Toast.makeText(ctx, "Add Event Success...", Toast.LENGTH_LONG).show();
         }
         else if (result.equals("Update Event Success...")){
+            Toast.makeText(ctx, result, Toast.LENGTH_LONG).show();
+        }
+        else if (result.equals("Event Deleted...")){
             Toast.makeText(ctx, result, Toast.LENGTH_LONG).show();
         }
         else

@@ -24,7 +24,7 @@ public class AddGroup extends AppCompatActivity {
     String name, description,id;
     ArrayList<String> members;
     Event eventinfo;
-    int position;
+    int eventposition;
     ArrayAdapter<String> adapter;
     ListView listView;
     ArrayList<String> allmembers;
@@ -44,12 +44,12 @@ public class AddGroup extends AppCompatActivity {
         if (eventinfo!=null){
             ET_NAME.setText(eventinfo.getName());
             ET_DES.setText(eventinfo.getDescription());
-            position = (int)intent.getSerializableExtra("addposition");
+            eventposition = (int)intent.getSerializableExtra("eventposition");
             id = Integer.toString(eventinfo.getId());
             members = eventinfo.getMembers();
         }
         else {
-            position = -1;
+            eventposition = -1;
             members = new ArrayList<String>();
             id = "0";
         }
@@ -105,7 +105,7 @@ public class AddGroup extends AppCompatActivity {
 
 
         BackgroundTask backgroundTask = new BackgroundTask(this, eventinfo.getMembers());
-        if (position == -1){
+        if (eventposition == -1){
             try {
                 id = backgroundTask.execute("addEventAndMember", eventinfo.getName(), eventinfo.getDescription()).get();
             }catch (InterruptedException e){
@@ -120,7 +120,7 @@ public class AddGroup extends AppCompatActivity {
         eventinfo.setId(Integer.parseInt(id));
         Intent intent = new Intent(AddGroup.this,GroupMenu.class);
         intent.putExtra("detail",eventinfo);
-        intent.putExtra("eventposition",position);
+        intent.putExtra("eventposition",eventposition);
 
         setResult(RESULT_OK,intent);
         finish();
@@ -128,13 +128,13 @@ public class AddGroup extends AppCompatActivity {
     }
 
     public void deleteGroup(View view) {
-        if (position!=-1){
+        if (eventposition!=-1){
             Intent intent = new Intent();
-            intent.putExtra("eventposition",position);
+            intent.putExtra("eventposition",eventposition);
             setResult(2,intent);
-            /*BackgroundTask backgroundTask = new BackgroundTask(this);
-            method = "deleteEvent";
-            backgroundTask.execute(method,id);*/
+            BackgroundTask backgroundTask = new BackgroundTask(this);
+            String method = "deleteEvent";
+            backgroundTask.execute(method,id);
             finish();
         }
     }

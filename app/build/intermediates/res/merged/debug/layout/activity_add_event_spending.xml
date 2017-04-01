@@ -167,7 +167,18 @@
         android:layout_alignParentRight="true"
         android:background="@android:color/holo_blue_dark"
         android:onClick="saveEventSpend"
-        />
+        android:text="@string/save" />
+
+    <Button
+        android:id="@+id/deleteEventSpend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/save_spending"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/holo_blue_dark"
+        android:onClick="deleteSpending"
+        android:text="delete"
+        android:textColor="@android:color/background_light" />
 
 
 </RelativeLayout>

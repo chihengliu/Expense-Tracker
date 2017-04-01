@@ -75,7 +75,7 @@ public class GroupMenu extends AppCompatActivity {
         if (requestCode==REQEST_CODE_ADD_IND){
             if (resultCode==RESULT_OK) {
                 Event info = data.getParcelableExtra("detail");
-                int position = (int) data.getSerializableExtra("groupposition");
+                int position = (int) data.getSerializableExtra("eventposition");
 
                 if (position == -1) {
                     events.add(0, info);
@@ -87,7 +87,7 @@ public class GroupMenu extends AppCompatActivity {
             }
             else if (resultCode == 2)
             {
-                int position = (int) data.getSerializableExtra("groupposition");
+                int position = (int) data.getSerializableExtra("eventposition");
                 events.remove(position);
 
             }
