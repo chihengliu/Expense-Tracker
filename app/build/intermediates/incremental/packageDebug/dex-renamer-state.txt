@@ -1,7 +1,7 @@
-#Sat Apr 01 02:38:41 EDT 2017
-base.0=/Users/yueweiyang/AndroidStudioProjects/CaptainJava/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_2fef0f6b44ec057237ed5cf0f08f105077a71ce4
-renamed.1=classes2.dex
-renamed.0=classes.dex
-file.1=/Users/yueweiyang/AndroidStudioProjects/CaptainJava/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_a7c85301a013989f50b902568bea9bc07936fd56/classes.dex
-base.1=/Users/yueweiyang/AndroidStudioProjects/CaptainJava/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_a7c85301a013989f50b902568bea9bc07936fd56
-file.0=/Users/yueweiyang/AndroidStudioProjects/CaptainJava/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_2fef0f6b44ec057237ed5cf0f08f105077a71ce4/classes.dex
+#Thu Apr 06 00:53:10 EDT 2017
+base.0=/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_42934d2171929512af4fd26f872e95df178c57e6
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_ce9954744ccb6986ffaa47f4d3411b4c0ee7dfd7/classes.dex
+base.1=/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_ce9954744ccb6986ffaa47f4d3411b4c0ee7dfd7
+file.0=/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_42934d2171929512af4fd26f872e95df178c57e6/classes.dex
