@@ -744,7 +744,6 @@ int drawable pluse 0x7f02006b
 int drawable register 0x7f02006c
 int drawable setting 0x7f02006d
 int drawable wallet 0x7f02006e
-int id Category_event 0x7f0d007f
 int id Category_event_label 0x7f0d007e
 int id Description_event 0x7f0d0083
 int id Description_event_label 0x7f0d0082
@@ -816,7 +815,7 @@ int id cancel 0x7f0d009a
 int id cancel_action 0x7f0d00df
 int id cancel_add 0x7f0d0088
 int id cancel_spending 0x7f0d0084
-int id category 0x7f0d0095
+int id cat_spinner 0x7f0d007f
 int id category_label 0x7f0d0094
 int id category_select 0x7f0d00b6
 int id catgoryview 0x7f0d00cd
@@ -877,6 +876,7 @@ int id imageButton_group 0x7f0d00c1
 int id imageButton_individual 0x7f0d00c0
 int id imageView 0x7f0d00c9
 int id imageView4 0x7f0d00ba
+int id ind_spinner 0x7f0d0095
 int id info 0x7f0d00e8
 int id item_touch_helper_previous_elevation 0x7f0d0005
 int id largeLabel 0x7f0d00d0

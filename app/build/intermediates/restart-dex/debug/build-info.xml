@@ -6,31 +6,30 @@
     density="xxhdpi"
     format="10"
     plugin-version="2.3.0"
-    timestamp="1491028784760"
+    timestamp="1491501389174"
     token="7542028817064858754"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="138" />
+        duration="0" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="13" />
+        duration="0" />
     <task
         name="verifier"
-        duration="1" />
-
-    <artifact
-        location="/Users/yueweiyang/AndroidStudioProjects/CaptainJava/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
-        type="SPLIT" />
+        duration="0" />
 
     <build
         build-mode="FULL"
-        timestamp="1491024206505"
+        timestamp="1491501202578"
         verifier="FULL_BUILD_REQUESTED" >
+        <artifact
+            location="/Users/yueweiyang/AndroidStudioProjects/CaptainJava/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
+            type="SPLIT" />
         <artifact
             location="/Users/yueweiyang/AndroidStudioProjects/CaptainJava/app/build/outputs/apk/app-debug.apk"
             type="SPLIT_MAIN" />
@@ -41,16 +40,13 @@
             location="/Users/yueweiyang/AndroidStudioProjects/CaptainJava/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/yueweiyang/AndroidStudioProjects/CaptainJava/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
-            type="SPLIT" />
-        <artifact
             location="/Users/yueweiyang/AndroidStudioProjects/CaptainJava/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/yueweiyang/AndroidStudioProjects/CaptainJava/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
+            location="/Users/yueweiyang/AndroidStudioProjects/CaptainJava/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/yueweiyang/AndroidStudioProjects/CaptainJava/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
+            location="/Users/yueweiyang/AndroidStudioProjects/CaptainJava/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
             type="SPLIT" />
         <artifact
             location="/Users/yueweiyang/AndroidStudioProjects/CaptainJava/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
@@ -70,22 +66,15 @@
     </build>
     <build
         build-mode="COLD"
-        timestamp="1491028719298"
-        verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="/Users/yueweiyang/AndroidStudioProjects/CaptainJava/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/yueweiyang/AndroidStudioProjects/CaptainJava/app/build/outputs/apk/app-debug.apk"
-            type="SPLIT_MAIN" />
-    </build>
-    <build
-        build-mode="COLD"
-        timestamp="1491028784760"
+        timestamp="1491501298450"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="/Users/yueweiyang/AndroidStudioProjects/CaptainJava/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
             type="SPLIT" />
     </build>
+    <build
+        build-mode="COLD"
+        timestamp="1491501389174"
+        verifier="COLD_SWAP_REQUESTED" />
 
 </instant-run>

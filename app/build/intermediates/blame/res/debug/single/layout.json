@@ -52,12 +52,12 @@
         "source": "/Users/yueweiyang/.android/build-cache/378577ae141831449347d365cffbe77103efdac1/output/res/layout/notification_action.xml"
     },
     {
-        "merged": "/Users/yueweiyang/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/layout/abc_popup_menu_header_item_layout.xml",
-        "source": "/Users/yueweiyang/.android/build-cache/378577ae141831449347d365cffbe77103efdac1/output/res/layout/abc_popup_menu_header_item_layout.xml"
-    },
-    {
         "merged": "/Users/yueweiyang/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/layout/activity_event_page.xml",
         "source": "/Users/yueweiyang/AndroidStudioProjects/CaptainJava/app/src/main/res/layout/activity_event_page.xml"
+    },
+    {
+        "merged": "/Users/yueweiyang/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/layout/abc_popup_menu_header_item_layout.xml",
+        "source": "/Users/yueweiyang/.android/build-cache/378577ae141831449347d365cffbe77103efdac1/output/res/layout/abc_popup_menu_header_item_layout.xml"
     },
     {
         "merged": "/Users/yueweiyang/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/layout/select_dialog_singlechoice_material.xml",

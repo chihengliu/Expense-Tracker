@@ -10,21 +10,18 @@ import android.os.Parcelable;
 import android.os.Parcel;
 
 public class Event implements Parcelable {
+    private int eventId;
     private  String name;
     private String date;
     private String description;
     private ArrayList<String> members;
 
 
-    //Use global variable to assign unique spending ID
-    //private static int idCounter = -1;
-    private int eventId;
-
     public Event(){
+        eventId = 0;
         name = "Unknown";
         date = "Unknown";
         description = "Unknown";
-        eventId = 0;
         members = new ArrayList<>();
     }
 
@@ -37,10 +34,10 @@ public class Event implements Parcelable {
     // write your object's data to the passed-in Parcel
     @Override
     public void writeToParcel(Parcel out, int flags) {
+        out.writeInt(eventId);
         out.writeString(name);
         out.writeString(date);
         out.writeString(description);
-        out.writeInt(eventId);
         out.writeSerializable(members);
     }
 
@@ -57,11 +54,18 @@ public class Event implements Parcelable {
 
     // example constructor that takes a Parcel and gives you an object populated with it's values
     private Event(Parcel in) {
+        eventId = in.readInt();
         name = in.readString();
         date = in.readString();
         description = in.readString();
-        eventId = in.readInt();
         members = (ArrayList<String>) in.readSerializable();
+    }
+
+
+    public void setId(int id) {this.eventId = id;  }
+
+    public int getId(){
+        return this.eventId;
     }
 
     public void setName(String name){
@@ -88,11 +92,6 @@ public class Event implements Parcelable {
         return this.description;
     }
 
-    public void setId(int id) {this.eventId = id;  }
-
-    public int getId(){
-        return this.eventId;
-    }
 
     public void setMembers(ArrayList<String> members) {
         this.members = members;

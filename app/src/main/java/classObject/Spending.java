@@ -9,21 +9,21 @@ import android.os.Parcel;
 
 public class Spending implements Parcelable {
     private  String name;
-    private double amount;
     private String date;
     private String category;
     private String description;
     private int eventId;
     private int spendingId;
+    private double amount;
 
     public Spending(){
         name = "Unknown";
-        amount = 0;
         date = "Unknown";
         category = "Unknown";
         description = "Unknown";
-        this.spendingId = 0;
-        this.eventId = 0;
+        spendingId = 0;
+        eventId = 0;
+        amount = 0;
     }
 
     // 99.9% of the time you can just ignore this
@@ -36,12 +36,12 @@ public class Spending implements Parcelable {
     @Override
     public void writeToParcel(Parcel out, int flags) {
         out.writeString(name);
-        out.writeDouble(amount);
         out.writeString(date);
         out.writeString(category);
         out.writeString(description);
         out.writeInt(spendingId);
         out.writeInt(eventId);
+        out.writeDouble(amount);
     }
 
     // this is used to regenerate your object. All Parcelables must have a CREATOR that implements these two methods
@@ -58,12 +58,12 @@ public class Spending implements Parcelable {
     // example constructor that takes a Parcel and gives you an object populated with it's values
     private Spending(Parcel in) {
         name = in.readString();
-        amount = in.readDouble();
         date = in.readString();
         category = in.readString();
         description = in.readString();
         spendingId = in.readInt();
         eventId = in.readInt();
+        amount = in.readDouble();
     }
 
     public void setName(String name){
@@ -72,14 +72,6 @@ public class Spending implements Parcelable {
 
     public String getName(){
         return this.name;
-    }
-
-    public void setAmount(double amount){
-        this.amount = amount;
-    }
-
-    public double getAmount(){
-        return this.amount;
     }
 
     public void setDate(String date){
@@ -119,5 +111,14 @@ public class Spending implements Parcelable {
     public int getEventId(){
         return this.eventId;
     }
+
+    public void setAmount(double amount){
+        this.amount = amount;
+    }
+
+    public double getAmount(){
+        return this.amount;
+    }
+
 
 }

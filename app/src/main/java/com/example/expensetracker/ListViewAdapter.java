@@ -9,17 +9,12 @@ import android.widget.BaseAdapter;
 import android.widget.TextView;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.Locale;
-
-import static classObject.Constants.FIRST_COLUMN;
-import static classObject.Constants.SECOND_COLUMN;
 
 import classObject.*;
 
 
 class ListViewAdapter extends BaseAdapter{
-    //public ArrayList<HashMap<String, String>> list;
     private ArrayList<Spending> list;
     private Activity activity;
     private TextView txtFirst;

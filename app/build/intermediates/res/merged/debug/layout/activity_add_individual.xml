@@ -38,14 +38,10 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent" >
 
-            <EditText
-                android:id="@+id/category"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@android:color/background_light"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:textSize="30sp" />
+            <Spinner
+                android:id="@+id/ind_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
 
         </TableRow>
 
