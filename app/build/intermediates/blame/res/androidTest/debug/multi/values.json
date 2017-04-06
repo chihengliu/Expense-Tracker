@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "/Users/yueweiyang/AndroidStudioProjects/CaptainJava/app/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values/values.xml",
+        "outputFile": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values/values.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,7 @@
                     "endOffset": 96
                 },
                 "from": {
-                    "file": "/Users/yueweiyang/.android/build-cache/7d93914884c005d546383939eeb6f4123cea7da8/output/res/values/values.xml",
+                    "file": "/Users/machengzhang/.android/build-cache/f46f4529c2ecb705dd8a7d9d6ceb304f0babd3ea/output/res/values/values.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
