@@ -17,6 +17,7 @@ import java.text.ParseException;
 
 
 import classObject.Spending;
+import java.util.Comparator;
 
 public class IndividualMenuActivity extends AppCompatActivity {
     //private ArrayList<HashMap<String, String>> list;
@@ -24,7 +25,6 @@ public class IndividualMenuActivity extends AppCompatActivity {
     private static final int REQEST_CODE_ADD_IND = 100;
     ListViewAdapter adapter;
     ListView listView;
-    SimpleDateFormat ft = new SimpleDateFormat ("yyyy.MM.dd");
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +32,18 @@ public class IndividualMenuActivity extends AppCompatActivity {
         setContentView(R.layout.activity_individual_menu);
         Intent intent2 = getIntent();
         list = intent2.getParcelableArrayListExtra("list");
+        for(int i=0; i< list.size(); i++){
+            list.get(i).setDate();
+        }
+
+
+        Collections.sort(list, new Comparator<Spending>() {
+            @Override
+            public int compare(Spending o1, Spending o2) {
+                return o1.getDate().compareTo(o2.getDate());
+            }
+        });
+
         Collections.reverse(list);
         adapter=new ListViewAdapter(this, list);
         listView = (ListView) findViewById(R.id.spendingList);

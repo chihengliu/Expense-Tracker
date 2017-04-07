@@ -75,6 +75,7 @@ class Parser extends AsyncTask<Void,Integer,Integer>{
             spending.setAmount(-1);
             spending.setDescription("");
             spending.setId(0);
+            spending.set_s_date("1980.01.01");
             spendings.add(spending);
 
             if (data.toString().trim().equals("nulln")){

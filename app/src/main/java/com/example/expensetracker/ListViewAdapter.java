@@ -18,7 +18,8 @@ class ListViewAdapter extends BaseAdapter{
     private ArrayList<Spending> list;
     private Activity activity;
     private TextView txtFirst;
-    private TextView txtSecond;
+    private TextView txtSecond, txtThird;
+
 
     ListViewAdapter(Activity activity, ArrayList<Spending> list){
         super();
@@ -68,6 +69,7 @@ class ListViewAdapter extends BaseAdapter{
 
             txtFirst=(TextView) convertView.findViewById(R.id.catgoryview);
             txtSecond=(TextView) convertView.findViewById(R.id.amountview);
+            txtThird = (TextView) convertView.findViewById(R.id.dateView);
 
         }
 
@@ -76,10 +78,14 @@ class ListViewAdapter extends BaseAdapter{
         if (temp.getAmount()!=-1) {
 
             txtSecond.setText(String.format(Locale.getDefault(),"%.2f",temp.getAmount()));
+            txtThird.setText(temp.get_s_date());
         }
         else {
             txtSecond.setText(null);
+            txtThird.setText(null);
         }
+
+
 
 
         return convertView;
