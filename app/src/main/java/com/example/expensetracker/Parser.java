@@ -95,6 +95,7 @@ class Parser extends AsyncTask<Void,Integer,Integer>{
                 double amount = jo.getDouble("Amount");
                 String description = jo.getString("Description");
                 int id = jo.getInt("sid");
+                String s_date = jo.getString("Date");
 
                 //Add them to list
                 spending = new Spending();
@@ -103,6 +104,7 @@ class Parser extends AsyncTask<Void,Integer,Integer>{
                 spending.setAmount(amount);
                 spending.setDescription(description);
                 spending.setId(id);
+                spending.set_s_date(s_date);
                 spendings.add(spending);
 
             }

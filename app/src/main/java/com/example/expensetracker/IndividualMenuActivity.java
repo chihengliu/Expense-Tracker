@@ -1,6 +1,7 @@
 package com.example.expensetracker;
 
 import android.content.Intent;
+import android.icu.text.SimpleDateFormat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -11,6 +12,8 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Date;
+import java.text.ParseException;
 
 
 import classObject.Spending;
@@ -21,6 +24,7 @@ public class IndividualMenuActivity extends AppCompatActivity {
     private static final int REQEST_CODE_ADD_IND = 100;
     ListViewAdapter adapter;
     ListView listView;
+    SimpleDateFormat ft = new SimpleDateFormat ("yyyy.MM.dd");
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -72,6 +76,8 @@ public class IndividualMenuActivity extends AppCompatActivity {
         if (requestCode==REQEST_CODE_ADD_IND){
             if (resultCode==RESULT_OK) {
                 Spending info = data.getParcelableExtra("spinfo");
+                info.setDate();
+
                 int position = (int) data.getSerializableExtra("position");
 
                 if (position == -1) {

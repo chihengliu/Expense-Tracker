@@ -58,9 +58,9 @@ public class AddIndividual extends AppCompatActivity {
     Spending spendingInfo;
     int position;
     String method;
-    int thisyear;
-    int thismonth;
-    int thisday;
+    String s_date;
+    Date setDate;
+
 
     Spinner spinner_cat;
     ArrayAdapter adapter_cat;
@@ -107,9 +107,10 @@ public class AddIndividual extends AppCompatActivity {
         @Override
         public void onDateSet(DatePicker view, int year, int month, int day) {
             // store the data in one string and set it to text
-            Date setTime = new GregorianCalendar(year, month, day).getTime();
+            setDate = new GregorianCalendar(year, month, day).getTime();
 //            set_date.setText(date1);
-            datetext.setText(ft.format(setTime));
+            s_date = ft.format(setDate);
+            datetext.setText(s_date);
         }
     };
 
@@ -127,6 +128,8 @@ public class AddIndividual extends AppCompatActivity {
         //ET_CAT = (EditText)findViewById(R.id.category);
         ET_AMT = (EditText)findViewById(R.id.amount);
         ET_DES = (EditText)findViewById(R.id.description_individual);
+        date = (Button)findViewById(R.id.selectdate);
+        datetext = (TextView) findViewById(R.id.dateText);
         if (spendingInfo!=null){
             //ET_CAT.setText(spendingInfo.getCategory());
             ET_AMT.setText(Double.toString(spendingInfo.getAmount() ) );
@@ -134,12 +137,20 @@ public class AddIndividual extends AppCompatActivity {
             position = (int)inten1.getSerializableExtra("position");
             id = Integer.toString(spendingInfo.getId());
 
+            s_date = spendingInfo.get_s_date();
+            datetext.setText(s_date);
+
             int cat = CategoryList.indexOf(spendingInfo.getCategory());
             Collections.swap(CategoryList,cat,0);
         }
         else {
             position = -1;
             id = Integer.toString(inten1.getIntExtra("id",0)+1);
+
+            Calendar calendar = Calendar.getInstance();
+            setDate = calendar.getTime();
+            s_date = ft.format(setDate);
+            datetext.setText(s_date);
         }
 
 
@@ -149,11 +160,9 @@ public class AddIndividual extends AppCompatActivity {
         spinner_cat.setAdapter(adapter_cat);
 
         //date picker
-        date = (Button)findViewById(R.id.selectdate);
-        datetext = (TextView) findViewById(R.id.dateText);
+
         //timetext = (TextView) findViewById(R.id.timeText);
 
-        Date curdate = new Date();
         //Time curtime = new Time();
 
         //System.out.println(curdate);
@@ -162,19 +171,7 @@ public class AddIndividual extends AppCompatActivity {
         //Date curtime = Calendar.getInstance().getTime();
         //System.out.println(curtime);
 
-        Calendar calendar = Calendar.getInstance();
-        thisyear = calendar.get(Calendar.YEAR);
-        thismonth = calendar.get(Calendar.MONTH);
-        thisday = calendar.get(Calendar.DAY_OF_MONTH);
 
-        System.out.println(thisyear);
-        System.out.println(thismonth);
-        System.out.println(thisday);
-
-        Date presentTime = calendar.getTime();
-        String date_s = ft.format(presentTime);
-
-        datetext.setText(date_s);
 
 
         date.setOnClickListener(new OnClickListener() {
@@ -246,6 +243,8 @@ public class AddIndividual extends AppCompatActivity {
         spendingInfo.setAmount(amountInt);
         spendingInfo.setCategory(category);
         spendingInfo.setId(Integer.parseInt(id));
+        spendingInfo.set_s_date(s_date);
+
 
 
         if (position==-1) {
@@ -254,7 +253,7 @@ public class AddIndividual extends AppCompatActivity {
         else method = "updateSpend";
 
         BackgroundTask backgroundTask = new BackgroundTask(this);
-        backgroundTask.execute(method,name,category,description,amount,id);
+        backgroundTask.execute(method,name,category,description,amount,id, s_date);
 
         Intent intent = new Intent();
         intent.putExtra("spinfo",spendingInfo);
