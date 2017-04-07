@@ -1,9 +1,4 @@
-<<<<<<< HEAD
-#Thu Apr 06 13:54:59 EDT 2017
-base.0=/Users/yueweiyang/AndroidStudioProjects/CaptainJava/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_4
-=======
-#Thu Apr 06 01:14:32 EDT 2017
-base.0=/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_4
->>>>>>> ef3da70166a24b7674af84111428bf0d42a4d1a2
+#Thu Apr 06 21:59:12 EDT 2017
+base.0=/Users/machengzhang/Desktop/651/CaptainJava/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_4
 renamed.0=classes.dex
-file.0=/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_4/classes.dex
+file.0=/Users/machengzhang/Desktop/651/CaptainJava/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_4/classes.dex

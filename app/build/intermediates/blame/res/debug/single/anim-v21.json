@@ -1,10 +1,10 @@
 [
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/anim-v21/design_bottom_sheet_slide_out.xml",
-        "source": "/Users/machengzhang/.android/build-cache/f8f345778ccb60a2ca44e34d6506f0be65b26d68/output/res/anim-v21/design_bottom_sheet_slide_out.xml"
+        "merged": "/Users/machengzhang/Desktop/651/CaptainJava/app/build/intermediates/res/merged/debug/anim-v21/design_bottom_sheet_slide_in.xml",
+        "source": "/Users/machengzhang/.android/build-cache/f8f345778ccb60a2ca44e34d6506f0be65b26d68/output/res/anim-v21/design_bottom_sheet_slide_in.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/anim-v21/design_bottom_sheet_slide_in.xml",
-        "source": "/Users/machengzhang/.android/build-cache/f8f345778ccb60a2ca44e34d6506f0be65b26d68/output/res/anim-v21/design_bottom_sheet_slide_in.xml"
+        "merged": "/Users/machengzhang/Desktop/651/CaptainJava/app/build/intermediates/res/merged/debug/anim-v21/design_bottom_sheet_slide_out.xml",
+        "source": "/Users/machengzhang/.android/build-cache/f8f345778ccb60a2ca44e34d6506f0be65b26d68/output/res/anim-v21/design_bottom_sheet_slide_out.xml"
     }
 ]

@@ -1,20 +1,20 @@
 package com.example.expensetracker;
 
 import android.content.Intent;
+import android.icu.text.DecimalFormat;
+import android.icu.text.SimpleDateFormat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
-import android.widget.Spinner;
-
-import java.util.Collections;
 import android.view.View.OnClickListener;
 
+import java.io.Serializable;
+import java.lang.reflect.Array;
+import java.util.ArrayList;
 import classObject.*;
-
-import static classObject.Constants.CategoryList;
 
 import android.app.AlertDialog;
 import android.app.DatePickerDialog;
@@ -30,6 +30,7 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.TimePicker;
 
@@ -43,33 +44,32 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.Calendar;
-import android.app.AlertDialog;
-import android.content.DialogInterface;
-import android.content.Intent;
-import android.media.MediaPlayer;
-import android.net.Uri;
-import android.os.AsyncTask;
-import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.VideoView;
+import java.util.Collections;
+import java.util.Date;
+import java.sql.Time;
+import java.util.GregorianCalendar;
+
+import static classObject.Constants.CategoryList;
+
 
 public class AddIndividual extends AppCompatActivity {
-    EditText ET_AMT,ET_DES;
+    EditText ET_CAT,ET_AMT,ET_DES;
     String name,category,description,amount,id;
     Spending spendingInfo;
     int position;
     String method;
+    int thisyear;
+    int thismonth;
+    int thisday;
+
     Spinner spinner_cat;
     ArrayAdapter adapter_cat;
 
 
-     Button date, time;
-    // TextView set_date, set_time;
-    private static final int Date_id = 0;
-    private static final int Time_id = 1;
+    Button date;
+    TextView datetext;
+
+    SimpleDateFormat ft = new SimpleDateFormat ("yyyy.MM.dd");
 
 
     /*======================Time Picker View==============================*/
@@ -84,23 +84,19 @@ public class AddIndividual extends AppCompatActivity {
         int year = c.get(Calendar.YEAR);
         int month = c.get(Calendar.MONTH);
         int day = c.get(Calendar.DAY_OF_MONTH);
-        int hour = c.get(Calendar.HOUR_OF_DAY);
-        int minute = c.get(Calendar.MINUTE);
+        //int hour = c.get(Calendar.HOUR_OF_DAY);
+        //int minute = c.get(Calendar.MINUTE);
 
-        switch (id) {
-            case Date_id:
+//        System.out.println(year);
+//        System.out.println(month);
+//        System.out.println(day);
+//        System.out.println(hour);
 
-                // Open the datepicker dialog
-                return new DatePickerDialog(AddIndividual.this, date_listener, year,
-                        month, day);
-            case Time_id:
 
-                // Open the timepicker dialog
-                return new TimePickerDialog(AddIndividual.this, time_listener, hour,
-                        minute, false);
+        // Open the datepicker dialog
+        return new DatePickerDialog(AddIndividual.this, date_listener, year,
+                month, day);
 
-        }
-        return null;
     }
 
 
@@ -111,34 +107,12 @@ public class AddIndividual extends AppCompatActivity {
         @Override
         public void onDateSet(DatePicker view, int year, int month, int day) {
             // store the data in one string and set it to text
-            String date1 = String.valueOf(month + 1) + "/" + String.valueOf(day)
-                    + "/" + String.valueOf(year);
+            Date setTime = new GregorianCalendar(year, month, day).getTime();
 //            set_date.setText(date1);
-//            theyear = year;
-//            themonth = month;
-//            theday = day;
-        }
-    };
-    TimePickerDialog.OnTimeSetListener time_listener = new TimePickerDialog.OnTimeSetListener() {
-
-        @Override
-        public void onTimeSet(TimePicker view, int hour, int minute) {
-            // store the data in one string and set it to text
-            String time1 = String.valueOf(hour) + ":" + String.valueOf(minute);
-//            set_time.setText(time1);
-//            thehour = hour;
-//            themin = minute;
+            datetext.setText(ft.format(setTime));
         }
     };
 
-    private boolean checkDigit(String str){
-        for(int i = 0; i < str.length(); i++){
-            if ((str.charAt(i) > '9') || (str.charAt(i) < '0')) {
-                return false;
-            }
-        }
-        return true;
-    }
 
 
 
@@ -150,9 +124,11 @@ public class AddIndividual extends AppCompatActivity {
         Intent inten1 = getIntent();
         name = inten1.getStringExtra("name");
         spendingInfo = inten1.getParcelableExtra("detail");
+        //ET_CAT = (EditText)findViewById(R.id.category);
         ET_AMT = (EditText)findViewById(R.id.amount);
         ET_DES = (EditText)findViewById(R.id.description_individual);
         if (spendingInfo!=null){
+            //ET_CAT.setText(spendingInfo.getCategory());
             ET_AMT.setText(Double.toString(spendingInfo.getAmount() ) );
             ET_DES.setText(spendingInfo.getDescription());
             position = (int)inten1.getSerializableExtra("position");
@@ -160,12 +136,12 @@ public class AddIndividual extends AppCompatActivity {
 
             int cat = CategoryList.indexOf(spendingInfo.getCategory());
             Collections.swap(CategoryList,cat,0);
-
         }
         else {
             position = -1;
             id = Integer.toString(inten1.getIntExtra("id",0)+1);
         }
+
 
         spinner_cat = (Spinner)findViewById(R.id.ind_spinner);
         adapter_cat = new ArrayAdapter<String>(this,android.R.layout.simple_spinner_item,CategoryList);
@@ -174,26 +150,41 @@ public class AddIndividual extends AppCompatActivity {
 
         //date picker
         date = (Button)findViewById(R.id.selectdate);
-        time = (Button)findViewById(R.id.selecttime);
-        //set_date = (TextView) findViewById(R.id.set_date);
-        //set_time = (TextView) findViewById(R.id.set_time);
+        datetext = (TextView) findViewById(R.id.dateText);
+        //timetext = (TextView) findViewById(R.id.timeText);
+
+        Date curdate = new Date();
+        //Time curtime = new Time();
+
+        //System.out.println(curdate);
+        //System.out.println(curtime);
+
+        //Date curtime = Calendar.getInstance().getTime();
+        //System.out.println(curtime);
+
+        Calendar calendar = Calendar.getInstance();
+        thisyear = calendar.get(Calendar.YEAR);
+        thismonth = calendar.get(Calendar.MONTH);
+        thisday = calendar.get(Calendar.DAY_OF_MONTH);
+
+        System.out.println(thisyear);
+        System.out.println(thismonth);
+        System.out.println(thisday);
+
+        Date presentTime = calendar.getTime();
+        String date_s = ft.format(presentTime);
+
+        datetext.setText(date_s);
+
+
         date.setOnClickListener(new OnClickListener() {
 
             @Override
             public void onClick(View arg0) {
 
                 // Show Date dialog
-                showDialog(Date_id);
+                showDialog(0);
 
-            }
-        });
-        time.setOnClickListener(new OnClickListener() {
-
-            @Override
-            public void onClick(View arg0) {
-
-                // Show time dialog
-                showDialog(Time_id);
             }
         });
 
@@ -218,6 +209,16 @@ public class AddIndividual extends AppCompatActivity {
     }
 
     public void saveCreate(View view){
+        //name = spendingInfo.getName();
+
+
+        /*
+        if (TextUtils.isEmpty(ET_CAT.getText())){
+            category = "Unknown";
+        }
+        else{
+            category = ET_CAT.getText().toString();
+        }*/
 
 
         if (TextUtils.isEmpty(ET_DES.getText())){
@@ -238,8 +239,6 @@ public class AddIndividual extends AppCompatActivity {
         double amountInt = Double.parseDouble(amount);
         category = spinner_cat.getSelectedItem().toString();
 
-
-
         //ArrayList<String> spendingInfo = new ArrayList<String>();
         spendingInfo = new Spending();
         spendingInfo.setName(name);
@@ -247,6 +246,7 @@ public class AddIndividual extends AppCompatActivity {
         spendingInfo.setAmount(amountInt);
         spendingInfo.setCategory(category);
         spendingInfo.setId(Integer.parseInt(id));
+
 
         if (position==-1) {
             method = "addSpend";

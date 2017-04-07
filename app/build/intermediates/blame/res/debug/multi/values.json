@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
+        "outputFile": "/Users/machengzhang/Desktop/651/CaptainJava/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
         "map": [
             {
                 "to": {
@@ -1244,7 +1244,7 @@
                     "endOffset": 5638
                 },
                 "from": {
-                    "file": "/Users/machengzhang/Desktop/CaptainJava/app/src/main/res/values/colors.xml",
+                    "file": "/Users/machengzhang/Desktop/651/CaptainJava/app/src/main/res/values/colors.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
@@ -1415,7 +1415,7 @@
                     "endOffset": 6325
                 },
                 "from": {
-                    "file": "/Users/machengzhang/Desktop/CaptainJava/app/src/main/res/values/colors.xml",
+                    "file": "/Users/machengzhang/Desktop/651/CaptainJava/app/src/main/res/values/colors.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -1434,7 +1434,7 @@
                     "endOffset": 6372
                 },
                 "from": {
-                    "file": "/Users/machengzhang/Desktop/CaptainJava/app/src/main/res/values/colors.xml",
+                    "file": "/Users/machengzhang/Desktop/651/CaptainJava/app/src/main/res/values/colors.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
@@ -1453,7 +1453,7 @@
                     "endOffset": 6423
                 },
                 "from": {
-                    "file": "/Users/machengzhang/Desktop/CaptainJava/app/src/main/res/values/colors.xml",
+                    "file": "/Users/machengzhang/Desktop/651/CaptainJava/app/src/main/res/values/colors.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
@@ -1795,7 +1795,7 @@
                     "endOffset": 7674
                 },
                 "from": {
-                    "file": "/Users/machengzhang/Desktop/CaptainJava/app/src/main/res/values/colors.xml",
+                    "file": "/Users/machengzhang/Desktop/651/CaptainJava/app/src/main/res/values/colors.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
@@ -2137,7 +2137,7 @@
                     "endOffset": 8754
                 },
                 "from": {
-                    "file": "/Users/machengzhang/Desktop/CaptainJava/app/src/main/res/values/colors.xml",
+                    "file": "/Users/machengzhang/Desktop/651/CaptainJava/app/src/main/res/values/colors.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
@@ -3904,7 +3904,7 @@
                     "endOffset": 50748
                 },
                 "from": {
-                    "file": "/Users/machengzhang/Desktop/CaptainJava/app/src/main/res/values/dimens.xml",
+                    "file": "/Users/machengzhang/Desktop/651/CaptainJava/app/src/main/res/values/dimens.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
@@ -3923,7 +3923,7 @@
                     "endOffset": 50804
                 },
                 "from": {
-                    "file": "/Users/machengzhang/Desktop/CaptainJava/app/src/main/res/values/dimens.xml",
+                    "file": "/Users/machengzhang/Desktop/651/CaptainJava/app/src/main/res/values/dimens.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
@@ -4702,7 +4702,7 @@
                     "endOffset": 53401
                 },
                 "from": {
-                    "file": "/Users/machengzhang/Desktop/CaptainJava/app/src/main/res/values/dimens.xml",
+                    "file": "/Users/machengzhang/Desktop/651/CaptainJava/app/src/main/res/values/dimens.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -6279,7 +6279,7 @@
                     "endOffset": 58936
                 },
                 "from": {
-                    "file": "/Users/machengzhang/Desktop/CaptainJava/app/src/main/res/values/strings.xml",
+                    "file": "/Users/machengzhang/Desktop/651/CaptainJava/app/src/main/res/values/strings.xml",
                     "position": {
                         "startLine": 14,
                         "startColumn": 4,
@@ -6298,7 +6298,7 @@
                     "endOffset": 58988
                 },
                 "from": {
-                    "file": "/Users/machengzhang/Desktop/CaptainJava/app/src/main/res/values/strings.xml",
+                    "file": "/Users/machengzhang/Desktop/651/CaptainJava/app/src/main/res/values/strings.xml",
                     "position": {
                         "startLine": 1,
                         "startColumn": 4,
@@ -6355,7 +6355,7 @@
                     "endOffset": 59296
                 },
                 "from": {
-                    "file": "/Users/machengzhang/Desktop/CaptainJava/app/src/main/res/values/strings.xml",
+                    "file": "/Users/machengzhang/Desktop/651/CaptainJava/app/src/main/res/values/strings.xml",
                     "position": {
                         "startLine": 12,
                         "startColumn": 4,
@@ -6374,7 +6374,7 @@
                     "endOffset": 59342
                 },
                 "from": {
-                    "file": "/Users/machengzhang/Desktop/CaptainJava/app/src/main/res/values/strings.xml",
+                    "file": "/Users/machengzhang/Desktop/651/CaptainJava/app/src/main/res/values/strings.xml",
                     "position": {
                         "startLine": 15,
                         "startColumn": 4,
@@ -6412,7 +6412,7 @@
                     "endOffset": 59465
                 },
                 "from": {
-                    "file": "/Users/machengzhang/Desktop/CaptainJava/app/src/main/res/values/strings.xml",
+                    "file": "/Users/machengzhang/Desktop/651/CaptainJava/app/src/main/res/values/strings.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
@@ -6431,7 +6431,7 @@
                     "endOffset": 59517
                 },
                 "from": {
-                    "file": "/Users/machengzhang/Desktop/CaptainJava/app/src/main/res/values/strings.xml",
+                    "file": "/Users/machengzhang/Desktop/651/CaptainJava/app/src/main/res/values/strings.xml",
                     "position": {
                         "startLine": 16,
                         "startColumn": 4,
@@ -6450,7 +6450,7 @@
                     "endOffset": 59567
                 },
                 "from": {
-                    "file": "/Users/machengzhang/Desktop/CaptainJava/app/src/main/res/values/strings.xml",
+                    "file": "/Users/machengzhang/Desktop/651/CaptainJava/app/src/main/res/values/strings.xml",
                     "position": {
                         "startLine": 20,
                         "startColumn": 4,
@@ -6469,7 +6469,7 @@
                     "endOffset": 59607
                 },
                 "from": {
-                    "file": "/Users/machengzhang/Desktop/CaptainJava/app/src/main/res/values/strings.xml",
+                    "file": "/Users/machengzhang/Desktop/651/CaptainJava/app/src/main/res/values/strings.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
@@ -6488,7 +6488,7 @@
                     "endOffset": 59657
                 },
                 "from": {
-                    "file": "/Users/machengzhang/Desktop/CaptainJava/app/src/main/res/values/strings.xml",
+                    "file": "/Users/machengzhang/Desktop/651/CaptainJava/app/src/main/res/values/strings.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
@@ -6507,7 +6507,7 @@
                     "endOffset": 59707
                 },
                 "from": {
-                    "file": "/Users/machengzhang/Desktop/CaptainJava/app/src/main/res/values/strings.xml",
+                    "file": "/Users/machengzhang/Desktop/651/CaptainJava/app/src/main/res/values/strings.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
@@ -6526,7 +6526,7 @@
                     "endOffset": 59767
                 },
                 "from": {
-                    "file": "/Users/machengzhang/Desktop/CaptainJava/app/src/main/res/values/strings.xml",
+                    "file": "/Users/machengzhang/Desktop/651/CaptainJava/app/src/main/res/values/strings.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
@@ -6545,7 +6545,7 @@
                     "endOffset": 59805
                 },
                 "from": {
-                    "file": "/Users/machengzhang/Desktop/CaptainJava/app/src/main/res/values/strings.xml",
+                    "file": "/Users/machengzhang/Desktop/651/CaptainJava/app/src/main/res/values/strings.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
@@ -6564,7 +6564,7 @@
                     "endOffset": 59857
                 },
                 "from": {
-                    "file": "/Users/machengzhang/Desktop/CaptainJava/app/src/main/res/values/strings.xml",
+                    "file": "/Users/machengzhang/Desktop/651/CaptainJava/app/src/main/res/values/strings.xml",
                     "position": {
                         "startLine": 17,
                         "startColumn": 4,
@@ -6583,7 +6583,7 @@
                     "endOffset": 59897
                 },
                 "from": {
-                    "file": "/Users/machengzhang/Desktop/CaptainJava/app/src/main/res/values/strings.xml",
+                    "file": "/Users/machengzhang/Desktop/651/CaptainJava/app/src/main/res/values/strings.xml",
                     "position": {
                         "startLine": 9,
                         "startColumn": 4,
@@ -6602,7 +6602,7 @@
                     "endOffset": 59945
                 },
                 "from": {
-                    "file": "/Users/machengzhang/Desktop/CaptainJava/app/src/main/res/values/strings.xml",
+                    "file": "/Users/machengzhang/Desktop/651/CaptainJava/app/src/main/res/values/strings.xml",
                     "position": {
                         "startLine": 13,
                         "startColumn": 4,
@@ -6716,7 +6716,7 @@
                     "endOffset": 60796
                 },
                 "from": {
-                    "file": "/Users/machengzhang/Desktop/CaptainJava/app/src/main/res/values/strings.xml",
+                    "file": "/Users/machengzhang/Desktop/651/CaptainJava/app/src/main/res/values/strings.xml",
                     "position": {
                         "startLine": 10,
                         "startColumn": 4,
@@ -6735,7 +6735,7 @@
                     "endOffset": 60834
                 },
                 "from": {
-                    "file": "/Users/machengzhang/Desktop/CaptainJava/app/src/main/res/values/strings.xml",
+                    "file": "/Users/machengzhang/Desktop/651/CaptainJava/app/src/main/res/values/strings.xml",
                     "position": {
                         "startLine": 18,
                         "startColumn": 4,
@@ -6792,7 +6792,7 @@
                     "endOffset": 61020
                 },
                 "from": {
-                    "file": "/Users/machengzhang/Desktop/CaptainJava/app/src/main/res/values/strings.xml",
+                    "file": "/Users/machengzhang/Desktop/651/CaptainJava/app/src/main/res/values/strings.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -6811,7 +6811,7 @@
                     "endOffset": 61099
                 },
                 "from": {
-                    "file": "/Users/machengzhang/Desktop/CaptainJava/app/src/main/res/values/strings.xml",
+                    "file": "/Users/machengzhang/Desktop/651/CaptainJava/app/src/main/res/values/strings.xml",
                     "position": {
                         "startLine": 19,
                         "startColumn": 4,
@@ -6830,7 +6830,7 @@
                     "endOffset": 61137
                 },
                 "from": {
-                    "file": "/Users/machengzhang/Desktop/CaptainJava/app/src/main/res/values/strings.xml",
+                    "file": "/Users/machengzhang/Desktop/651/CaptainJava/app/src/main/res/values/strings.xml",
                     "position": {
                         "startLine": 11,
                         "startColumn": 4,
@@ -6947,7 +6947,7 @@
                     "endOffset": 62095
                 },
                 "from": {
-                    "file": "/Users/machengzhang/Desktop/CaptainJava/app/src/main/res/values/styles.xml",
+                    "file": "/Users/machengzhang/Desktop/651/CaptainJava/app/src/main/res/values/styles.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
@@ -6967,7 +6967,7 @@
                     "endOffset": 62185
                 },
                 "from": {
-                    "file": "/Users/machengzhang/Desktop/CaptainJava/app/src/main/res/values/styles.xml",
+                    "file": "/Users/machengzhang/Desktop/651/CaptainJava/app/src/main/res/values/styles.xml",
                     "position": {
                         "startLine": 15,
                         "startColumn": 4,
@@ -6987,7 +6987,7 @@
                     "endOffset": 62335
                 },
                 "from": {
-                    "file": "/Users/machengzhang/Desktop/CaptainJava/app/src/main/res/values/styles.xml",
+                    "file": "/Users/machengzhang/Desktop/651/CaptainJava/app/src/main/res/values/styles.xml",
                     "position": {
                         "startLine": 10,
                         "startColumn": 4,
@@ -7007,7 +7007,7 @@
                     "endOffset": 62415
                 },
                 "from": {
-                    "file": "/Users/machengzhang/Desktop/CaptainJava/app/src/main/res/values/styles.xml",
+                    "file": "/Users/machengzhang/Desktop/651/CaptainJava/app/src/main/res/values/styles.xml",
                     "position": {
                         "startLine": 17,
                         "startColumn": 4,

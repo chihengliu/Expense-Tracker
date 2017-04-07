@@ -104,18 +104,6 @@
     </TableLayout>
 
     <Button
-        android:id="@+id/selecttime"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:padding="10dp"
-        android:text="Select Time"
-        android:layout_alignBaseline="@+id/selectdate"
-        android:layout_alignBottom="@+id/selectdate"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <Button
         android:id="@+id/selectdate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -123,9 +111,9 @@
         android:padding="10dp"
         android:text="Select Date"
         android:layout_marginBottom="30dp"
-        android:layout_above="@+id/delete"
-        android:layout_alignLeft="@+id/delete"
-        android:layout_alignStart="@+id/delete" />
+        android:layout_above="@+id/save"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
     <Button
         android:id="@+id/save"
@@ -160,5 +148,18 @@
         android:background="@android:color/holo_orange_dark"
         android:onClick="deleteCreate"
         android:text="DELETE" />
+
+    <TextView
+        android:id="@+id/dateText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/selectdate"
+        android:layout_alignEnd="@+id/delete"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/delete"
+        android:layout_alignTop="@+id/selectdate"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
 </RelativeLayout>
