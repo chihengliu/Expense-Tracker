@@ -36,7 +36,6 @@ public class IndividualMenuActivity extends AppCompatActivity {
             list.get(i).setDate();
         }
 
-
         Collections.sort(list, new Comparator<Spending>() {
             @Override
             public int compare(Spending o1, Spending o2) {
@@ -77,7 +76,14 @@ public class IndividualMenuActivity extends AppCompatActivity {
 
     public void addIndividualEvent(View view){
         Intent addIndividualWindow = new Intent(IndividualMenuActivity.this,AddIndividual.class);
-        addIndividualWindow.putExtra("id",list.get(0).getId());
+        int id = 0;
+        for (int i = 0; i<list.size(); i++){
+            if (list.get(i).getId() > id) {
+                id = list.get(i).getId();
+            }
+        }
+        addIndividualWindow.putExtra("id",id);
+
         addIndividualWindow.putExtra("name",list.get(0).getName());
         startActivityForResult(addIndividualWindow,REQEST_CODE_ADD_IND);
         //startActivity(addIndividualWindow);
@@ -98,6 +104,13 @@ public class IndividualMenuActivity extends AppCompatActivity {
                     list.set(position, info);
                 }
 
+                Collections.sort(list, new Comparator<Spending>() {
+                    @Override
+                    public int compare(Spending o1, Spending o2) {
+                        return o1.getDate().compareTo(o2.getDate());
+                    }
+                });
+                Collections.reverse(list);
 
             }
             else if (resultCode == 2)

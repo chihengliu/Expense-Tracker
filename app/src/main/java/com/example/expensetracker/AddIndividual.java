@@ -246,7 +246,6 @@ public class AddIndividual extends AppCompatActivity {
         spendingInfo.set_s_date(s_date);
 
 
-
         if (position==-1) {
             method = "addSpend";
         }
