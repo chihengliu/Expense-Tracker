@@ -11,6 +11,7 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.concurrent.ExecutionException;
 
 import classObject.Event;
@@ -46,6 +47,17 @@ public class EventPage extends AppCompatActivity {
         }catch (InterruptedException e){
             e.printStackTrace();
         }
+
+        for(int i=0; i< list.size(); i++){
+            list.get(i).setDate();
+        }
+
+        Collections.sort(list, new Comparator<Spending>() {
+            @Override
+            public int compare(Spending o1, Spending o2) {
+                return o1.getDate().compareTo(o2.getDate());
+            }
+        });
 
         Collections.reverse(list);
         adapter=new ListViewAdapter(this, list);
@@ -84,7 +96,13 @@ public class EventPage extends AppCompatActivity {
 
     public void addEventSpending(View view){
         Intent addEventSpending = new Intent(EventPage.this,AddEventSpending.class);
-        addEventSpending.putExtra("id",list.get(0).getId());
+        int id = 0;
+        for (int i = 0; i<list.size(); i++){
+            if (list.get(i).getId() > id) {
+                id = list.get(i).getId();
+            }
+        }
+        addEventSpending.putExtra("id",id);
         addEventSpending.putExtra("eid",event.getId());
         addEventSpending.putExtra("members",event.getMembers());
         startActivityForResult(addEventSpending,REQEST_CODE_ADD_EVT_SP);
@@ -117,6 +135,7 @@ public class EventPage extends AppCompatActivity {
         else if (requestCode == REQEST_CODE_ADD_EVT_SP){
             if (resultCode == RESULT_OK){
                 Spending spending = data.getParcelableExtra("spending");
+                spending.setDate();
                 spendposition = (int)data.getSerializableExtra("spendposition");
 
                 if (spendposition==-1){
@@ -131,6 +150,14 @@ public class EventPage extends AppCompatActivity {
                 list.remove(spendposition);
             }
         }
+
+        Collections.sort(list, new Comparator<Spending>() {
+            @Override
+            public int compare(Spending o1, Spending o2) {
+                return o1.getDate().compareTo(o2.getDate());
+            }
+        });
+        Collections.reverse(list);
 
         adapter=new ListViewAdapter(this, list);
         listView = (ListView) findViewById(R.id.event_spending);

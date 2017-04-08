@@ -81,6 +81,7 @@ public class EventSpendingBackgroundTask extends AsyncTask<String,Void,ArrayList
             String category = params[4];
             String description = params[5];
             String eid = params[6];
+            String date = params[7];
             httpURLConnection.setRequestProperty("Content-Type", "application/json");
             JSONObject jsonObject = new JSONObject();
             jsonObject.put("id", id);
@@ -89,6 +90,7 @@ public class EventSpendingBackgroundTask extends AsyncTask<String,Void,ArrayList
             jsonObject.put("category", category);
             jsonObject.put("description", description);
             jsonObject.put("eid",eid);
+            jsonObject.put("date",date);
             data = jsonObject.toString();
 
         }
@@ -148,6 +150,7 @@ public class EventSpendingBackgroundTask extends AsyncTask<String,Void,ArrayList
                 spending.setDescription("");
                 spending.setName("");
                 spending.setAmount(-1);
+                spending.set_s_date("1980.01.01");
                 spendings.add(spending);
                 if (result.equals("null")){
                     return spendings;
@@ -164,6 +167,7 @@ public class EventSpendingBackgroundTask extends AsyncTask<String,Void,ArrayList
                         double Amount = jo.getDouble("Amount");
                         int eid = jo.getInt("eid");
                         int id = jo.getInt("sid");
+                        String s_date = jo.getString("Date");
                         spending = new Spending();
                         spending.setId(id);
                         spending.setCategory(Category);
@@ -171,6 +175,7 @@ public class EventSpendingBackgroundTask extends AsyncTask<String,Void,ArrayList
                         spending.setAmount(Amount);
                         spending.setDescription(Description);
                         spending.setEventId(eid);
+                        spending.set_s_date(s_date);
                         spendings.add(spending);
 
                     }

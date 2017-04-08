@@ -107,13 +107,13 @@
         android:id="@+id/selectdate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_above="@+id/save"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="30dp"
         android:gravity="center"
         android:padding="10dp"
-        android:text="Select Date"
-        android:layout_marginBottom="30dp"
-        android:layout_above="@+id/save"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:text="Change Date" />
 
     <Button
         android:id="@+id/save"

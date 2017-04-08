@@ -171,6 +171,7 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
                 String name = params[1];
                 String description = params[2];
 
+
                 // here you are setting the 'Content-Type' for the data you are sending which is 'application/json'
                 httpURLConnection.setRequestProperty("Content-Type", "application/json");
 
@@ -189,6 +190,7 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
                 int EventID = Integer.valueOf(eventId);
                 String name = params[2];
                 String description = params[3];
+
 
                 // here you are setting the 'Content-Type' for the data you are sending which is 'application/json'
                 httpURLConnection.setRequestProperty("Content-Type", "application/json");
