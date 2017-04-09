@@ -64,16 +64,16 @@
 
     <Button
         android:id="@+id/LogInButton"
+        style="@style/button_style"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@android:color/holo_green_light"
+        android:layout_marginBottom="12dp"
         android:onClick="login"
         android:text="Log in"
+        android:visibility="visible"
         tools:layout_editor_absoluteX="103dp"
         tools:layout_editor_absoluteY="373dp"
         android:layout_alignParentBottom="true"
-        android:layout_toRightOf="@+id/Log_Passwd"
-        android:layout_toEndOf="@+id/Log_Passwd"
-        android:layout_marginBottom="12dp" />
+        android:layout_toEndOf="@+id/Log_Passwd" />
 
 </RelativeLayout>

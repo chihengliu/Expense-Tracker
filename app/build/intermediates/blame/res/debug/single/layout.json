@@ -40,16 +40,16 @@
         "source": "/Users/machengzhang/Desktop/651/CaptainJava/app/src/main/res/layout/activity_group_menu.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/651/CaptainJava/app/build/intermediates/res/merged/debug/layout/design_layout_snackbar.xml",
-        "source": "/Users/machengzhang/.android/build-cache/f8f345778ccb60a2ca44e34d6506f0be65b26d68/output/res/layout/design_layout_snackbar.xml"
+        "merged": "/Users/machengzhang/Desktop/651/CaptainJava/app/build/intermediates/res/merged/debug/layout/design_navigation_item_header.xml",
+        "source": "/Users/machengzhang/.android/build-cache/f8f345778ccb60a2ca44e34d6506f0be65b26d68/output/res/layout/design_navigation_item_header.xml"
     },
     {
         "merged": "/Users/machengzhang/Desktop/651/CaptainJava/app/build/intermediates/res/merged/debug/layout/abc_alert_dialog_title_material.xml",
         "source": "/Users/machengzhang/.android/build-cache/24e700bbef4eb71076cb51f8e402319e6a057dc0/output/res/layout/abc_alert_dialog_title_material.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/651/CaptainJava/app/build/intermediates/res/merged/debug/layout/design_navigation_item_header.xml",
-        "source": "/Users/machengzhang/.android/build-cache/f8f345778ccb60a2ca44e34d6506f0be65b26d68/output/res/layout/design_navigation_item_header.xml"
+        "merged": "/Users/machengzhang/Desktop/651/CaptainJava/app/build/intermediates/res/merged/debug/layout/design_layout_snackbar.xml",
+        "source": "/Users/machengzhang/.android/build-cache/f8f345778ccb60a2ca44e34d6506f0be65b26d68/output/res/layout/design_layout_snackbar.xml"
     },
     {
         "merged": "/Users/machengzhang/Desktop/651/CaptainJava/app/build/intermediates/res/merged/debug/layout/support_simple_spinner_dropdown_item.xml",

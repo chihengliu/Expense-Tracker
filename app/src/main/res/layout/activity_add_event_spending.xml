@@ -131,7 +131,7 @@
 
     <Button
         android:id="@+id/cancel_spending"
-        style="@style/Widget.AppCompat.Button.Colored"
+        style="@style/button_style"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="15dp"
@@ -144,13 +144,13 @@
 
     <Button
         android:id="@+id/save_spending"
-        style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/cancel_spending"
         android:layout_alignBottom="@+id/cancel_spending"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
+        style="@style/button_style"
         android:background="@android:color/holo_blue_dark"
         android:onClick="saveEventSpend"
         android:text="@string/save" />
@@ -160,6 +160,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/save_spending"
+        style="@style/button_style"
         android:layout_centerHorizontal="true"
         android:background="@android:color/holo_blue_dark"
         android:onClick="deleteSpending"

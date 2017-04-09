@@ -14051,6 +14051,69 @@
                         "endOffset": 22855
                     }
                 }
+            },
+            {
+                "to": {
+                    "startLine": 2234,
+                    "startColumn": 4,
+                    "startOffset": 163041,
+                    "endLine": 2237,
+                    "endColumn": 12,
+                    "endOffset": 163205
+                },
+                "from": {
+                    "file": "/Users/machengzhang/Desktop/651/CaptainJava/app/src/main/res/values/styles.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 4,
+                        "startOffset": 699,
+                        "endLine": 22,
+                        "endColumn": 12,
+                        "endOffset": 869
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 2238,
+                    "startColumn": 4,
+                    "startOffset": 163210,
+                    "endLine": 2241,
+                    "endColumn": 12,
+                    "endOffset": 163376
+                },
+                "from": {
+                    "file": "/Users/machengzhang/Desktop/651/CaptainJava/app/src/main/res/values/styles.xml",
+                    "position": {
+                        "startLine": 24,
+                        "startColumn": 4,
+                        "startOffset": 875,
+                        "endLine": 27,
+                        "endColumn": 12,
+                        "endOffset": 1047
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 2242,
+                    "startColumn": 4,
+                    "startOffset": 163381,
+                    "endLine": 2246,
+                    "endColumn": 12,
+                    "endOffset": 163608
+                },
+                "from": {
+                    "file": "/Users/machengzhang/Desktop/651/CaptainJava/app/src/main/res/values/styles.xml",
+                    "position": {
+                        "startLine": 31,
+                        "startColumn": 4,
+                        "startOffset": 1055,
+                        "endLine": 35,
+                        "endColumn": 12,
+                        "endOffset": 1286
+                    }
+                }
             }
         ]
     }

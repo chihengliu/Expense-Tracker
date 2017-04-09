@@ -37,12 +37,12 @@
 
     <Button
         android:id="@+id/Reg_reg"
+        style="@style/button_style"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/Reg_Passwd"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="18dp"
-        android:background="@android:color/holo_blue_light"
         android:onClick="register"
         android:text="Register" />
 

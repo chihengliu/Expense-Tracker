@@ -121,9 +121,9 @@
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/cancel"
         android:layout_alignBottom="@+id/cancel"
+        style="@style/button_style"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:background="@android:color/holo_orange_dark"
         android:onClick="saveCreate"
         android:text="save" />
 
@@ -132,7 +132,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="107dp"
-        android:background="@android:color/holo_orange_dark"
+        style="@style/button_style"
         android:onClick="cancelCreate"
         android:text="@android:string/cancel"
         android:layout_alignParentBottom="true"
@@ -143,6 +143,7 @@
         android:id="@+id/delete"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        style="@style/button_style"
         android:layout_alignTop="@+id/save"
         android:layout_centerHorizontal="true"
         android:background="@android:color/holo_orange_dark"

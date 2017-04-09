@@ -2232,4 +2232,17 @@
         <item name="passwordToggleTint">@color/design_tint_password_toggle</item>
         <item name="passwordToggleContentDescription">@string/password_toggle_content_description</item>
     </style>
+    <style name="button_style">
+        <item name="android:background">@drawable/style_button</item>
+        <item name="android:textColor">#FDFDFE</item>
+    </style>
+    <style name="button_style2">
+        <item name="android:background">@drawable/style2_button</item>
+        <item name="android:textColor">#FDFDFE</item>
+    </style>
+    <style name="text_style">
+        <item name="android:background">@drawable/style_textview</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+    </style>
 </resources>

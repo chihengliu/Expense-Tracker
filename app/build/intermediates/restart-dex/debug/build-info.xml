@@ -6,7 +6,7 @@
     density="420dpi"
     format="10"
     plugin-version="2.3.0"
-    timestamp="1491698247967"
+    timestamp="1491702910958"
     token="-3415317173516739184"
     verifier="COLD_SWAP_REQUESTED" >
 
@@ -29,14 +29,8 @@
 
     <build
         build-mode="FULL"
-        timestamp="1491697972996"
+        timestamp="1491702616383"
         verifier="FULL_BUILD_REQUESTED" >
-        <artifact
-            location="/Users/machengzhang/Desktop/651/CaptainJava/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/machengzhang/Desktop/651/CaptainJava/app/build/outputs/apk/app-debug.apk"
-            type="SPLIT_MAIN" />
         <artifact
             location="/Users/machengzhang/Desktop/651/CaptainJava/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
             type="SPLIT" />
@@ -65,12 +59,18 @@
             location="/Users/machengzhang/Desktop/651/CaptainJava/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
             type="SPLIT" />
         <artifact
+            location="/Users/machengzhang/Desktop/651/CaptainJava/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
+            type="SPLIT" />
+        <artifact
             location="/Users/machengzhang/Desktop/651/CaptainJava/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
             type="SPLIT" />
+        <artifact
+            location="/Users/machengzhang/Desktop/651/CaptainJava/app/build/outputs/apk/app-debug.apk"
+            type="SPLIT_MAIN" />
     </build>
     <build
         build-mode="COLD"
-        timestamp="1491698247967"
+        timestamp="1491702910958"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="/Users/machengzhang/Desktop/651/CaptainJava/app/build/outputs/apk/app-debug.apk"
