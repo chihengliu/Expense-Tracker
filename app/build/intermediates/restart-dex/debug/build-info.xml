@@ -6,34 +6,31 @@
     density="420dpi"
     format="10"
     plugin-version="2.3.0"
-    timestamp="1491614429180"
+    timestamp="1491698247967"
     token="-3415317173516739184"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="205" />
+        duration="0" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="9" />
+        duration="0" />
     <task
         name="verifier"
-        duration="1" />
+        duration="0" />
 
     <artifact
-        location="/Users/machengzhang/Desktop/651/CaptainJava/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
-        type="SPLIT" />
+        location="/Users/machengzhang/Desktop/651/CaptainJava/app/build/outputs/apk/app-debug.apk"
+        type="SPLIT_MAIN" />
 
     <build
         build-mode="FULL"
-        timestamp="1491610631808"
+        timestamp="1491697972996"
         verifier="FULL_BUILD_REQUESTED" >
-        <artifact
-            location="/Users/machengzhang/Desktop/651/CaptainJava/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
-            type="SPLIT" />
         <artifact
             location="/Users/machengzhang/Desktop/651/CaptainJava/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
             type="SPLIT" />
@@ -45,6 +42,9 @@
             type="SPLIT" />
         <artifact
             location="/Users/machengzhang/Desktop/651/CaptainJava/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/machengzhang/Desktop/651/CaptainJava/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
             type="SPLIT" />
         <artifact
             location="/Users/machengzhang/Desktop/651/CaptainJava/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
@@ -70,11 +70,11 @@
     </build>
     <build
         build-mode="COLD"
-        timestamp="1491614429180"
+        timestamp="1491698247967"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
-            location="/Users/machengzhang/Desktop/651/CaptainJava/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
-            type="SPLIT" />
+            location="/Users/machengzhang/Desktop/651/CaptainJava/app/build/outputs/apk/app-debug.apk"
+            type="SPLIT_MAIN" />
     </build>
 
 </instant-run>
