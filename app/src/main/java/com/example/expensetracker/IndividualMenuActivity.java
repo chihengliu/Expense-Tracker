@@ -181,7 +181,7 @@ public class IndividualMenuActivity extends AppCompatActivity {
                     for (int i =0 ; i<list.size(); i++){
                         if(position == list.get(i).getId()){
                             list.set(i, info);
-                            return;
+                            break;
                         }
                     }
                 }
@@ -209,14 +209,11 @@ public class IndividualMenuActivity extends AppCompatActivity {
             }
 
 
-//            adapter = new ListViewAdapter(this, list);
-//            //adapter.updateList(list);
-//            adapter.notifyDataSetChanged();
-//            listView.setAdapter(adapter);
-
-            adapter=new ListViewAdapter(this, tempList);
-            listView = (ListView) findViewById(R.id.spendingList);
+            adapter = new ListViewAdapter(this, list);
+            //adapter.updateList(list);
+            adapter.notifyDataSetChanged();
             listView.setAdapter(adapter);
+
 
 
             listView.setOnItemClickListener(new AdapterView.OnItemClickListener()

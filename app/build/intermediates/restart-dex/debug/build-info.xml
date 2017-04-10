@@ -6,22 +6,22 @@
     density="420dpi"
     format="10"
     plugin-version="2.3.0"
-    timestamp="1491796534997"
+    timestamp="1491796919351"
     token="-3415317173516739184"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="183" />
+        duration="202" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="16" />
+        duration="10" />
     <task
         name="verifier"
-        duration="4" />
+        duration="2" />
 
     <artifact
         location="/Users/machengzhang/Desktop/651/CaptainJava/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
@@ -70,7 +70,7 @@
     </build>
     <build
         build-mode="COLD"
-        timestamp="1491796534997"
+        timestamp="1491796919351"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="/Users/machengzhang/Desktop/651/CaptainJava/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
