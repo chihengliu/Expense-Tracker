@@ -36,7 +36,7 @@ public class ManageMember extends AppCompatActivity {
         listView.setTextFilterEnabled(true);
         listView.setAdapter(adapter);
         if (members.size()!=0) {
-            for (int i=1; i<allmembers.size();i++){
+            for (int i=0; i<allmembers.size();i++){
                 if (members.contains(allmembers.get(i))){
                     listView.setItemChecked(i,true);
                 }

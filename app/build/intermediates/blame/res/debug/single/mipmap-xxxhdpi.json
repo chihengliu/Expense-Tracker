@@ -1,5 +1,9 @@
 [
     {
+        "merged": "/Users/yueweiyang/ECE651/CaptainJava/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi/ic_launcher.png",
+        "source": "/Users/yueweiyang/ECE651/CaptainJava/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
         "merged": "/Users/machengzhang/Desktop/651/CaptainJava/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi/ic_launcher.png",
         "source": "/Users/machengzhang/Desktop/651/CaptainJava/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
     }

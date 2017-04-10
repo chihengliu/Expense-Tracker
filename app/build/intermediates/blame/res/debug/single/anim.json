@@ -4,40 +4,24 @@
         "source": "/Users/machengzhang/.android/build-cache/f8f345778ccb60a2ca44e34d6506f0be65b26d68/output/res/anim/design_snackbar_out.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/651/CaptainJava/app/build/intermediates/res/merged/debug/anim/design_fab_in.xml",
-        "source": "/Users/machengzhang/.android/build-cache/f8f345778ccb60a2ca44e34d6506f0be65b26d68/output/res/anim/design_fab_in.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/651/CaptainJava/app/build/intermediates/res/merged/debug/anim/design_fab_out.xml",
-        "source": "/Users/machengzhang/.android/build-cache/f8f345778ccb60a2ca44e34d6506f0be65b26d68/output/res/anim/design_fab_out.xml"
-    },
-    {
         "merged": "/Users/machengzhang/Desktop/651/CaptainJava/app/build/intermediates/res/merged/debug/anim/abc_fade_in.xml",
         "source": "/Users/machengzhang/.android/build-cache/24e700bbef4eb71076cb51f8e402319e6a057dc0/output/res/anim/abc_fade_in.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/651/CaptainJava/app/build/intermediates/res/merged/debug/anim/abc_popup_enter.xml",
-        "source": "/Users/machengzhang/.android/build-cache/24e700bbef4eb71076cb51f8e402319e6a057dc0/output/res/anim/abc_popup_enter.xml"
+        "merged": "/Users/yueweiyang/ECE651/CaptainJava/app/build/intermediates/res/merged/debug/anim/abc_slide_in_bottom.xml",
+        "source": "/Users/yueweiyang/.android/build-cache/378577ae141831449347d365cffbe77103efdac1/output/res/anim/abc_slide_in_bottom.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/651/CaptainJava/app/build/intermediates/res/merged/debug/anim/abc_slide_in_bottom.xml",
-        "source": "/Users/machengzhang/.android/build-cache/24e700bbef4eb71076cb51f8e402319e6a057dc0/output/res/anim/abc_slide_in_bottom.xml"
+        "merged": "/Users/yueweiyang/ECE651/CaptainJava/app/build/intermediates/res/merged/debug/anim/abc_popup_exit.xml",
+        "source": "/Users/yueweiyang/.android/build-cache/378577ae141831449347d365cffbe77103efdac1/output/res/anim/abc_popup_exit.xml"
     },
     {
         "merged": "/Users/machengzhang/Desktop/651/CaptainJava/app/build/intermediates/res/merged/debug/anim/abc_fade_out.xml",
         "source": "/Users/machengzhang/.android/build-cache/24e700bbef4eb71076cb51f8e402319e6a057dc0/output/res/anim/abc_fade_out.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/651/CaptainJava/app/build/intermediates/res/merged/debug/anim/design_snackbar_in.xml",
-        "source": "/Users/machengzhang/.android/build-cache/f8f345778ccb60a2ca44e34d6506f0be65b26d68/output/res/anim/design_snackbar_in.xml"
-    },
-    {
         "merged": "/Users/machengzhang/Desktop/651/CaptainJava/app/build/intermediates/res/merged/debug/anim/abc_slide_out_top.xml",
         "source": "/Users/machengzhang/.android/build-cache/24e700bbef4eb71076cb51f8e402319e6a057dc0/output/res/anim/abc_slide_out_top.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/651/CaptainJava/app/build/intermediates/res/merged/debug/anim/abc_slide_in_top.xml",
-        "source": "/Users/machengzhang/.android/build-cache/24e700bbef4eb71076cb51f8e402319e6a057dc0/output/res/anim/abc_slide_in_top.xml"
     },
     {
         "merged": "/Users/machengzhang/Desktop/651/CaptainJava/app/build/intermediates/res/merged/debug/anim/abc_slide_out_bottom.xml",
@@ -48,11 +32,83 @@
         "source": "/Users/machengzhang/.android/build-cache/24e700bbef4eb71076cb51f8e402319e6a057dc0/output/res/anim/abc_grow_fade_in_from_bottom.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/651/CaptainJava/app/build/intermediates/res/merged/debug/anim/abc_popup_exit.xml",
-        "source": "/Users/machengzhang/.android/build-cache/24e700bbef4eb71076cb51f8e402319e6a057dc0/output/res/anim/abc_popup_exit.xml"
-    },
-    {
         "merged": "/Users/machengzhang/Desktop/651/CaptainJava/app/build/intermediates/res/merged/debug/anim/abc_shrink_fade_out_from_bottom.xml",
         "source": "/Users/machengzhang/.android/build-cache/24e700bbef4eb71076cb51f8e402319e6a057dc0/output/res/anim/abc_shrink_fade_out_from_bottom.xml"
+    },
+    {
+        "merged": "/Users/yueweiyang/ECE651/CaptainJava/app/build/intermediates/res/merged/debug/anim/design_snackbar_out.xml",
+        "source": "/Users/yueweiyang/.android/build-cache/0fbc56aeec0dd2fe80c3181662a567a216688e21/output/res/anim/design_snackbar_out.xml"
+    },
+    {
+        "merged": "/Users/yueweiyang/ECE651/CaptainJava/app/build/intermediates/res/merged/debug/anim/design_fab_in.xml",
+        "source": "/Users/yueweiyang/.android/build-cache/0fbc56aeec0dd2fe80c3181662a567a216688e21/output/res/anim/design_fab_in.xml"
+    },
+    {
+        "merged": "/Users/yueweiyang/ECE651/CaptainJava/app/build/intermediates/res/merged/debug/anim/abc_grow_fade_in_from_bottom.xml",
+        "source": "/Users/yueweiyang/.android/build-cache/378577ae141831449347d365cffbe77103efdac1/output/res/anim/abc_grow_fade_in_from_bottom.xml"
+    },
+    {
+        "merged": "/Users/machengzhang/Desktop/651/CaptainJava/app/build/intermediates/res/merged/debug/anim/design_fab_in.xml",
+        "source": "/Users/machengzhang/.android/build-cache/f8f345778ccb60a2ca44e34d6506f0be65b26d68/output/res/anim/design_fab_in.xml"
+    },
+    {
+        "merged": "/Users/machengzhang/Desktop/651/CaptainJava/app/build/intermediates/res/merged/debug/anim/design_fab_out.xml",
+        "source": "/Users/machengzhang/.android/build-cache/f8f345778ccb60a2ca44e34d6506f0be65b26d68/output/res/anim/design_fab_out.xml"
+    },
+    {
+        "merged": "/Users/machengzhang/Desktop/651/CaptainJava/app/build/intermediates/res/merged/debug/anim/abc_popup_enter.xml",
+        "source": "/Users/machengzhang/.android/build-cache/24e700bbef4eb71076cb51f8e402319e6a057dc0/output/res/anim/abc_popup_enter.xml"
+    },
+    {
+        "merged": "/Users/yueweiyang/ECE651/CaptainJava/app/build/intermediates/res/merged/debug/anim/design_snackbar_in.xml",
+        "source": "/Users/yueweiyang/.android/build-cache/0fbc56aeec0dd2fe80c3181662a567a216688e21/output/res/anim/design_snackbar_in.xml"
+    },
+    {
+        "merged": "/Users/yueweiyang/ECE651/CaptainJava/app/build/intermediates/res/merged/debug/anim/abc_slide_out_top.xml",
+        "source": "/Users/yueweiyang/.android/build-cache/378577ae141831449347d365cffbe77103efdac1/output/res/anim/abc_slide_out_top.xml"
+    },
+    {
+        "merged": "/Users/machengzhang/Desktop/651/CaptainJava/app/build/intermediates/res/merged/debug/anim/abc_slide_in_bottom.xml",
+        "source": "/Users/machengzhang/.android/build-cache/24e700bbef4eb71076cb51f8e402319e6a057dc0/output/res/anim/abc_slide_in_bottom.xml"
+    },
+    {
+        "merged": "/Users/machengzhang/Desktop/651/CaptainJava/app/build/intermediates/res/merged/debug/anim/design_snackbar_in.xml",
+        "source": "/Users/machengzhang/.android/build-cache/f8f345778ccb60a2ca44e34d6506f0be65b26d68/output/res/anim/design_snackbar_in.xml"
+    },
+    {
+        "merged": "/Users/machengzhang/Desktop/651/CaptainJava/app/build/intermediates/res/merged/debug/anim/abc_slide_in_top.xml",
+        "source": "/Users/machengzhang/.android/build-cache/24e700bbef4eb71076cb51f8e402319e6a057dc0/output/res/anim/abc_slide_in_top.xml"
+    },
+    {
+        "merged": "/Users/yueweiyang/ECE651/CaptainJava/app/build/intermediates/res/merged/debug/anim/abc_fade_out.xml",
+        "source": "/Users/yueweiyang/.android/build-cache/378577ae141831449347d365cffbe77103efdac1/output/res/anim/abc_fade_out.xml"
+    },
+    {
+        "merged": "/Users/yueweiyang/ECE651/CaptainJava/app/build/intermediates/res/merged/debug/anim/abc_slide_in_top.xml",
+        "source": "/Users/yueweiyang/.android/build-cache/378577ae141831449347d365cffbe77103efdac1/output/res/anim/abc_slide_in_top.xml"
+    },
+    {
+        "merged": "/Users/yueweiyang/ECE651/CaptainJava/app/build/intermediates/res/merged/debug/anim/abc_popup_enter.xml",
+        "source": "/Users/yueweiyang/.android/build-cache/378577ae141831449347d365cffbe77103efdac1/output/res/anim/abc_popup_enter.xml"
+    },
+    {
+        "merged": "/Users/yueweiyang/ECE651/CaptainJava/app/build/intermediates/res/merged/debug/anim/abc_slide_out_bottom.xml",
+        "source": "/Users/yueweiyang/.android/build-cache/378577ae141831449347d365cffbe77103efdac1/output/res/anim/abc_slide_out_bottom.xml"
+    },
+    {
+        "merged": "/Users/yueweiyang/ECE651/CaptainJava/app/build/intermediates/res/merged/debug/anim/design_fab_out.xml",
+        "source": "/Users/yueweiyang/.android/build-cache/0fbc56aeec0dd2fe80c3181662a567a216688e21/output/res/anim/design_fab_out.xml"
+    },
+    {
+        "merged": "/Users/yueweiyang/ECE651/CaptainJava/app/build/intermediates/res/merged/debug/anim/abc_fade_in.xml",
+        "source": "/Users/yueweiyang/.android/build-cache/378577ae141831449347d365cffbe77103efdac1/output/res/anim/abc_fade_in.xml"
+    },
+    {
+        "merged": "/Users/yueweiyang/ECE651/CaptainJava/app/build/intermediates/res/merged/debug/anim/abc_shrink_fade_out_from_bottom.xml",
+        "source": "/Users/yueweiyang/.android/build-cache/378577ae141831449347d365cffbe77103efdac1/output/res/anim/abc_shrink_fade_out_from_bottom.xml"
+    },
+    {
+        "merged": "/Users/machengzhang/Desktop/651/CaptainJava/app/build/intermediates/res/merged/debug/anim/abc_popup_exit.xml",
+        "source": "/Users/machengzhang/.android/build-cache/24e700bbef4eb71076cb51f8e402319e6a057dc0/output/res/anim/abc_popup_exit.xml"
     }
 ]
