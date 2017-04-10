@@ -1,13 +1,5 @@
 [
     {
-        "merged": "/Users/machengzhang/Desktop/651/CaptainJava/app/build/intermediates/res/merged/debug/layout-v21/notification_template_custom_big.xml",
-        "source": "/Users/machengzhang/.android/build-cache/24e700bbef4eb71076cb51f8e402319e6a057dc0/output/res/layout-v21/notification_template_custom_big.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/651/CaptainJava/app/build/intermediates/res/merged/debug/layout-v21/notification_template_icon_group.xml",
-        "source": "/Users/machengzhang/.android/build-cache/24e700bbef4eb71076cb51f8e402319e6a057dc0/output/res/layout-v21/notification_template_icon_group.xml"
-    },
-    {
         "merged": "/Users/yueweiyang/ECE651/CaptainJava/app/build/intermediates/res/merged/debug/layout-v21/notification_template_icon_group.xml",
         "source": "/Users/yueweiyang/.android/build-cache/378577ae141831449347d365cffbe77103efdac1/output/res/layout-v21/notification_template_icon_group.xml"
     },
@@ -18,14 +10,6 @@
     {
         "merged": "/Users/yueweiyang/ECE651/CaptainJava/app/build/intermediates/res/merged/debug/layout-v21/notification_action.xml",
         "source": "/Users/yueweiyang/.android/build-cache/378577ae141831449347d365cffbe77103efdac1/output/res/layout-v21/notification_action.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/651/CaptainJava/app/build/intermediates/res/merged/debug/layout-v21/notification_action.xml",
-        "source": "/Users/machengzhang/.android/build-cache/24e700bbef4eb71076cb51f8e402319e6a057dc0/output/res/layout-v21/notification_action.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/651/CaptainJava/app/build/intermediates/res/merged/debug/layout-v21/notification_action_tombstone.xml",
-        "source": "/Users/machengzhang/.android/build-cache/24e700bbef4eb71076cb51f8e402319e6a057dc0/output/res/layout-v21/notification_action_tombstone.xml"
     },
     {
         "merged": "/Users/yueweiyang/ECE651/CaptainJava/app/build/intermediates/res/merged/debug/layout-v21/notification_template_custom_big.xml",
