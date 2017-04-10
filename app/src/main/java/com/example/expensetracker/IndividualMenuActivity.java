@@ -29,6 +29,8 @@ public class IndividualMenuActivity extends AppCompatActivity {
     ListView listView;
 
     int weekFlag = 0;
+    int dayFlag = 0;
+    int monthFlag = 0;
     private ArrayList<Spending> tempList = new ArrayList<Spending>();
 
 
@@ -82,6 +84,7 @@ public class IndividualMenuActivity extends AppCompatActivity {
 
     public void weeklySpending(View view) {
         if (weekFlag == 0){
+            tempList.removeAll(tempList);
             Date presentDate = new Date();
             int noOfDays = -7; //i.e two weeks
             Calendar calendar = Calendar.getInstance();
@@ -97,6 +100,8 @@ public class IndividualMenuActivity extends AppCompatActivity {
             tempList.add(list.get(list.size()-1));
 
             weekFlag = 1;
+            monthFlag = 0;
+            dayFlag = 0;
 
             adapter=new ListViewAdapter(this, tempList);
             listView = (ListView) findViewById(R.id.spendingList);
@@ -151,6 +156,150 @@ public class IndividualMenuActivity extends AppCompatActivity {
 
     }
 
+    public void dailySpending(View view) {
+        if (dayFlag == 0){
+            tempList.removeAll(tempList);
+            Date presentDate = new Date();
+            int noOfDays = -1;
+            Calendar calendar = Calendar.getInstance();
+            calendar.setTime(presentDate);
+            calendar.add(Calendar.DAY_OF_YEAR, noOfDays);
+            Date previousDate = calendar.getTime();
+
+            for (int i=0; i<list.size(); i++ ){
+                if (presentDate.after(list.get(i).getDate()) && previousDate.before(list.get(i).getDate())){
+                    tempList.add(list.get(i));
+                }
+            }
+            tempList.add(list.get(list.size()-1));
+
+            dayFlag = 1;
+            monthFlag = 0;
+            weekFlag = 0;
+
+            adapter=new ListViewAdapter(this, tempList);
+            listView = (ListView) findViewById(R.id.spendingList);
+            listView.setAdapter(adapter);
+            //adapter.notifyDataSetChanged();
+
+            listView.setOnItemClickListener(new AdapterView.OnItemClickListener()
+            {
+                @Override
+                public void onItemClick(AdapterView<?> parent, final View view, int position, long id)
+                {
+                    int pos=position+1;
+                    if (pos!=list.size()) {
+                        Toast.makeText(IndividualMenuActivity.this, Integer.toString(pos) + " Clicked", Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(IndividualMenuActivity.this, AddIndividual.class);
+                        intent.putExtra("detail", tempList.get(position));
+                        intent.putExtra("position", tempList.get(position).getId());
+                        intent.putExtra("name", tempList.get(position).getName());
+                        startActivityForResult(intent, REQEST_CODE_ADD_IND);
+                    }
+                }
+
+            });
+        }
+        else{
+            tempList.removeAll(tempList);
+            dayFlag = 0;
+            adapter=new ListViewAdapter(this, list);
+            listView = (ListView) findViewById(R.id.spendingList);
+            listView.setAdapter(adapter);
+            //adapter.notifyDataSetChanged();
+
+            listView.setOnItemClickListener(new AdapterView.OnItemClickListener()
+            {
+                @Override
+                public void onItemClick(AdapterView<?> parent, final View view, int position, long id)
+                {
+                    int pos=position+1;
+                    if (pos!=list.size()) {
+                        Toast.makeText(IndividualMenuActivity.this, Integer.toString(pos) + " Clicked", Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(IndividualMenuActivity.this, AddIndividual.class);
+                        intent.putExtra("detail", list.get(position));
+                        intent.putExtra("position", list.get(position).getId());
+                        intent.putExtra("name", list.get(position).getName());
+                        startActivityForResult(intent, REQEST_CODE_ADD_IND);
+                    }
+                }
+
+            });
+        }
+    }
+
+    public void monthlySpending(View view) {
+        if (monthFlag == 0){
+            tempList.removeAll(tempList);
+            Date presentDate = new Date();
+            int noOfDays = -31;
+            Calendar calendar = Calendar.getInstance();
+            calendar.setTime(presentDate);
+            calendar.add(Calendar.DAY_OF_YEAR, noOfDays);
+            Date previousDate = calendar.getTime();
+
+            for (int i=0; i<list.size(); i++ ){
+                if (presentDate.after(list.get(i).getDate()) && previousDate.before(list.get(i).getDate())){
+                    tempList.add(list.get(i));
+                }
+            }
+            tempList.add(list.get(list.size()-1));
+
+            monthFlag = 1;
+            dayFlag = 0;
+            weekFlag = 0;
+
+            adapter=new ListViewAdapter(this, tempList);
+            listView = (ListView) findViewById(R.id.spendingList);
+            listView.setAdapter(adapter);
+            //adapter.notifyDataSetChanged();
+
+            listView.setOnItemClickListener(new AdapterView.OnItemClickListener()
+            {
+                @Override
+                public void onItemClick(AdapterView<?> parent, final View view, int position, long id)
+                {
+                    int pos=position+1;
+                    if (pos!=list.size()) {
+                        Toast.makeText(IndividualMenuActivity.this, Integer.toString(pos) + " Clicked", Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(IndividualMenuActivity.this, AddIndividual.class);
+                        intent.putExtra("detail", tempList.get(position));
+                        intent.putExtra("position", tempList.get(position).getId());
+                        intent.putExtra("name", tempList.get(position).getName());
+                        startActivityForResult(intent, REQEST_CODE_ADD_IND);
+                    }
+                }
+
+            });
+        }
+        else{
+            tempList.removeAll(tempList);
+            monthFlag = 0;
+            adapter=new ListViewAdapter(this, list);
+            listView = (ListView) findViewById(R.id.spendingList);
+            listView.setAdapter(adapter);
+            //adapter.notifyDataSetChanged();
+
+            listView.setOnItemClickListener(new AdapterView.OnItemClickListener()
+            {
+                @Override
+                public void onItemClick(AdapterView<?> parent, final View view, int position, long id)
+                {
+                    int pos=position+1;
+                    if (pos!=list.size()) {
+                        Toast.makeText(IndividualMenuActivity.this, Integer.toString(pos) + " Clicked", Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(IndividualMenuActivity.this, AddIndividual.class);
+                        intent.putExtra("detail", list.get(position));
+                        intent.putExtra("position", list.get(position).getId());
+                        intent.putExtra("name", list.get(position).getName());
+                        startActivityForResult(intent, REQEST_CODE_ADD_IND);
+                    }
+                }
+
+            });
+        }
+    }
+
     public void addIndividualEvent(View view){
         Intent addIndividualWindow = new Intent(IndividualMenuActivity.this,AddIndividual.class);
         int id = 0;
@@ -187,6 +336,8 @@ public class IndividualMenuActivity extends AppCompatActivity {
                 }
 
                 weekFlag = 0;
+                monthFlag = 0;
+                dayFlag = 0;
 
                 Collections.sort(list, new Comparator<Spending>() {
                     @Override

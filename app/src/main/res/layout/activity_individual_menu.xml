@@ -13,16 +13,17 @@
     android:background="@color/orange">
 
     <Button
-        android:text="day"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:id="@+id/day_individual"
         style="@style/Widget.AppCompat.Button.Colored"
-        android:background="@android:color/holo_orange_dark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/week_individual"
+        android:layout_alignTop="@+id/week_individual"
         android:layout_toLeftOf="@+id/week_individual"
         android:layout_toStartOf="@+id/week_individual"
-        android:layout_alignTop="@+id/week_individual" />
+        android:background="@android:color/holo_orange_dark"
+        android:onClick="dailySpending"
+        android:text="day" />
 
     <ImageButton
         android:layout_width="wrap_content"
@@ -48,15 +49,16 @@
         android:text="week" />
 
     <Button
-        android:text="month"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:id="@+id/month_individual"
         style="@style/Widget.AppCompat.Button.Colored"
-        android:background="@android:color/holo_orange_dark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/back_to_main"
+        android:layout_toEndOf="@+id/week_individual"
         android:layout_toRightOf="@+id/week_individual"
-        android:layout_toEndOf="@+id/week_individual" />
+        android:background="@android:color/holo_orange_dark"
+        android:onClick="monthlySpending"
+        android:text="month" />
 
     <Button
         android:text="list"
