@@ -43,7 +43,6 @@
         android:layout_below="@+id/Reg_Passwd"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="18dp"
-        android:background="@android:color/holo_blue_light"
         android:onClick="register"
         android:text="Register" />
 

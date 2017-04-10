@@ -36,15 +36,16 @@
         android:layout_alignParentEnd="true" />
 
     <Button
-        android:text="week"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:id="@+id/week_individual"
         style="@style/Widget.AppCompat.Button.Colored"
-        android:background="@android:color/holo_orange_dark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/month_individual"
         android:layout_alignBottom="@+id/month_individual"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/holo_orange_dark"
+        android:onClick="weeklySpending"
+        android:text="week" />
 
     <Button
         android:text="month"

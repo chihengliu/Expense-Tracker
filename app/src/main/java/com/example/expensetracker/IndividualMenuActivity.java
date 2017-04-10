@@ -19,12 +19,18 @@ import java.text.ParseException;
 import classObject.Spending;
 import java.util.Comparator;
 
+import java.util.Calendar;
+
 public class IndividualMenuActivity extends AppCompatActivity {
     //private ArrayList<HashMap<String, String>> list;
     private ArrayList<Spending> list;
     private static final int REQEST_CODE_ADD_IND = 100;
     ListViewAdapter adapter;
     ListView listView;
+
+    int weekFlag = 0;
+    private ArrayList<Spending> tempList = new ArrayList<Spending>();
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,7 +65,7 @@ public class IndividualMenuActivity extends AppCompatActivity {
                     Toast.makeText(IndividualMenuActivity.this, Integer.toString(pos) + " Clicked", Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(IndividualMenuActivity.this, AddIndividual.class);
                     intent.putExtra("detail", list.get(position));
-                    intent.putExtra("position", position);
+                    intent.putExtra("position", list.get(position).getId());
                     intent.putExtra("name", list.get(position).getName());
                     startActivityForResult(intent, REQEST_CODE_ADD_IND);
                 }
@@ -72,6 +78,77 @@ public class IndividualMenuActivity extends AppCompatActivity {
     public void mainMenu(View view) {
         finish();
         overridePendingTransition(R.animator.zoom_enter,R.animator.zoom_exit);
+    }
+
+    public void weeklySpending(View view) {
+        if (weekFlag == 0){
+            Date presentDate = new Date();
+            int noOfDays = -7; //i.e two weeks
+            Calendar calendar = Calendar.getInstance();
+            calendar.setTime(presentDate);
+            calendar.add(Calendar.DAY_OF_YEAR, noOfDays);
+            Date previousDate = calendar.getTime();
+
+            for (int i=0; i<list.size(); i++ ){
+                if (presentDate.after(list.get(i).getDate()) && previousDate.before(list.get(i).getDate())){
+                    tempList.add(list.get(i));
+                }
+            }
+            tempList.add(list.get(list.size()-1));
+
+            weekFlag = 1;
+
+            adapter=new ListViewAdapter(this, tempList);
+            listView = (ListView) findViewById(R.id.spendingList);
+            listView.setAdapter(adapter);
+            //adapter.notifyDataSetChanged();
+
+            listView.setOnItemClickListener(new AdapterView.OnItemClickListener()
+            {
+                @Override
+                public void onItemClick(AdapterView<?> parent, final View view, int position, long id)
+                {
+                    int pos=position+1;
+                    if (pos!=list.size()) {
+                        Toast.makeText(IndividualMenuActivity.this, Integer.toString(pos) + " Clicked", Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(IndividualMenuActivity.this, AddIndividual.class);
+                        intent.putExtra("detail", tempList.get(position));
+                        intent.putExtra("position", tempList.get(position).getId());
+                        intent.putExtra("name", tempList.get(position).getName());
+                        startActivityForResult(intent, REQEST_CODE_ADD_IND);
+                    }
+                }
+
+            });
+        }
+        else{
+            tempList.removeAll(tempList);
+            weekFlag = 0;
+            adapter=new ListViewAdapter(this, list);
+            listView = (ListView) findViewById(R.id.spendingList);
+            listView.setAdapter(adapter);
+            //adapter.notifyDataSetChanged();
+
+            listView.setOnItemClickListener(new AdapterView.OnItemClickListener()
+            {
+                @Override
+                public void onItemClick(AdapterView<?> parent, final View view, int position, long id)
+                {
+                    int pos=position+1;
+                    if (pos!=list.size()) {
+                        Toast.makeText(IndividualMenuActivity.this, Integer.toString(pos) + " Clicked", Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(IndividualMenuActivity.this, AddIndividual.class);
+                        intent.putExtra("detail", list.get(position));
+                        intent.putExtra("position", list.get(position).getId());
+                        intent.putExtra("name", list.get(position).getName());
+                        startActivityForResult(intent, REQEST_CODE_ADD_IND);
+                    }
+                }
+
+            });
+        }
+
+
     }
 
     public void addIndividualEvent(View view){
@@ -101,8 +178,15 @@ public class IndividualMenuActivity extends AppCompatActivity {
                 if (position == -1) {
                     list.add(0, info);
                 } else {
-                    list.set(position, info);
+                    for (int i =0 ; i<list.size(); i++){
+                        if(position == list.get(i).getId()){
+                            list.set(i, info);
+                            return;
+                        }
+                    }
                 }
+
+                weekFlag = 0;
 
                 Collections.sort(list, new Comparator<Spending>() {
                     @Override
@@ -116,13 +200,22 @@ public class IndividualMenuActivity extends AppCompatActivity {
             else if (resultCode == 2)
             {
                 int position = (int) data.getSerializableExtra("position");
-                list.remove(position);
-
+                for (int i =0 ; i<list.size(); i++){
+                    if(position == list.get(i).getId()){
+                        list.remove(position);
+                        return;
+                    }
+                }
             }
 
-            adapter = new ListViewAdapter(this, list);
-            //adapter.updateList(list);
-            adapter.notifyDataSetChanged();
+
+//            adapter = new ListViewAdapter(this, list);
+//            //adapter.updateList(list);
+//            adapter.notifyDataSetChanged();
+//            listView.setAdapter(adapter);
+
+            adapter=new ListViewAdapter(this, tempList);
+            listView = (ListView) findViewById(R.id.spendingList);
             listView.setAdapter(adapter);
 
 
@@ -135,7 +228,7 @@ public class IndividualMenuActivity extends AppCompatActivity {
                     if (pos!=list.size()) {
                         Intent intent = new Intent(IndividualMenuActivity.this, AddIndividual.class);
                         intent.putExtra("detail", list.get(position));
-                        intent.putExtra("position", position);
+                        intent.putExtra("position", list.get(position).getId());
                         intent.putExtra("name", list.get(position).getName());
                         startActivityForResult(intent, REQEST_CODE_ADD_IND);
                     }
