@@ -9,9 +9,12 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.concurrent.ExecutionException;
 
 import classObject.Event;
@@ -116,6 +119,7 @@ public class EventPage extends AppCompatActivity {
         startActivityForResult(editevent,REQEST_CODE_ADD_IND);
     }
 
+
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (requestCode == REQEST_CODE_ADD_IND) {
@@ -185,4 +189,24 @@ public class EventPage extends AppCompatActivity {
         super.onActivityResult(requestCode, resultCode, data);
 
     }
+    public void memberPie(View View){
+        //calculate spending for each member to a map<name,amount>
+
+        HashMap<String, Double> map = new HashMap<>();
+        for(int i = 0; i<list.size()-1;i++) {
+            String key = list.get(i).getName();
+            if (map.containsKey(key)) {
+                map.put(key, map.get(key) + list.get(i).getAmount());
+            } else {
+                map.put(key, list.get(i).getAmount());
+            }
+        }
+
+        Intent intent = new Intent(this,PieActivity.class);
+        intent.putExtra("map",  map);
+        startActivity(intent);
+
+    }
+
+
 }
