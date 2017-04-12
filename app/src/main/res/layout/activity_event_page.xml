@@ -69,7 +69,7 @@
         android:layout_alignParentBottom="true"
         android:layout_alignStart="@+id/day_event"
         android:background="@android:color/holo_blue_dark"
-        android:text="@string/list" />
+        android:text="TIME" />
 
     <ImageButton
         android:id="@+id/back_group"
@@ -104,7 +104,8 @@
         android:layout_toEndOf="@+id/week_event"
         android:layout_toRightOf="@+id/week_event"
         android:background="@android:color/holo_blue_dark"
-        android:text="@string/pie" />
+        android:onClick="categoryPie"
+        android:text="category" />
 
     <TextView
         android:id="@+id/event_label"

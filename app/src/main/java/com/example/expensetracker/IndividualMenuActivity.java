@@ -20,6 +20,7 @@ import classObject.Spending;
 import java.util.Comparator;
 
 import java.util.Calendar;
+import java.util.HashMap;
 
 public class IndividualMenuActivity extends AppCompatActivity {
     //private ArrayList<HashMap<String, String>> list;
@@ -387,5 +388,26 @@ public class IndividualMenuActivity extends AppCompatActivity {
 
         }
         super.onActivityResult(requestCode, resultCode, data);
+    }
+    public void categoryPie(View view){
+        //calculate spending for each category to a map<category,amount>
+        HashMap<String, Double> map = new HashMap<>();
+        for(int i = 0; i<list.size()-1;i++) {
+            String key = list.get(i).getCategory();
+            if (map.containsKey(key)) {
+                map.put(key, map.get(key) + list.get(i).getAmount());
+            } else {
+                map.put(key, list.get(i).getAmount());
+            }
+        }
+        Intent intent = new Intent(this,PieActivity.class);
+        intent.putExtra("type", "Category");
+        intent.putExtra("map",  map);
+        startActivity(intent);
+
+    }
+
+    public void timeBar(View view){
+        //
     }
 }
