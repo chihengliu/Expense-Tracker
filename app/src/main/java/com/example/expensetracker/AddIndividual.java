@@ -72,51 +72,6 @@ public class AddIndividual extends AppCompatActivity {
     SimpleDateFormat ft = new SimpleDateFormat ("yyyy.MM.dd");
 
 
-    /*======================Time Picker View==============================*/
-
-
-    protected Dialog onCreateDialog(int id) {
-
-        // Get the calander
-        Calendar c = Calendar.getInstance();
-
-        // From calander get the year, month, day, hour, minute
-        int year = c.get(Calendar.YEAR);
-        int month = c.get(Calendar.MONTH);
-        int day = c.get(Calendar.DAY_OF_MONTH);
-        //int hour = c.get(Calendar.HOUR_OF_DAY);
-        //int minute = c.get(Calendar.MINUTE);
-
-//        System.out.println(year);
-//        System.out.println(month);
-//        System.out.println(day);
-//        System.out.println(hour);
-
-
-        // Open the datepicker dialog
-        return new DatePickerDialog(AddIndividual.this, date_listener, year,
-                month, day);
-
-    }
-
-
-
-    // Date picker dialog
-    DatePickerDialog.OnDateSetListener date_listener = new DatePickerDialog.OnDateSetListener() {
-
-        @Override
-        public void onDateSet(DatePicker view, int year, int month, int day) {
-            // store the data in one string and set it to text
-            setDate = new GregorianCalendar(year, month, day).getTime();
-//            set_date.setText(date1);
-            s_date = ft.format(setDate);
-            datetext.setText(s_date);
-        }
-    };
-
-
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -160,26 +115,10 @@ public class AddIndividual extends AppCompatActivity {
         spinner_cat.setAdapter(adapter_cat);
 
         //date picker
-
-        //timetext = (TextView) findViewById(R.id.timeText);
-
-        //Time curtime = new Time();
-
-        //System.out.println(curdate);
-        //System.out.println(curtime);
-
-        //Date curtime = Calendar.getInstance().getTime();
-        //System.out.println(curtime);
-
-
-
-
         date.setOnClickListener(new OnClickListener() {
 
             @Override
             public void onClick(View arg0) {
-
-                // Show Date dialog
                 showDialog(0);
 
             }
@@ -261,4 +200,29 @@ public class AddIndividual extends AppCompatActivity {
         finish();
 
     }
+
+
+    protected Dialog onCreateDialog(int id) {
+        Calendar c = Calendar.getInstance();
+
+        int year = c.get(Calendar.YEAR);
+        int month = c.get(Calendar.MONTH);
+        int day = c.get(Calendar.DAY_OF_MONTH);
+
+        return new DatePickerDialog(AddIndividual.this, date_listener, year,
+                month, day);
+
+    }
+
+    DatePickerDialog.OnDateSetListener date_listener = new DatePickerDialog.OnDateSetListener() {
+
+        @Override
+        public void onDateSet(DatePicker view, int year, int month, int day) {
+            setDate = new GregorianCalendar(year, month, day).getTime();
+            s_date = ft.format(setDate);
+            datetext.setText(s_date);
+        }
+    };
+
+
 }

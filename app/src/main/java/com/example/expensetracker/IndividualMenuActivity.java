@@ -366,7 +366,6 @@ public class IndividualMenuActivity extends AppCompatActivity {
             listView.setAdapter(adapter);
 
 
-
             listView.setOnItemClickListener(new AdapterView.OnItemClickListener()
             {
                 @Override
