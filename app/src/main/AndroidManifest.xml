@@ -26,7 +26,8 @@
         <activity android:name=".AddEventSpending" />
         <activity android:name=".MainMenu" />
         <activity android:name=".Register" />
-        <activity android:name=".ManageMember"></activity>
+        <activity android:name=".ManageMember" />
+        <activity android:name=".PieActivity"></activity>
     </application>
 
 </manifest>

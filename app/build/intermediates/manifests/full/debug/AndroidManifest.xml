@@ -33,6 +33,7 @@
         <activity android:name="com.example.expensetracker.MainMenu" />
         <activity android:name="com.example.expensetracker.Register" />
         <activity android:name="com.example.expensetracker.ManageMember" />
+        <activity android:name="com.example.expensetracker.PieActivity" />
     </application>
 
 </manifest>

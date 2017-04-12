@@ -92,6 +92,7 @@
         android:layout_toLeftOf="@+id/pie_event"
         android:layout_toStartOf="@+id/pie_event"
         android:background="@android:color/holo_blue_dark"
+        android:onClick="memberPie"
         android:text="Member" />
 
     <Button

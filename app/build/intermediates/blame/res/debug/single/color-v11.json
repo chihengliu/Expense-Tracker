@@ -1,10 +1,10 @@
 [
     {
-        "merged": "/Users/yueweiyang/ECE651/CaptainJava/app/build/intermediates/res/merged/debug/color-v11/abc_background_cache_hint_selector_material_dark.xml",
-        "source": "/Users/yueweiyang/.android/build-cache/378577ae141831449347d365cffbe77103efdac1/output/res/color-v11/abc_background_cache_hint_selector_material_dark.xml"
+        "merged": "C:\\Users\\mudbr\\StudioProjects\\CaptainJava\\app\\build\\intermediates\\res\\merged\\debug\\color-v11\\abc_background_cache_hint_selector_material_light.xml",
+        "source": "C:\\Users\\mudbr\\.android\\build-cache\\1d8da8d45dd217fd035153ddacfe3eb47db5bccb\\output\\res\\color-v11\\abc_background_cache_hint_selector_material_light.xml"
     },
     {
-        "merged": "/Users/yueweiyang/ECE651/CaptainJava/app/build/intermediates/res/merged/debug/color-v11/abc_background_cache_hint_selector_material_light.xml",
-        "source": "/Users/yueweiyang/.android/build-cache/378577ae141831449347d365cffbe77103efdac1/output/res/color-v11/abc_background_cache_hint_selector_material_light.xml"
+        "merged": "C:\\Users\\mudbr\\StudioProjects\\CaptainJava\\app\\build\\intermediates\\res\\merged\\debug\\color-v11\\abc_background_cache_hint_selector_material_dark.xml",
+        "source": "C:\\Users\\mudbr\\.android\\build-cache\\1d8da8d45dd217fd035153ddacfe3eb47db5bccb\\output\\res\\color-v11\\abc_background_cache_hint_selector_material_dark.xml"
     }
 ]
