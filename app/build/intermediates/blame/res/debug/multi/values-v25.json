@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "C:\\Users\\mudbr\\StudioProjects\\CaptainJava\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v25\\values-v25.xml",
+        "outputFile": "C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v25\\values-v25.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,7 @@
                     "endOffset": 121
                 },
                 "from": {
-                    "file": "C:\\Users\\mudbr\\.android\\build-cache\\b4cf5d004202d1bd0daaca95ddf86522bb6e8056\\output\\res\\values-v25\\values-v25.xml",
+                    "file": "C:\\Users\\mudbr\\.android\\build-cache\\1d8da8d45dd217fd035153ddacfe3eb47db5bccb\\output\\res\\values-v25\\values-v25.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
@@ -30,7 +30,7 @@
                     "endOffset": 204
                 },
                 "from": {
-                    "file": "C:\\Users\\mudbr\\.android\\build-cache\\b4cf5d004202d1bd0daaca95ddf86522bb6e8056\\output\\res\\values-v25\\values-v25.xml",
+                    "file": "C:\\Users\\mudbr\\.android\\build-cache\\1d8da8d45dd217fd035153ddacfe3eb47db5bccb\\output\\res\\values-v25\\values-v25.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
@@ -50,7 +50,7 @@
                     "endOffset": 303
                 },
                 "from": {
-                    "file": "C:\\Users\\mudbr\\.android\\build-cache\\b4cf5d004202d1bd0daaca95ddf86522bb6e8056\\output\\res\\values-v25\\values-v25.xml",
+                    "file": "C:\\Users\\mudbr\\.android\\build-cache\\1d8da8d45dd217fd035153ddacfe3eb47db5bccb\\output\\res\\values-v25\\values-v25.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -71,7 +71,7 @@
                     "endOffset": 414
                 },
                 "from": {
-                    "file": "C:\\Users\\mudbr\\.android\\build-cache\\b4cf5d004202d1bd0daaca95ddf86522bb6e8056\\output\\res\\values-v25\\values-v25.xml",
+                    "file": "C:\\Users\\mudbr\\.android\\build-cache\\1d8da8d45dd217fd035153ddacfe3eb47db5bccb\\output\\res\\values-v25\\values-v25.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,

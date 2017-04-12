@@ -1,10 +1,10 @@
 [
     {
-        "merged": "C:\\Users\\mudbr\\StudioProjects\\CaptainJava\\app\\build\\intermediates\\res\\merged\\debug\\anim-v21\\design_bottom_sheet_slide_in.xml",
-        "source": "C:\\Users\\mudbr\\.android\\build-cache\\577816dd90408c9b23d33469118928de597b34bd\\output\\res\\anim-v21\\design_bottom_sheet_slide_in.xml"
+        "merged": "C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\anim-v21\\design_bottom_sheet_slide_out.xml",
+        "source": "C:\\Users\\mudbr\\.android\\build-cache\\be891ca3ac5c8bc94d26f61dd1829a33ba54132d\\output\\res\\anim-v21\\design_bottom_sheet_slide_out.xml"
     },
     {
-        "merged": "C:\\Users\\mudbr\\StudioProjects\\CaptainJava\\app\\build\\intermediates\\res\\merged\\debug\\anim-v21\\design_bottom_sheet_slide_out.xml",
-        "source": "C:\\Users\\mudbr\\.android\\build-cache\\577816dd90408c9b23d33469118928de597b34bd\\output\\res\\anim-v21\\design_bottom_sheet_slide_out.xml"
+        "merged": "C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\anim-v21\\design_bottom_sheet_slide_in.xml",
+        "source": "C:\\Users\\mudbr\\.android\\build-cache\\be891ca3ac5c8bc94d26f61dd1829a33ba54132d\\output\\res\\anim-v21\\design_bottom_sheet_slide_in.xml"
     }
 ]
