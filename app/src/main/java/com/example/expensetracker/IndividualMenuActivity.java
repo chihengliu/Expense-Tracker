@@ -114,7 +114,7 @@ public class IndividualMenuActivity extends AppCompatActivity {
                 public void onItemClick(AdapterView<?> parent, final View view, int position, long id)
                 {
                     int pos=position+1;
-                    if (pos!=list.size()) {
+                    if (pos!=tempList.size()) {
                         Toast.makeText(IndividualMenuActivity.this, Integer.toString(pos) + " Clicked", Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(IndividualMenuActivity.this, AddIndividual.class);
                         intent.putExtra("detail", tempList.get(position));
@@ -140,7 +140,7 @@ public class IndividualMenuActivity extends AppCompatActivity {
                 public void onItemClick(AdapterView<?> parent, final View view, int position, long id)
                 {
                     int pos=position+1;
-                    if (pos!=list.size()) {
+                    if (pos!=tempList.size()) {
                         Toast.makeText(IndividualMenuActivity.this, Integer.toString(pos) + " Clicked", Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(IndividualMenuActivity.this, AddIndividual.class);
                         intent.putExtra("detail", list.get(position));
@@ -188,7 +188,7 @@ public class IndividualMenuActivity extends AppCompatActivity {
                 public void onItemClick(AdapterView<?> parent, final View view, int position, long id)
                 {
                     int pos=position+1;
-                    if (pos!=list.size()) {
+                    if (pos!=tempList.size()) {
                         Toast.makeText(IndividualMenuActivity.this, Integer.toString(pos) + " Clicked", Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(IndividualMenuActivity.this, AddIndividual.class);
                         intent.putExtra("detail", tempList.get(position));
@@ -214,7 +214,7 @@ public class IndividualMenuActivity extends AppCompatActivity {
                 public void onItemClick(AdapterView<?> parent, final View view, int position, long id)
                 {
                     int pos=position+1;
-                    if (pos!=list.size()) {
+                    if (pos!=tempList.size()) {
                         Toast.makeText(IndividualMenuActivity.this, Integer.toString(pos) + " Clicked", Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(IndividualMenuActivity.this, AddIndividual.class);
                         intent.putExtra("detail", list.get(position));
@@ -260,7 +260,7 @@ public class IndividualMenuActivity extends AppCompatActivity {
                 public void onItemClick(AdapterView<?> parent, final View view, int position, long id)
                 {
                     int pos=position+1;
-                    if (pos!=list.size()) {
+                    if (pos!=tempList.size()) {
                         Toast.makeText(IndividualMenuActivity.this, Integer.toString(pos) + " Clicked", Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(IndividualMenuActivity.this, AddIndividual.class);
                         intent.putExtra("detail", tempList.get(position));
@@ -286,7 +286,7 @@ public class IndividualMenuActivity extends AppCompatActivity {
                 public void onItemClick(AdapterView<?> parent, final View view, int position, long id)
                 {
                     int pos=position+1;
-                    if (pos!=list.size()) {
+                    if (pos!=tempList.size()) {
                         Toast.makeText(IndividualMenuActivity.this, Integer.toString(pos) + " Clicked", Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(IndividualMenuActivity.this, AddIndividual.class);
                         intent.putExtra("detail", list.get(position));
@@ -353,8 +353,8 @@ public class IndividualMenuActivity extends AppCompatActivity {
                 int position = (int) data.getSerializableExtra("position");
                 for (int i =0 ; i<list.size(); i++){
                     if(position == list.get(i).getId()){
-                        list.remove(position);
-                        return;
+                        list.remove(i);
+                        break;
                     }
                 }
             }

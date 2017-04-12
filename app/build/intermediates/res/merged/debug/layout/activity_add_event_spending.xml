@@ -135,7 +135,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="15dp"
-        android:background="@android:color/holo_blue_dark"
         android:onClick="backToEvent"
         android:text="@string/cancel"
         tools:ignore="RelativeOverlap"
@@ -151,7 +150,6 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         style="@style/button_style"
-        android:background="@android:color/holo_blue_dark"
         android:onClick="saveEventSpend"
         android:text="@string/save" />
 
@@ -159,10 +157,10 @@
         android:id="@+id/deleteEventSpend"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/save_spending"
         style="@style/button_style"
+        android:layout_alignBottom="@+id/save_spending"
         android:layout_centerHorizontal="true"
-        android:background="@android:color/holo_blue_dark"
+
         android:onClick="deleteSpending"
         android:text="delete"
         android:textColor="@android:color/background_light" />
@@ -172,6 +170,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/save_spending"
+        android:background="@android:color/holo_blue_dark"
         android:layout_alignParentEnd="true"
         android:layout_marginBottom="44dp"
         android:text="Change Date" />

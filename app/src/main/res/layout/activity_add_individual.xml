@@ -110,6 +110,7 @@
         android:layout_above="@+id/save"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
+        android:background="@android:color/holo_orange_dark"
         android:layout_marginBottom="30dp"
         android:gravity="center"
         android:padding="10dp"
@@ -146,7 +147,6 @@
         style="@style/button_style"
         android:layout_alignTop="@+id/save"
         android:layout_centerHorizontal="true"
-        android:background="@android:color/holo_orange_dark"
         android:onClick="deleteCreate"
         android:text="DELETE" />
 

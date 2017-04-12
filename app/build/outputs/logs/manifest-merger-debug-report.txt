@@ -1,122 +1,122 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\mudbr\StudioProjects\CaptainJavaNIHAOMA\app\src\main\AndroidManifest.xml:2:1-33:12
+ADDED from /Users/machengzhang/Desktop/CaptainJava/app/src/main/AndroidManifest.xml:2:1-33:12
 	package
-		ADDED from C:\Users\mudbr\StudioProjects\CaptainJavaNIHAOMA\app\src\main\AndroidManifest.xml:3:5-41
-		INJECTED from C:\Users\mudbr\StudioProjects\CaptainJavaNIHAOMA\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\mudbr\StudioProjects\CaptainJavaNIHAOMA\app\src\main\AndroidManifest.xml
+		ADDED from /Users/machengzhang/Desktop/CaptainJava/app/src/main/AndroidManifest.xml:3:5-41
+		INJECTED from /Users/machengzhang/Desktop/CaptainJava/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/machengzhang/Desktop/CaptainJava/app/src/main/AndroidManifest.xml
 	android:versionName
-		INJECTED from C:\Users\mudbr\StudioProjects\CaptainJavaNIHAOMA\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\mudbr\StudioProjects\CaptainJavaNIHAOMA\app\src\main\AndroidManifest.xml
+		INJECTED from /Users/machengzhang/Desktop/CaptainJava/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/machengzhang/Desktop/CaptainJava/app/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\mudbr\StudioProjects\CaptainJavaNIHAOMA\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from /Users/machengzhang/Desktop/CaptainJava/app/src/main/AndroidManifest.xml:2:11-69
 	android:versionCode
-		INJECTED from C:\Users\mudbr\StudioProjects\CaptainJavaNIHAOMA\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\mudbr\StudioProjects\CaptainJavaNIHAOMA\app\src\main\AndroidManifest.xml
+		INJECTED from /Users/machengzhang/Desktop/CaptainJava/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/machengzhang/Desktop/CaptainJava/app/src/main/AndroidManifest.xml
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\mudbr\StudioProjects\CaptainJavaNIHAOMA\app\src\main\AndroidManifest.xml:5:5-67
+ADDED from /Users/machengzhang/Desktop/CaptainJava/app/src/main/AndroidManifest.xml:5:5-67
 	android:name
-		ADDED from C:\Users\mudbr\StudioProjects\CaptainJavaNIHAOMA\app\src\main\AndroidManifest.xml:5:22-64
+		ADDED from /Users/machengzhang/Desktop/CaptainJava/app/src/main/AndroidManifest.xml:5:22-64
 application
-ADDED from C:\Users\mudbr\StudioProjects\CaptainJavaNIHAOMA\app\src\main\AndroidManifest.xml:7:5-31:19
-MERGED from [com.android.support.constraint:constraint-layout:1.0.0-beta5] C:\Users\mudbr\.android\build-cache\ca3ad59f99e0d15d7d0a7e1de36780c32843bcfd\output\AndroidManifest.xml:9:5-20
-MERGED from [com.android.support:design:25.2.0] C:\Users\mudbr\.android\build-cache\be891ca3ac5c8bc94d26f61dd1829a33ba54132d\output\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:appcompat-v7:25.2.0] C:\Users\mudbr\.android\build-cache\1d8da8d45dd217fd035153ddacfe3eb47db5bccb\output\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:animated-vector-drawable:25.2.0] C:\Users\mudbr\.android\build-cache\9dd2806d525d00154c31d26fe4221fea64dd8f9e\output\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-vector-drawable:25.2.0] C:\Users\mudbr\.android\build-cache\036c414ac0204dfb7caee745fd0a339efe0706ef\output\AndroidManifest.xml:23:5-20
-MERGED from [com.android.support:transition:25.2.0] C:\Users\mudbr\.android\build-cache\9a7478015982201baefc8c222f9b99a40ad2a6ff\output\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:25.2.0] C:\Users\mudbr\.android\build-cache\fa8d20a650decb1db2ae084807c8a89b3e2bcf47\output\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-fragment:25.2.0] C:\Users\mudbr\.android\build-cache\149e5cef86fe7a308238403c87cedb1e2929ed38\output\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-media-compat:25.2.0] C:\Users\mudbr\.android\build-cache\c2d2469c12036f05f04bf1e6364323c9c28ba44f\output\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-ui:25.2.0] C:\Users\mudbr\.android\build-cache\4007fcece357d1cdea44d414606015fd8a6ba0f5\output\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-utils:25.2.0] C:\Users\mudbr\.android\build-cache\172c90f41700dd72f6e4be57698464e3921e46e3\output\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-compat:25.2.0] C:\Users\mudbr\.android\build-cache\232c807e1ce934de775b91d4ee471b4f17cde1fb\output\AndroidManifest.xml:25:5-20
+ADDED from /Users/machengzhang/Desktop/CaptainJava/app/src/main/AndroidManifest.xml:7:5-31:19
+MERGED from [com.android.support.constraint:constraint-layout:1.0.0-beta5] /Users/machengzhang/.android/build-cache/4f89a55a3bb2a0ac5740ea69a885816e05e641ec/output/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:design:25.2.0] /Users/machengzhang/.android/build-cache/f8f345778ccb60a2ca44e34d6506f0be65b26d68/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:appcompat-v7:25.2.0] /Users/machengzhang/.android/build-cache/24e700bbef4eb71076cb51f8e402319e6a057dc0/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.2.0] /Users/machengzhang/.android/build-cache/3559da4c89ad5c2fe9210340b6e0396a0e69996d/output/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-vector-drawable:25.2.0] /Users/machengzhang/.android/build-cache/b645ef03cbb317011119ff0ee4bc5316d81d3e3a/output/AndroidManifest.xml:23:5-20
+MERGED from [com.android.support:transition:25.2.0] /Users/machengzhang/.android/build-cache/98b9c8238212a664ec53b0c613710721fb7ac005/output/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:25.2.0] /Users/machengzhang/.android/build-cache/6d145f9155a1bbeafafa5b22464fbbd8662e324a/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-fragment:25.2.0] /Users/machengzhang/.android/build-cache/7af0686a887292d09f62763c9ccee8c54c132289/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:25.2.0] /Users/machengzhang/.android/build-cache/894da1c168c7ef3fb519aa91d28ef88278b69336/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-ui:25.2.0] /Users/machengzhang/.android/build-cache/5db3905fe8e90e1beb3a65473788f49bd9ab6558/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-utils:25.2.0] /Users/machengzhang/.android/build-cache/4c2b8aefee3d62f0da58c535ec64ed071006321d/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:25.2.0] /Users/machengzhang/.android/build-cache/343eb459325b2a8d9c91428dfda6b060c66f3278/output/AndroidManifest.xml:25:5-20
 	android:label
-		ADDED from C:\Users\mudbr\StudioProjects\CaptainJavaNIHAOMA\app\src\main\AndroidManifest.xml:10:9-41
+		ADDED from /Users/machengzhang/Desktop/CaptainJava/app/src/main/AndroidManifest.xml:10:9-41
 	android:supportsRtl
-		ADDED from C:\Users\mudbr\StudioProjects\CaptainJavaNIHAOMA\app\src\main\AndroidManifest.xml:11:9-35
+		ADDED from /Users/machengzhang/Desktop/CaptainJava/app/src/main/AndroidManifest.xml:11:9-35
 	android:windowSoftInputMode
-		ADDED from C:\Users\mudbr\StudioProjects\CaptainJavaNIHAOMA\app\src\main\AndroidManifest.xml:13:9-48
+		ADDED from /Users/machengzhang/Desktop/CaptainJava/app/src/main/AndroidManifest.xml:13:9-48
 	android:allowBackup
-		ADDED from C:\Users\mudbr\StudioProjects\CaptainJavaNIHAOMA\app\src\main\AndroidManifest.xml:8:9-35
+		ADDED from /Users/machengzhang/Desktop/CaptainJava/app/src/main/AndroidManifest.xml:8:9-35
 	android:icon
-		ADDED from C:\Users\mudbr\StudioProjects\CaptainJavaNIHAOMA\app\src\main\AndroidManifest.xml:9:9-43
+		ADDED from /Users/machengzhang/Desktop/CaptainJava/app/src/main/AndroidManifest.xml:9:9-43
 	android:theme
-		ADDED from C:\Users\mudbr\StudioProjects\CaptainJavaNIHAOMA\app\src\main\AndroidManifest.xml:12:9-40
+		ADDED from /Users/machengzhang/Desktop/CaptainJava/app/src/main/AndroidManifest.xml:12:9-40
 activity#com.example.expensetracker.LogIn
-ADDED from C:\Users\mudbr\StudioProjects\CaptainJavaNIHAOMA\app\src\main\AndroidManifest.xml:14:9-20:20
+ADDED from /Users/machengzhang/Desktop/CaptainJava/app/src/main/AndroidManifest.xml:14:9-20:20
 	android:name
-		ADDED from C:\Users\mudbr\StudioProjects\CaptainJavaNIHAOMA\app\src\main\AndroidManifest.xml:14:19-40
+		ADDED from /Users/machengzhang/Desktop/CaptainJava/app/src/main/AndroidManifest.xml:14:19-40
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from C:\Users\mudbr\StudioProjects\CaptainJavaNIHAOMA\app\src\main\AndroidManifest.xml:15:13-19:29
+ADDED from /Users/machengzhang/Desktop/CaptainJava/app/src/main/AndroidManifest.xml:15:13-19:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\mudbr\StudioProjects\CaptainJavaNIHAOMA\app\src\main\AndroidManifest.xml:16:17-69
+ADDED from /Users/machengzhang/Desktop/CaptainJava/app/src/main/AndroidManifest.xml:16:17-69
 	android:name
-		ADDED from C:\Users\mudbr\StudioProjects\CaptainJavaNIHAOMA\app\src\main\AndroidManifest.xml:16:25-66
+		ADDED from /Users/machengzhang/Desktop/CaptainJava/app/src/main/AndroidManifest.xml:16:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\mudbr\StudioProjects\CaptainJavaNIHAOMA\app\src\main\AndroidManifest.xml:18:17-77
+ADDED from /Users/machengzhang/Desktop/CaptainJava/app/src/main/AndroidManifest.xml:18:17-77
 	android:name
-		ADDED from C:\Users\mudbr\StudioProjects\CaptainJavaNIHAOMA\app\src\main\AndroidManifest.xml:18:27-74
+		ADDED from /Users/machengzhang/Desktop/CaptainJava/app/src/main/AndroidManifest.xml:18:27-74
 activity#com.example.expensetracker.IndividualMenuActivity
-ADDED from C:\Users\mudbr\StudioProjects\CaptainJavaNIHAOMA\app\src\main\AndroidManifest.xml:21:9-60
+ADDED from /Users/machengzhang/Desktop/CaptainJava/app/src/main/AndroidManifest.xml:21:9-60
 	android:name
-		ADDED from C:\Users\mudbr\StudioProjects\CaptainJavaNIHAOMA\app\src\main\AndroidManifest.xml:21:19-57
+		ADDED from /Users/machengzhang/Desktop/CaptainJava/app/src/main/AndroidManifest.xml:21:19-57
 activity#com.example.expensetracker.GroupMenu
-ADDED from C:\Users\mudbr\StudioProjects\CaptainJavaNIHAOMA\app\src\main\AndroidManifest.xml:22:9-47
+ADDED from /Users/machengzhang/Desktop/CaptainJava/app/src/main/AndroidManifest.xml:22:9-47
 	android:name
-		ADDED from C:\Users\mudbr\StudioProjects\CaptainJavaNIHAOMA\app\src\main\AndroidManifest.xml:22:19-44
+		ADDED from /Users/machengzhang/Desktop/CaptainJava/app/src/main/AndroidManifest.xml:22:19-44
 activity#com.example.expensetracker.AddGroup
-ADDED from C:\Users\mudbr\StudioProjects\CaptainJavaNIHAOMA\app\src\main\AndroidManifest.xml:23:9-46
+ADDED from /Users/machengzhang/Desktop/CaptainJava/app/src/main/AndroidManifest.xml:23:9-46
 	android:name
-		ADDED from C:\Users\mudbr\StudioProjects\CaptainJavaNIHAOMA\app\src\main\AndroidManifest.xml:23:19-43
+		ADDED from /Users/machengzhang/Desktop/CaptainJava/app/src/main/AndroidManifest.xml:23:19-43
 activity#com.example.expensetracker.AddIndividual
-ADDED from C:\Users\mudbr\StudioProjects\CaptainJavaNIHAOMA\app\src\main\AndroidManifest.xml:24:9-51
+ADDED from /Users/machengzhang/Desktop/CaptainJava/app/src/main/AndroidManifest.xml:24:9-51
 	android:name
-		ADDED from C:\Users\mudbr\StudioProjects\CaptainJavaNIHAOMA\app\src\main\AndroidManifest.xml:24:19-48
+		ADDED from /Users/machengzhang/Desktop/CaptainJava/app/src/main/AndroidManifest.xml:24:19-48
 activity#com.example.expensetracker.EventPage
-ADDED from C:\Users\mudbr\StudioProjects\CaptainJavaNIHAOMA\app\src\main\AndroidManifest.xml:25:9-47
+ADDED from /Users/machengzhang/Desktop/CaptainJava/app/src/main/AndroidManifest.xml:25:9-47
 	android:name
-		ADDED from C:\Users\mudbr\StudioProjects\CaptainJavaNIHAOMA\app\src\main\AndroidManifest.xml:25:19-44
+		ADDED from /Users/machengzhang/Desktop/CaptainJava/app/src/main/AndroidManifest.xml:25:19-44
 activity#com.example.expensetracker.AddEventSpending
-ADDED from C:\Users\mudbr\StudioProjects\CaptainJavaNIHAOMA\app\src\main\AndroidManifest.xml:26:9-54
+ADDED from /Users/machengzhang/Desktop/CaptainJava/app/src/main/AndroidManifest.xml:26:9-54
 	android:name
-		ADDED from C:\Users\mudbr\StudioProjects\CaptainJavaNIHAOMA\app\src\main\AndroidManifest.xml:26:19-51
+		ADDED from /Users/machengzhang/Desktop/CaptainJava/app/src/main/AndroidManifest.xml:26:19-51
 activity#com.example.expensetracker.MainMenu
-ADDED from C:\Users\mudbr\StudioProjects\CaptainJavaNIHAOMA\app\src\main\AndroidManifest.xml:27:9-46
+ADDED from /Users/machengzhang/Desktop/CaptainJava/app/src/main/AndroidManifest.xml:27:9-46
 	android:name
-		ADDED from C:\Users\mudbr\StudioProjects\CaptainJavaNIHAOMA\app\src\main\AndroidManifest.xml:27:19-43
+		ADDED from /Users/machengzhang/Desktop/CaptainJava/app/src/main/AndroidManifest.xml:27:19-43
 activity#com.example.expensetracker.Register
-ADDED from C:\Users\mudbr\StudioProjects\CaptainJavaNIHAOMA\app\src\main\AndroidManifest.xml:28:9-46
+ADDED from /Users/machengzhang/Desktop/CaptainJava/app/src/main/AndroidManifest.xml:28:9-46
 	android:name
-		ADDED from C:\Users\mudbr\StudioProjects\CaptainJavaNIHAOMA\app\src\main\AndroidManifest.xml:28:19-43
+		ADDED from /Users/machengzhang/Desktop/CaptainJava/app/src/main/AndroidManifest.xml:28:19-43
 activity#com.example.expensetracker.ManageMember
-ADDED from C:\Users\mudbr\StudioProjects\CaptainJavaNIHAOMA\app\src\main\AndroidManifest.xml:29:9-50
+ADDED from /Users/machengzhang/Desktop/CaptainJava/app/src/main/AndroidManifest.xml:29:9-50
 	android:name
-		ADDED from C:\Users\mudbr\StudioProjects\CaptainJavaNIHAOMA\app\src\main\AndroidManifest.xml:29:19-47
+		ADDED from /Users/machengzhang/Desktop/CaptainJava/app/src/main/AndroidManifest.xml:29:19-47
 activity#com.example.expensetracker.PieActivity
-ADDED from C:\Users\mudbr\StudioProjects\CaptainJavaNIHAOMA\app\src\main\AndroidManifest.xml:30:9-58
+ADDED from /Users/machengzhang/Desktop/CaptainJava/app/src/main/AndroidManifest.xml:30:9-58
 	android:name
-		ADDED from C:\Users\mudbr\StudioProjects\CaptainJavaNIHAOMA\app\src\main\AndroidManifest.xml:30:19-46
+		ADDED from /Users/machengzhang/Desktop/CaptainJava/app/src/main/AndroidManifest.xml:30:19-46
 uses-sdk
-INJECTED from C:\Users\mudbr\StudioProjects\CaptainJavaNIHAOMA\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-MERGED from [com.android.support.constraint:constraint-layout:1.0.0-beta5] C:\Users\mudbr\.android\build-cache\ca3ad59f99e0d15d7d0a7e1de36780c32843bcfd\output\AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support:design:25.2.0] C:\Users\mudbr\.android\build-cache\be891ca3ac5c8bc94d26f61dd1829a33ba54132d\output\AndroidManifest.xml:21:5-23:62
-MERGED from [com.android.support:appcompat-v7:25.2.0] C:\Users\mudbr\.android\build-cache\1d8da8d45dd217fd035153ddacfe3eb47db5bccb\output\AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:animated-vector-drawable:25.2.0] C:\Users\mudbr\.android\build-cache\9dd2806d525d00154c31d26fe4221fea64dd8f9e\output\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:25.2.0] C:\Users\mudbr\.android\build-cache\036c414ac0204dfb7caee745fd0a339efe0706ef\output\AndroidManifest.xml:21:5-43
-MERGED from [com.android.support:recyclerview-v7:25.2.0] C:\Users\mudbr\.android\build-cache\55494c69d313dcaca75ed5fbd30873a4e2317531\output\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:transition:25.2.0] C:\Users\mudbr\.android\build-cache\9a7478015982201baefc8c222f9b99a40ad2a6ff\output\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v4:25.2.0] C:\Users\mudbr\.android\build-cache\fa8d20a650decb1db2ae084807c8a89b3e2bcf47\output\AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-fragment:25.2.0] C:\Users\mudbr\.android\build-cache\149e5cef86fe7a308238403c87cedb1e2929ed38\output\AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-media-compat:25.2.0] C:\Users\mudbr\.android\build-cache\c2d2469c12036f05f04bf1e6364323c9c28ba44f\output\AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-core-ui:25.2.0] C:\Users\mudbr\.android\build-cache\4007fcece357d1cdea44d414606015fd8a6ba0f5\output\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-core-utils:25.2.0] C:\Users\mudbr\.android\build-cache\172c90f41700dd72f6e4be57698464e3921e46e3\output\AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:support-compat:25.2.0] C:\Users\mudbr\.android\build-cache\232c807e1ce934de775b91d4ee471b4f17cde1fb\output\AndroidManifest.xml:21:5-23:58
+INJECTED from /Users/machengzhang/Desktop/CaptainJava/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support.constraint:constraint-layout:1.0.0-beta5] /Users/machengzhang/.android/build-cache/4f89a55a3bb2a0ac5740ea69a885816e05e641ec/output/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:design:25.2.0] /Users/machengzhang/.android/build-cache/f8f345778ccb60a2ca44e34d6506f0be65b26d68/output/AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:appcompat-v7:25.2.0] /Users/machengzhang/.android/build-cache/24e700bbef4eb71076cb51f8e402319e6a057dc0/output/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:25.2.0] /Users/machengzhang/.android/build-cache/3559da4c89ad5c2fe9210340b6e0396a0e69996d/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.2.0] /Users/machengzhang/.android/build-cache/b645ef03cbb317011119ff0ee4bc5316d81d3e3a/output/AndroidManifest.xml:21:5-43
+MERGED from [com.android.support:recyclerview-v7:25.2.0] /Users/machengzhang/.android/build-cache/66dd9cb1ba814015adaecf9e1e391e95765c57ff/output/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:transition:25.2.0] /Users/machengzhang/.android/build-cache/98b9c8238212a664ec53b0c613710721fb7ac005/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:25.2.0] /Users/machengzhang/.android/build-cache/6d145f9155a1bbeafafa5b22464fbbd8662e324a/output/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:25.2.0] /Users/machengzhang/.android/build-cache/7af0686a887292d09f62763c9ccee8c54c132289/output/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.2.0] /Users/machengzhang/.android/build-cache/894da1c168c7ef3fb519aa91d28ef88278b69336/output/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-ui:25.2.0] /Users/machengzhang/.android/build-cache/5db3905fe8e90e1beb3a65473788f49bd9ab6558/output/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:25.2.0] /Users/machengzhang/.android/build-cache/4c2b8aefee3d62f0da58c535ec64ed071006321d/output/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:25.2.0] /Users/machengzhang/.android/build-cache/343eb459325b2a8d9c91428dfda6b060c66f3278/output/AndroidManifest.xml:21:5-23:58
 	tools:overrideLibrary
-		ADDED from [com.android.support:design:25.2.0] C:\Users\mudbr\.android\build-cache\be891ca3ac5c8bc94d26f61dd1829a33ba54132d\output\AndroidManifest.xml:23:9-59
+		ADDED from [com.android.support:design:25.2.0] /Users/machengzhang/.android/build-cache/f8f345778ccb60a2ca44e34d6506f0be65b26d68/output/AndroidManifest.xml:23:9-59
 	android:targetSdkVersion
-		INJECTED from C:\Users\mudbr\StudioProjects\CaptainJavaNIHAOMA\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\mudbr\StudioProjects\CaptainJavaNIHAOMA\app\src\main\AndroidManifest.xml
+		INJECTED from /Users/machengzhang/Desktop/CaptainJava/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/machengzhang/Desktop/CaptainJava/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\Users\mudbr\StudioProjects\CaptainJavaNIHAOMA\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\mudbr\StudioProjects\CaptainJavaNIHAOMA\app\src\main\AndroidManifest.xml
+		INJECTED from /Users/machengzhang/Desktop/CaptainJava/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/machengzhang/Desktop/CaptainJava/app/src/main/AndroidManifest.xml
