@@ -46,6 +46,8 @@ public class PieActivity extends AppCompatActivity {
         setContentView(R.layout.activity_pie);
         Log.d(TAG, "onCreate: starting to create chart");
         pieChart = (PieChart) findViewById(R.id.idPieChart);
+//        pieChart.setDescription("Spending by Members");
+        pieChart.setDrawHoleEnabled(true);
         pieChart.setRotationEnabled(true);
         pieChart.setHoleRadius(25f);
         pieChart.setTransparentCircleAlpha(0);
