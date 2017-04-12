@@ -29,13 +29,14 @@ public class PieActivity extends AppCompatActivity {
     private float[] yData;
     private String[] xData;
     PieChart pieChart;
+    private String type;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Intent intent = getIntent();
         HashMap<String, Double> map = (HashMap<String, Double>) intent.getSerializableExtra("map");
-
+        type = intent.getStringExtra("type");
         yData = new float[map.size()];
         xData = new String[map.size()];
         Set set = map.entrySet();
@@ -64,7 +65,7 @@ public class PieActivity extends AppCompatActivity {
 
         //get Description and set it
         Description d = pieChart.getDescription();
-        d.setText("Spending by members");
+        d.setText("Spending by "+type);
         d.setTextSize(20);
         d.setXOffset(10);
         d.setYOffset(20);
@@ -82,6 +83,7 @@ public class PieActivity extends AppCompatActivity {
         }
 
         //create data set
+
         PieDataSet pieDataSet = new PieDataSet(Entrys,"Spending");
         pieDataSet.setSliceSpace(3);
 

@@ -189,7 +189,7 @@ public class EventPage extends AppCompatActivity {
         super.onActivityResult(requestCode, resultCode, data);
 
     }
-    public void memberPie(View View){
+    public void memberPie(View View ){
         //calculate spending for each member to a map<name,amount>
 
         HashMap<String, Double> map = new HashMap<>();
@@ -203,10 +203,30 @@ public class EventPage extends AppCompatActivity {
         }
 
         Intent intent = new Intent(this,PieActivity.class);
+        intent.putExtra("type", "Member");
         intent.putExtra("map",  map);
         startActivity(intent);
 
     }
+
+    public void categoryPie(View view){
+        //calculate spending for each category to a map<category,amount>
+        HashMap<String, Double> map = new HashMap<>();
+        for(int i = 0; i<list.size()-1;i++) {
+            String key = list.get(i).getCategory();
+            if (map.containsKey(key)) {
+                map.put(key, map.get(key) + list.get(i).getAmount());
+            } else {
+                map.put(key, list.get(i).getAmount());
+            }
+        }
+        Intent intent = new Intent(this,PieActivity.class);
+        intent.putExtra("type", "Category");
+        intent.putExtra("map",  map);
+        startActivity(intent);
+
+    }
+
 
 
 }

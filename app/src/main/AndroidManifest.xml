@@ -27,7 +27,8 @@
         <activity android:name=".MainMenu" />
         <activity android:name=".Register" />
         <activity android:name=".ManageMember" />
-        <activity android:name=".PieActivity"></activity>
+        <activity android:name=".PieActivity" />
+        <activity android:name=".BarActivity"></activity>
     </application>
 
 </manifest>
