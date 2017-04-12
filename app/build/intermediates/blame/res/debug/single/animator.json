@@ -1,18 +1,18 @@
 [
     {
-        "merged": "/Users/yueweiyang/ECE651/CaptainJava/app/build/intermediates/res/merged/debug/animator/right_in.xml",
-        "source": "/Users/yueweiyang/ECE651/CaptainJava/app/src/main/res/animator/right_in.xml"
+        "merged": "C:\\Users\\mudbr\\StudioProjects\\CaptainJava\\app\\build\\intermediates\\res\\merged\\debug\\animator\\zoom_enter.xml",
+        "source": "C:\\Users\\mudbr\\StudioProjects\\CaptainJava\\app\\src\\main\\res\\animator\\zoom_enter.xml"
     },
     {
-        "merged": "/Users/yueweiyang/ECE651/CaptainJava/app/build/intermediates/res/merged/debug/animator/left_out.xml",
-        "source": "/Users/yueweiyang/ECE651/CaptainJava/app/src/main/res/animator/left_out.xml"
+        "merged": "C:\\Users\\mudbr\\StudioProjects\\CaptainJava\\app\\build\\intermediates\\res\\merged\\debug\\animator\\zoom_exit.xml",
+        "source": "C:\\Users\\mudbr\\StudioProjects\\CaptainJava\\app\\src\\main\\res\\animator\\zoom_exit.xml"
     },
     {
-        "merged": "/Users/yueweiyang/ECE651/CaptainJava/app/build/intermediates/res/merged/debug/animator/zoom_exit.xml",
-        "source": "/Users/yueweiyang/ECE651/CaptainJava/app/src/main/res/animator/zoom_exit.xml"
+        "merged": "C:\\Users\\mudbr\\StudioProjects\\CaptainJava\\app\\build\\intermediates\\res\\merged\\debug\\animator\\right_in.xml",
+        "source": "C:\\Users\\mudbr\\StudioProjects\\CaptainJava\\app\\src\\main\\res\\animator\\right_in.xml"
     },
     {
-        "merged": "/Users/yueweiyang/ECE651/CaptainJava/app/build/intermediates/res/merged/debug/animator/zoom_enter.xml",
-        "source": "/Users/yueweiyang/ECE651/CaptainJava/app/src/main/res/animator/zoom_enter.xml"
+        "merged": "C:\\Users\\mudbr\\StudioProjects\\CaptainJava\\app\\build\\intermediates\\res\\merged\\debug\\animator\\left_out.xml",
+        "source": "C:\\Users\\mudbr\\StudioProjects\\CaptainJava\\app\\src\\main\\res\\animator\\left_out.xml"
     }
 ]
