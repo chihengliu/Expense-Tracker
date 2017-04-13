@@ -32,6 +32,7 @@
         android:layout_toEndOf="@+id/week_event"
         android:layout_toRightOf="@+id/week_event"
         android:background="@android:color/holo_blue_dark"
+        android:onClick="monthlySpending"
         android:text="@string/month" />
 
     <Button
@@ -44,6 +45,7 @@
         android:layout_toEndOf="@+id/day_event"
         android:layout_toRightOf="@+id/day_event"
         android:background="@android:color/holo_blue_dark"
+        android:onClick="weeklySpending"
         android:text="@string/week" />
 
     <Button
@@ -51,13 +53,11 @@
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/week_event"
-        android:layout_alignBottom="@+id/week_event"
+        android:layout_below="@+id/event_label"
         android:layout_marginLeft="7dp"
-        android:layout_marginStart="7dp"
         android:layout_toEndOf="@+id/back_group"
-        android:layout_toRightOf="@+id/back_group"
         android:background="@android:color/holo_blue_dark"
+        android:onClick="dailySpending"
         android:text="@string/day" />
 
     <Button

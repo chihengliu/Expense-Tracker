@@ -16,6 +16,10 @@
         "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\src\\main\\res\\layout\\activity_add_group.xml"
     },
     {
+        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/layout/activity_bar.xml",
+        "source": "/Users/machengzhang/Desktop/CaptainJava/app/src/main/res/layout/activity_bar.xml"
+    },
+    {
         "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/layout/abc_screen_simple_overlay_action_mode.xml",
         "source": "/Users/machengzhang/.android/build-cache/24e700bbef4eb71076cb51f8e402319e6a057dc0/output/res/layout/abc_screen_simple_overlay_action_mode.xml"
     },

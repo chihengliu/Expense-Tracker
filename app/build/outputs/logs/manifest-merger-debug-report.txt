@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/machengzhang/Desktop/CaptainJava/app/src/main/AndroidManifest.xml:2:1-33:12
+ADDED from /Users/machengzhang/Desktop/CaptainJava/app/src/main/AndroidManifest.xml:2:1-34:12
 	package
 		ADDED from /Users/machengzhang/Desktop/CaptainJava/app/src/main/AndroidManifest.xml:3:5-41
 		INJECTED from /Users/machengzhang/Desktop/CaptainJava/app/src/main/AndroidManifest.xml
@@ -18,7 +18,7 @@ ADDED from /Users/machengzhang/Desktop/CaptainJava/app/src/main/AndroidManifest.
 	android:name
 		ADDED from /Users/machengzhang/Desktop/CaptainJava/app/src/main/AndroidManifest.xml:5:22-64
 application
-ADDED from /Users/machengzhang/Desktop/CaptainJava/app/src/main/AndroidManifest.xml:7:5-31:19
+ADDED from /Users/machengzhang/Desktop/CaptainJava/app/src/main/AndroidManifest.xml:7:5-32:19
 MERGED from [com.android.support.constraint:constraint-layout:1.0.0-beta5] /Users/machengzhang/.android/build-cache/4f89a55a3bb2a0ac5740ea69a885816e05e641ec/output/AndroidManifest.xml:9:5-20
 MERGED from [com.android.support:design:25.2.0] /Users/machengzhang/.android/build-cache/f8f345778ccb60a2ca44e34d6506f0be65b26d68/output/AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:appcompat-v7:25.2.0] /Users/machengzhang/.android/build-cache/24e700bbef4eb71076cb51f8e402319e6a057dc0/output/AndroidManifest.xml:25:5-20
@@ -94,9 +94,13 @@ ADDED from /Users/machengzhang/Desktop/CaptainJava/app/src/main/AndroidManifest.
 	android:name
 		ADDED from /Users/machengzhang/Desktop/CaptainJava/app/src/main/AndroidManifest.xml:29:19-47
 activity#com.example.expensetracker.PieActivity
-ADDED from /Users/machengzhang/Desktop/CaptainJava/app/src/main/AndroidManifest.xml:30:9-58
+ADDED from /Users/machengzhang/Desktop/CaptainJava/app/src/main/AndroidManifest.xml:30:9-49
 	android:name
 		ADDED from /Users/machengzhang/Desktop/CaptainJava/app/src/main/AndroidManifest.xml:30:19-46
+activity#com.example.expensetracker.BarActivity
+ADDED from /Users/machengzhang/Desktop/CaptainJava/app/src/main/AndroidManifest.xml:31:9-58
+	android:name
+		ADDED from /Users/machengzhang/Desktop/CaptainJava/app/src/main/AndroidManifest.xml:31:19-46
 uses-sdk
 INJECTED from /Users/machengzhang/Desktop/CaptainJava/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support.constraint:constraint-layout:1.0.0-beta5] /Users/machengzhang/.android/build-cache/4f89a55a3bb2a0ac5740ea69a885816e05e641ec/output/AndroidManifest.xml:5:5-7:41

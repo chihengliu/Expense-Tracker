@@ -34,6 +34,7 @@
         <activity android:name="com.example.expensetracker.Register" />
         <activity android:name="com.example.expensetracker.ManageMember" />
         <activity android:name="com.example.expensetracker.PieActivity" />
+        <activity android:name="com.example.expensetracker.BarActivity" />
     </application>
 
 </manifest>

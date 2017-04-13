@@ -11,8 +11,10 @@ import android.widget.Toast;
 
 import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.ExecutionException;
@@ -31,6 +33,11 @@ public class EventPage extends AppCompatActivity {
     TextView ET_NAME;
     ListViewAdapter adapter;
     ListView listView;
+
+    int weekFlag = 0;
+    int dayFlag = 0;
+    int monthFlag = 0;
+    private ArrayList<Spending> tempList = new ArrayList<Spending>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,6 +60,7 @@ public class EventPage extends AppCompatActivity {
 
         for(int i=0; i< list.size(); i++){
             list.get(i).setDate();
+            System.out.print(list.get(i).getId());
         }
 
         Collections.sort(list, new Comparator<Spending>() {
@@ -78,16 +86,234 @@ public class EventPage extends AppCompatActivity {
                     Intent intent = new Intent(EventPage.this, AddEventSpending.class);
                     intent.putExtra("detail", list.get(positions));
                     intent.putExtra("members",event.getMembers());
-                    intent.putExtra("spendposition", positions);
+                    intent.putExtra("spendposition", list.get(positions).getId());
                     startActivityForResult(intent, REQEST_CODE_ADD_EVT_SP);
                 }
             }
 
         });
 
+    }
+
+
+    public void weeklySpending(View view) {
+        if (weekFlag == 0){
+            tempList.removeAll(tempList);
+            Date presentDate = new Date();
+            int noOfDays = -7; //i.e two weeks
+            Calendar calendar = Calendar.getInstance();
+            calendar.setTime(presentDate);
+            calendar.add(Calendar.DAY_OF_YEAR, noOfDays);
+            Date previousDate = calendar.getTime();
+
+            for (int i=0; i<list.size(); i++ ){
+                if (presentDate.after(list.get(i).getDate()) && previousDate.before(list.get(i).getDate())){
+                    tempList.add(list.get(i));
+                }
+            }
+            tempList.add(list.get(list.size()-1));
+
+            weekFlag = 1;
+            monthFlag = 0;
+            dayFlag = 0;
+
+            adapter=new ListViewAdapter(this, tempList);
+            listView = (ListView) findViewById(R.id.event_spending);
+            listView.setAdapter(adapter);
+            //adapter.notifyDataSetChanged();
+
+            listView.setOnItemClickListener(new AdapterView.OnItemClickListener()
+            {
+                @Override
+                public void onItemClick(AdapterView<?> parent, final View view, int positions, long id)
+                {
+                    int pos=positions+1;
+                    if (pos!=tempList.size()) {
+                        Toast.makeText(EventPage.this, Integer.toString(pos) + " Clicked", Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(EventPage.this, AddEventSpending.class);
+                        intent.putExtra("detail", tempList.get(positions));
+                        intent.putExtra("members",event.getMembers());
+                        intent.putExtra("spendposition", tempList.get(positions).getId());
+                        startActivityForResult(intent, REQEST_CODE_ADD_EVT_SP);
+                    }
+                }
+
+            });
+        }
+        else{
+            tempList.removeAll(tempList);
+            weekFlag = 0;
+            adapter=new ListViewAdapter(this, list);
+            listView = (ListView) findViewById(R.id.event_spending);
+            listView.setAdapter(adapter);
+            //adapter.notifyDataSetChanged();
+
+            listView.setOnItemClickListener(new AdapterView.OnItemClickListener()
+            {
+                @Override
+                public void onItemClick(AdapterView<?> parent, final View view, int positions, long id)
+                {
+                    int pos=positions+1;
+                    if (pos!=list.size()) {
+                        Toast.makeText(EventPage.this, Integer.toString(pos) + " Clicked", Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(EventPage.this, AddEventSpending.class);
+                        intent.putExtra("detail", list.get(positions));
+                        intent.putExtra("members",event.getMembers());
+                        intent.putExtra("spendposition", list.get(positions).getId());
+                        startActivityForResult(intent, REQEST_CODE_ADD_EVT_SP);
+                    }
+                }
+
+            });
+        }
 
 
     }
+
+    public void dailySpending(View view) {
+        if (dayFlag == 0){
+            tempList.removeAll(tempList);
+            Date presentDate = new Date();
+            int noOfDays = -1;
+            Calendar calendar = Calendar.getInstance();
+            calendar.setTime(presentDate);
+            calendar.add(Calendar.DAY_OF_YEAR, noOfDays);
+            Date previousDate = calendar.getTime();
+
+            for (int i=0; i<list.size(); i++ ){
+                if (presentDate.after(list.get(i).getDate()) && previousDate.before(list.get(i).getDate())){
+                    tempList.add(list.get(i));
+                }
+            }
+            tempList.add(list.get(list.size()-1));
+
+            dayFlag = 1;
+            monthFlag = 0;
+            weekFlag = 0;
+
+            adapter=new ListViewAdapter(this, tempList);
+            listView = (ListView) findViewById(R.id.event_spending);
+            listView.setAdapter(adapter);
+            //adapter.notifyDataSetChanged();
+
+            listView.setOnItemClickListener(new AdapterView.OnItemClickListener()
+            {
+                @Override
+                public void onItemClick(AdapterView<?> parent, final View view, int positions, long id)
+                {
+                    int pos=positions+1;
+                    if (pos!=tempList.size()) {
+                        Toast.makeText(EventPage.this, Integer.toString(pos) + " Clicked", Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(EventPage.this, AddEventSpending.class);
+                        intent.putExtra("detail", tempList.get(positions));
+                        intent.putExtra("members",event.getMembers());
+                        intent.putExtra("spendposition", tempList.get(positions).getId());
+                        startActivityForResult(intent, REQEST_CODE_ADD_EVT_SP);
+                    }
+                }
+
+            });
+        }
+        else{
+            tempList.removeAll(tempList);
+            dayFlag = 0;
+            adapter=new ListViewAdapter(this, list);
+            listView = (ListView) findViewById(R.id.event_spending);
+            listView.setAdapter(adapter);
+            //adapter.notifyDataSetChanged();
+
+            listView.setOnItemClickListener(new AdapterView.OnItemClickListener()
+            {
+                @Override
+                public void onItemClick(AdapterView<?> parent, final View view, int positions, long id)
+                {
+                    int pos=positions+1;
+                    if (pos!=list.size()) {
+                        Toast.makeText(EventPage.this, Integer.toString(pos) + " Clicked", Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(EventPage.this, AddEventSpending.class);
+                        intent.putExtra("detail", list.get(positions));
+                        intent.putExtra("members",event.getMembers());
+                        intent.putExtra("spendposition", list.get(positions).getId());
+                        startActivityForResult(intent, REQEST_CODE_ADD_EVT_SP);
+                    }
+                }
+
+            });
+        }
+    }
+
+    public void monthlySpending(View view) {
+        if (monthFlag == 0){
+            tempList.removeAll(tempList);
+            Date presentDate = new Date();
+            int noOfDays = -31;
+            Calendar calendar = Calendar.getInstance();
+            calendar.setTime(presentDate);
+            calendar.add(Calendar.DAY_OF_YEAR, noOfDays);
+            Date previousDate = calendar.getTime();
+
+            for (int i=0; i<list.size(); i++ ){
+                if (presentDate.after(list.get(i).getDate()) && previousDate.before(list.get(i).getDate())){
+                    tempList.add(list.get(i));
+                }
+            }
+            tempList.add(list.get(list.size()-1));
+
+            monthFlag = 1;
+            dayFlag = 0;
+            weekFlag = 0;
+
+            adapter=new ListViewAdapter(this, tempList);
+            listView = (ListView) findViewById(R.id.event_spending);
+            listView.setAdapter(adapter);
+            //adapter.notifyDataSetChanged();
+
+            listView.setOnItemClickListener(new AdapterView.OnItemClickListener()
+            {
+                @Override
+                public void onItemClick(AdapterView<?> parent, final View view, int positions, long id)
+                {
+                    int pos=positions+1;
+                    if (pos!=tempList.size()) {
+                        Toast.makeText(EventPage.this, Integer.toString(pos) + " Clicked", Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(EventPage.this, AddEventSpending.class);
+                        intent.putExtra("detail", tempList.get(positions));
+                        intent.putExtra("members",event.getMembers());
+                        intent.putExtra("spendposition", tempList.get(positions).getId());
+                        startActivityForResult(intent, REQEST_CODE_ADD_EVT_SP);
+                    }
+                }
+
+            });
+        }
+        else{
+            tempList.removeAll(tempList);
+            monthFlag = 0;
+            adapter=new ListViewAdapter(this, list);
+            listView = (ListView) findViewById(R.id.event_spending);
+            listView.setAdapter(adapter);
+            //adapter.notifyDataSetChanged();
+
+            listView.setOnItemClickListener(new AdapterView.OnItemClickListener()
+            {
+                @Override
+                public void onItemClick(AdapterView<?> parent, final View view, int positions, long id)
+                {
+                    int pos=positions+1;
+                    if (pos!=list.size()) {
+                        Toast.makeText(EventPage.this, Integer.toString(pos) + " Clicked", Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(EventPage.this, AddEventSpending.class);
+                        intent.putExtra("detail", list.get(positions));
+                        intent.putExtra("members",event.getMembers());
+                        intent.putExtra("spendposition", list.get(positions).getId());
+                        startActivityForResult(intent, REQEST_CODE_ADD_EVT_SP);
+                    }
+                }
+
+            });
+        }
+    }
+
 
     public void backtoGroupMenu(View veiw){
         Intent intent = new Intent();
@@ -146,14 +372,28 @@ public class EventPage extends AppCompatActivity {
                     list.add(0,spending);
                 }
                 else {
-                    list.set(spendposition,spending);
+                    for (int i =0 ; i<list.size(); i++){
+                        if(spendposition == list.get(i).getId()){
+                            list.set(i, spending);
+                            break;
+                        }
+                    }
                 }
             }
             else if (resultCode==2){
                 spendposition = (int)data.getSerializableExtra("spendposition");
-                list.remove(spendposition);
+                for (int i =0 ; i<list.size(); i++){
+                    if(spendposition == list.get(i).getId()){
+                        list.remove(i);
+                        break;
+                    }
+                }
             }
         }
+
+        weekFlag = 0;
+        monthFlag = 0;
+        dayFlag = 0;
 
         Collections.sort(list, new Comparator<Spending>() {
             @Override
@@ -177,7 +417,7 @@ public class EventPage extends AppCompatActivity {
                     Toast.makeText(EventPage.this, Integer.toString(pos) + " Clicked", Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(EventPage.this, AddEventSpending.class);
                     intent.putExtra("detail", list.get(positions));
-                    intent.putExtra("spendposition", positions);
+                    intent.putExtra("spendposition", list.get(positions).getId());
                     intent.putExtra("members",event.getMembers());
                     startActivityForResult(intent, REQEST_CODE_ADD_EVT_SP);
                 }
