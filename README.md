@@ -1,10 +1,15 @@
 # Expense Tracker
-This is source code for Android App Expense Tracker that has a server and a mysql database set up on a Duke OIT virtual machine.
-The code submitted by March 9th on Master branch is for Sprint 1 which has functions allowing users to:
+This is source code for Android App Expense Tracker that has a server and a mysql database set up on a Duke OIT virtual machine. 
+The code submitted by April 18th on Master branch is for Sprint 3 which has functions allowing users to:
 <ul>
 <li>View list of individual spendings and event names</li>
 <li>Create a new individual spending</li>
-<li>Edit an existing individual spending</li>
+<li>Edit/remove an existing individual spending</li>
+<li>Create a new event</li>
+<li>Edit/remove an existing event</li>
+<li>Manage members in an event</li>
+<li>Rearrange list according to time of creation</li>
+<li>View spending records in pie chart and bar chart according to members or categories</li>
 </ul>
 All data displayed on this app is stored in mysql database. 
 
