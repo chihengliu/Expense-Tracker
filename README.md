@@ -13,14 +13,16 @@ The code submitted by April 18th on Master branch is for Sprint 3 which has func
 </ul>
 All data displayed on this app is stored in mysql database. 
 
-## Insltall, run, and test the app
+# Getting Started
+## Android Studio
+
 Change to an empty directory clone this repository, run:
 ```
 git clone git@gitlab.oit.duke.edu:ECE651_S17_PROJECTS/CaptainJava.git
 ```
- 
+1. Dowload Android Studio at [here](https://developer.android.com/studio/index.html?gclid=CjwKEAiA0fnFBRC6g8rgmICvrw0SJADx1_zASntPtDFk4kuUeoPWy__8XLeW76pvfyuSTsSKh2FBHxoCJw7w_wcB). 
 
-Open Android Studio (if not installed, install [here](https://developer.android.com/studio/index.html?gclid=CjwKEAiA0fnFBRC6g8rgmICvrw0SJADx1_zASntPtDFk4kuUeoPWy__8XLeW76pvfyuSTsSKh2FBHxoCJw7w_wcB)).
+Open Android Studio 
 
 Open project named "CaptainJava" in the directory you just git cloned the code.
 
