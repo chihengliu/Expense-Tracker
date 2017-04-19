@@ -77,7 +77,7 @@ To connect to VM, run:
 ```
 ssh bitnami@colab-sbx-370.oit.duke.edu
 ```
-in terminal.Password is bRumerern0.
+in terminal.Password is CaptainJava.
 
 To connect to database, run:
 ```
