@@ -14,7 +14,7 @@ The code submitted by April 21th on Master branch is for Sprint 3 which has func
 <li>Rearrange list according to time of creation</li>
 <li>View spending records in pie chart and bar chart according to members or categories</li>
 </ul>
-All data displayed on this app is stored in mysql database. 
+All data displayed on this app is stored in MySQL database. 
 
 ## Installation
 
@@ -47,6 +47,29 @@ In file **app** there are 3 subfolders:
 <li>*java* has object classes and activity classes</li>
 <li>*res* has all activity layouts and some UI animations</li>
 </ul>
+
+## API Reference
+### Log in
+[http://152.3.52.123/login.php](http://152.3.52.123/login.php) 
+### Register
+[http://152.3.52.123/register.php](http://152.3.52.123/register.php)
+### Get all personal spending records
+[http://152.3.52.123/updateList.php](http://152.3.52.123/updateList.php)
+### Add, remove and update personal spending
+[http://152.3.52.123/addSpending.php](http://152.3.52.123/addSpending.php)<br/>
+[http://152.3.52.123/updateSpending.php](http://152.3.52.123/updateSpending.php)<br/>
+[http://152.3.52.123/deleteSpending.php](http://152.3.52.123/deleteSpending.php)
+### Get event list
+[http://152.3.52.123/updateEventList.php](http://152.3.52.123/updateEventList.php)
+### Member management and add, update, remove event info
+[http://152.3.52.123/addEventAndMember.php](http://152.3.52.123/addEventAndMember.php)<br/>
+[http://152.3.52.123/updateEventAndMember.php](http://152.3.52.123/updateEventAndMember.php)<br/>
+[http://152.3.52.123/deleteEvent.php](http://152.3.52.123/deleteEvent.php)
+### Add, remove and update event spending
+[http://152.3.52.123/downEventSpend.php](http://152.3.52.123/downEventSpend.php)<br/>
+[http://152.3.52.123/addEventSpend.php](http://152.3.52.123/addEventSpend.php)<br/>
+[http://152.3.52.123/updateEventSpend.php](http://152.3.52.123/updateEventSpend.php)<br/>
+[http://152.3.52.123/deleteEventSpend.php](http://152.3.52.123/deleteEventSpend.php)
 
 ## Database access
 A mysql database is installed on OIT issued debian VM.
