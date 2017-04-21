@@ -18,8 +18,7 @@ All data displayed on this app is stored in MySQL database.
 
 ## Installation
 
-1. Dowload Android Studio at [here](https://developer.android.com/studio/index.html?gclid=CjwKEAiA0fnFBRC6g8rgmICvrw0SJADx1_zASntPtDFk4kuUeoPWy__8XLeW76pvfyuSTsSKh2FBHxoCJw7w_wcB). 
-2. (Make sure the version of Android Studio is 2.3.1)
+1. Dowload Android Studio at [here](https://developer.android.com/studio/index.html?gclid=CjwKEAiA0fnFBRC6g8rgmICvrw0SJADx1_zASntPtDFk4kuUeoPWy__8XLeW76pvfyuSTsSKh2FBHxoCJw7w_wcB). (Make sure the version of Android Studio is 2.3.1)
 
 2. Change to an empty directory clone this repository, run:
 ```
