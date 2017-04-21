@@ -79,9 +79,6 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
         String login_url = "http://152.3.52.123/login.php";
         String delete_url = "http://152.3.52.123/deleteSpending.php";
         String updateEvent_url = "http://152.3.52.123/updateEventList.php";
-        //String updateMember_url = "http://152.3.52.123/updateMembers.php";
-        //String addEvent_url = "http://152.3.52.123/addEvent.php";
-        //String updateE_url = "http://152.3.52.123/updateEvent.php";
         String addEventAndMember_url = "http://152.3.52.123/addEventAndMember.php";
         String updateEventAndMember_url = "http://152.3.52.123/updateEventAndMember.php";
         String deleteEvent_url = "http://152.3.52.123/deleteEvent.php";
@@ -91,10 +88,6 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
 
 
         try {
-
-
-
-
             switch (method){
                 case "addSpend":
                     url = new URL(addS_url);
@@ -127,6 +120,9 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
 
             HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
 
+            httpURLConnection.setRequestProperty("Content-Type", "application/json");
+            JSONObject jsonObject = new JSONObject();
+
             if (method.equals("addSpend") || method.equals("updateSpend")) {
                 String name = params[1];
                 String category = params[2];
@@ -134,55 +130,47 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
                 String amount = params[4];
                 String id = params[5];
                 String date = params[6];
-                data = URLEncoder.encode("id", "UTF-8") + "=" + URLEncoder.encode(id, "UTF-8") + "&" +
-                        URLEncoder.encode("name", "UTF-8") + "=" + URLEncoder.encode(name, "UTF-8") + "&" +
-                        URLEncoder.encode("category", "UTF-8") + "=" + URLEncoder.encode(category, "UTF-8") + "&" +
-                        URLEncoder.encode("description", "UTF-8") + "=" + URLEncoder.encode(description, "UTF-8") + "&" +
-                        URLEncoder.encode("amount", "UTF-8") + "=" + URLEncoder.encode(amount, "UTF-8") + "&" +
-                        URLEncoder.encode("date", "UTF-8") + "=" + URLEncoder.encode(date, "UTF-8");
+//                data = URLEncoder.encode("id", "UTF-8") + "=" + URLEncoder.encode(id, "UTF-8") + "&" +
+//                        URLEncoder.encode("name", "UTF-8") + "=" + URLEncoder.encode(name, "UTF-8") + "&" +
+//                        URLEncoder.encode("category", "UTF-8") + "=" + URLEncoder.encode(category, "UTF-8") + "&" +
+//                        URLEncoder.encode("description", "UTF-8") + "=" + URLEncoder.encode(description, "UTF-8") + "&" +
+//                        URLEncoder.encode("amount", "UTF-8") + "=" + URLEncoder.encode(amount, "UTF-8") + "&" +
+//                        URLEncoder.encode("date", "UTF-8") + "=" + URLEncoder.encode(date, "UTF-8");
+
+                jsonObject.put("id", id);
+                jsonObject.put("name", name);
+                jsonObject.put("category", category);
+                jsonObject.put("description", description);
+                jsonObject.put("amount", amount);
+                jsonObject.put("date", date);
 
             }
             else if (method.equals("deleteSpend")) {
                 String name = params[1];
                 String id = params[2];
-                data = URLEncoder.encode("id", "UTF-8") + "=" + URLEncoder.encode(id, "UTF-8") + "&" +
-                        URLEncoder.encode("name", "UTF-8") + "=" + URLEncoder.encode(name, "UTF-8");
+
+                jsonObject.put("id", id);
+                jsonObject.put("name", name);
+
             }
             else if (method.equals("updateEventList")){
                 username = params[1];
-                httpURLConnection.setRequestProperty("Content-Type", "application/json");
-
-                JSONObject jsonObject = new JSONObject();
                 jsonObject.put("username", username);
-                data = jsonObject.toString();
-
-                //data = URLEncoder.encode("username", "UTF-8") + "=" + URLEncoder.encode(username, "UTF-8");
             }
             else if (method.equals("deleteEvent")){
                 String id = params[1];
-                httpURLConnection.setRequestProperty("Content-Type", "application/json");
 
-                JSONObject jsonObject = new JSONObject();
                 jsonObject.put("id", id);
-                data = jsonObject.toString();
             }
             else if (method.equals("addEventAndMember")){
-                //String eventId = params[1];
                 String name = params[1];
                 String description = params[2];
 
-
-                // here you are setting the 'Content-Type' for the data you are sending which is 'application/json'
-                httpURLConnection.setRequestProperty("Content-Type", "application/json");
-
-                JSONObject jsonObject = new JSONObject();
                 jsonObject.put("name", name);
                 jsonObject.put("description", description);
 
-                //JSONArray memberList = new JSONArray();
                 jsonObject.put("members", new JSONArray(array));
 
-                data = jsonObject.toString();
 
             }
             else if (method.equals("updateEventAndMember")){
@@ -191,30 +179,25 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
                 String name = params[2];
                 String description = params[3];
 
-
-                // here you are setting the 'Content-Type' for the data you are sending which is 'application/json'
-                httpURLConnection.setRequestProperty("Content-Type", "application/json");
-
-                JSONObject jsonObject = new JSONObject();
                 jsonObject.put("id", EventID);
                 jsonObject.put("name", name);
                 jsonObject.put("description", description);
 
-                System.out.println(EventID);
+                //System.out.println(EventID);
 
-                //JSONArray memberList = new JSONArray();
                 jsonObject.put("members", new JSONArray(array));
 
-                data = jsonObject.toString();
 
             }
             else {
                 username = params[1];
                 password = params[2];
-                data = URLEncoder.encode("username", "UTF-8") + "=" + URLEncoder.encode(username, "UTF-8") + "&" +
-                        URLEncoder.encode("password", "UTF-8") + "=" + URLEncoder.encode(password, "UTF-8");
+
+                jsonObject.put("username", username);
+                jsonObject.put("password", password);
             }
 
+            data = jsonObject.toString();
 
             httpURLConnection.setRequestMethod("POST");
             httpURLConnection.setDoOutput(true);
