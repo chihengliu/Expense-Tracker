@@ -29,10 +29,11 @@ if ($result){
 
 $js = $data[0];
 $eventId = $js[0];
-//print($eventId);
+print($eventId);
+
 
  foreach($array as $item) {
-        //      print($item);
+	//      print($item);
       $insert = "insert into EventMember (Event_ID, User_Name) values('$eventId', '$item');";
       mysqli_query($con,$insert);
        }

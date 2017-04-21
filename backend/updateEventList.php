@@ -17,11 +17,11 @@ if($query){
           $tempquery = mysqli_query($con, $tempsql);
           //$numForEvent = 0;
           if($tempquery){
-		while($temprow = mysqli_fetch_array($tempquery)){
-                	       $data[] = $temprow;
-		}
+    while($temprow = mysqli_fetch_array($tempquery)){
+                               $data[] = $temprow;
+    }
           }
-        }
+  }
 }else{
    echo('fail0');
 }
@@ -33,11 +33,11 @@ $query2 = mysqli_query($con,$sql2);
 $totalNum = 0;
 
 if($query2){
-        while($row=mysqli_fetch_array($query2)){
+  while($row=mysqli_fetch_array($query2)){
           $data[]=$row;
           $totalNum = $totalNum + 1;
           }
-        }else{
+  }else{
           echo('fail1');
           }
           $arr = array('totalNum'=>$totalNum);
