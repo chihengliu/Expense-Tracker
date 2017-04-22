@@ -1,410 +1,206 @@
 [
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/drawable/abc_ratingbar_material.xml",
-        "source": "/Users/machengzhang/.android/build-cache/24e700bbef4eb71076cb51f8e402319e6a057dc0/output/res/drawable/abc_ratingbar_material.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/drawable/abc_ic_search_api_material.xml",
+        "source": "/Users/student/.android/build-cache/13b4679d7136b2adca2bd5412cf1ab81252c1930/output/res/drawable/abc_ic_search_api_material.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/drawable/abc_btn_radio_material.xml",
-        "source": "/Users/machengzhang/.android/build-cache/24e700bbef4eb71076cb51f8e402319e6a057dc0/output/res/drawable/abc_btn_radio_material.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/drawable/abc_ic_clear_material.xml",
+        "source": "/Users/student/.android/build-cache/13b4679d7136b2adca2bd5412cf1ab81252c1930/output/res/drawable/abc_ic_clear_material.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/drawable/abc_ic_arrow_drop_right_black_24dp.xml",
-        "source": "/Users/machengzhang/.android/build-cache/24e700bbef4eb71076cb51f8e402319e6a057dc0/output/res/drawable/abc_ic_arrow_drop_right_black_24dp.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/drawable/abc_switch_thumb_material.xml",
+        "source": "/Users/student/.android/build-cache/13b4679d7136b2adca2bd5412cf1ab81252c1930/output/res/drawable/abc_switch_thumb_material.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/drawable/abc_cab_background_internal_bg.xml",
-        "source": "/Users/machengzhang/.android/build-cache/24e700bbef4eb71076cb51f8e402319e6a057dc0/output/res/drawable/abc_cab_background_internal_bg.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/drawable/pluse.png",
+        "source": "/Users/student/AndroidStudioProjects/CaptainJava/app/src/main/res/drawable/pluse.png"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\individual01.png",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\src\\main\\res\\drawable\\individual01.png"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/drawable/abc_cab_background_internal_bg.xml",
+        "source": "/Users/student/.android/build-cache/13b4679d7136b2adca2bd5412cf1ab81252c1930/output/res/drawable/abc_cab_background_internal_bg.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/drawable/notification_icon_background.xml",
-        "source": "/Users/machengzhang/.android/build-cache/24e700bbef4eb71076cb51f8e402319e6a057dc0/output/res/drawable/notification_icon_background.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_background_transition_holo_light.xml",
+        "source": "/Users/student/.android/build-cache/13b4679d7136b2adca2bd5412cf1ab81252c1930/output/res/drawable/abc_list_selector_background_transition_holo_light.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_dark.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\.android\\build-cache\\1d8da8d45dd217fd035153ddacfe3eb47db5bccb\\output\\res\\drawable\\abc_list_selector_holo_dark.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_holo_dark.xml",
+        "source": "/Users/student/.android/build-cache/13b4679d7136b2adca2bd5412cf1ab81252c1930/output/res/drawable/abc_list_selector_holo_dark.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_background_transition_holo_dark.xml",
-        "source": "/Users/machengzhang/.android/build-cache/24e700bbef4eb71076cb51f8e402319e6a057dc0/output/res/drawable/abc_list_selector_background_transition_holo_dark.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/drawable/abc_dialog_material_background.xml",
+        "source": "/Users/student/.android/build-cache/13b4679d7136b2adca2bd5412cf1ab81252c1930/output/res/drawable/abc_dialog_material_background.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/drawable/wallet.png",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/app/src/main/res/drawable/wallet.png"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/drawable/design_snackbar_background.xml",
+        "source": "/Users/student/.android/build-cache/43c4f0c75fe684f4b0651bc4e97fe01607a06679/output/res/drawable/design_snackbar_background.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/drawable/register.png",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/app/src/main/res/drawable/register.png"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/drawable/abc_btn_borderless_material.xml",
+        "source": "/Users/student/.android/build-cache/13b4679d7136b2adca2bd5412cf1ab81252c1930/output/res/drawable/abc_btn_borderless_material.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/drawable/abc_btn_default_mtrl_shape.xml",
-        "source": "/Users/machengzhang/.android/build-cache/24e700bbef4eb71076cb51f8e402319e6a057dc0/output/res/drawable/abc_btn_default_mtrl_shape.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/drawable/group01.png",
+        "source": "/Users/student/AndroidStudioProjects/CaptainJava/app/src/main/res/drawable/group01.png"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/drawable/notification_tile_bg.xml",
-        "source": "/Users/machengzhang/.android/build-cache/24e700bbef4eb71076cb51f8e402319e6a057dc0/output/res/drawable/notification_tile_bg.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_background_transition_holo_dark.xml",
+        "source": "/Users/student/.android/build-cache/13b4679d7136b2adca2bd5412cf1ab81252c1930/output/res/drawable/abc_list_selector_background_transition_holo_dark.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_dark.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\.android\\build-cache\\1d8da8d45dd217fd035153ddacfe3eb47db5bccb\\output\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/drawable/abc_ic_arrow_drop_right_black_24dp.xml",
+        "source": "/Users/student/.android/build-cache/13b4679d7136b2adca2bd5412cf1ab81252c1930/output/res/drawable/abc_ic_arrow_drop_right_black_24dp.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_check_material.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\.android\\build-cache\\1d8da8d45dd217fd035153ddacfe3eb47db5bccb\\output\\res\\drawable\\abc_btn_check_material.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/drawable/abc_seekbar_thumb_material.xml",
+        "source": "/Users/student/.android/build-cache/13b4679d7136b2adca2bd5412cf1ab81252c1930/output/res/drawable/abc_seekbar_thumb_material.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_light.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\.android\\build-cache\\1d8da8d45dd217fd035153ddacfe3eb47db5bccb\\output\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/drawable/abc_ratingbar_small_material.xml",
+        "source": "/Users/student/.android/build-cache/13b4679d7136b2adca2bd5412cf1ab81252c1930/output/res/drawable/abc_ratingbar_small_material.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_go_search_api_material.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\.android\\build-cache\\1d8da8d45dd217fd035153ddacfe3eb47db5bccb\\output\\res\\drawable\\abc_ic_go_search_api_material.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/drawable/drop_down.png",
+        "source": "/Users/student/AndroidStudioProjects/CaptainJava/app/src/main/res/drawable/drop_down.png"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_clear_material.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\.android\\build-cache\\1d8da8d45dd217fd035153ddacfe3eb47db5bccb\\output\\res\\drawable\\abc_ic_clear_material.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/drawable/style_textview.xml",
+        "source": "/Users/student/AndroidStudioProjects/CaptainJava/app/src/main/res/drawable/style_textview.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_light.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\.android\\build-cache\\1d8da8d45dd217fd035153ddacfe3eb47db5bccb\\output\\res\\drawable\\abc_list_selector_holo_light.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/drawable/abc_vector_test.xml",
+        "source": "/Users/student/.android/build-cache/13b4679d7136b2adca2bd5412cf1ab81252c1930/output/res/drawable/abc_vector_test.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/drawable/individual01.png",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/app/src/main/res/drawable/individual01.png"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_holo_light.xml",
+        "source": "/Users/student/.android/build-cache/13b4679d7136b2adca2bd5412cf1ab81252c1930/output/res/drawable/abc_list_selector_holo_light.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_spinner_textfield_background_material.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\.android\\build-cache\\1d8da8d45dd217fd035153ddacfe3eb47db5bccb\\output\\res\\drawable\\abc_spinner_textfield_background_material.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/drawable/abc_btn_radio_material.xml",
+        "source": "/Users/student/.android/build-cache/13b4679d7136b2adca2bd5412cf1ab81252c1930/output/res/drawable/abc_btn_radio_material.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_bg_low.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\.android\\build-cache\\1d8da8d45dd217fd035153ddacfe3eb47db5bccb\\output\\res\\drawable\\notification_bg_low.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/drawable/notification_bg.xml",
+        "source": "/Users/student/.android/build-cache/13b4679d7136b2adca2bd5412cf1ab81252c1930/output/res/drawable/notification_bg.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_dark.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\.android\\build-cache\\1d8da8d45dd217fd035153ddacfe3eb47db5bccb\\output\\res\\drawable\\abc_item_background_holo_dark.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/drawable/abc_item_background_holo_light.xml",
+        "source": "/Users/student/.android/build-cache/13b4679d7136b2adca2bd5412cf1ab81252c1930/output/res/drawable/abc_item_background_holo_light.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\green_background.jpg",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\src\\main\\res\\drawable\\green_background.jpg"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/drawable/abc_textfield_search_material.xml",
+        "source": "/Users/student/.android/build-cache/13b4679d7136b2adca2bd5412cf1ab81252c1930/output/res/drawable/abc_textfield_search_material.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/drawable/abc_ratingbar_small_material.xml",
-        "source": "/Users/machengzhang/.android/build-cache/24e700bbef4eb71076cb51f8e402319e6a057dc0/output/res/drawable/abc_ratingbar_small_material.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/drawable/abc_ic_voice_search_api_material.xml",
+        "source": "/Users/student/.android/build-cache/13b4679d7136b2adca2bd5412cf1ab81252c1930/output/res/drawable/abc_ic_voice_search_api_material.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_bg.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\.android\\build-cache\\1d8da8d45dd217fd035153ddacfe3eb47db5bccb\\output\\res\\drawable\\notification_bg.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/drawable/abc_spinner_textfield_background_material.xml",
+        "source": "/Users/student/.android/build-cache/13b4679d7136b2adca2bd5412cf1ab81252c1930/output/res/drawable/abc_spinner_textfield_background_material.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/drawable/style2_button.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/app/src/main/res/drawable/style2_button.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/drawable/style2_button.xml",
+        "source": "/Users/student/AndroidStudioProjects/CaptainJava/app/src/main/res/drawable/style2_button.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\wallet.png",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\src\\main\\res\\drawable\\wallet.png"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/drawable/design_fab_background.xml",
+        "source": "/Users/student/.android/build-cache/43c4f0c75fe684f4b0651bc4e97fe01607a06679/output/res/drawable/design_fab_background.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_top_material.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\.android\\build-cache\\1d8da8d45dd217fd035153ddacfe3eb47db5bccb\\output\\res\\drawable\\abc_cab_background_top_material.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/drawable/abc_ratingbar_material.xml",
+        "source": "/Users/student/.android/build-cache/13b4679d7136b2adca2bd5412cf1ab81252c1930/output/res/drawable/abc_ratingbar_material.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_switch_thumb_material.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\.android\\build-cache\\1d8da8d45dd217fd035153ddacfe3eb47db5bccb\\output\\res\\drawable\\abc_switch_thumb_material.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/drawable/register.png",
+        "source": "/Users/student/AndroidStudioProjects/CaptainJava/app/src/main/res/drawable/register.png"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/drawable/abc_vector_test.xml",
-        "source": "/Users/machengzhang/.android/build-cache/24e700bbef4eb71076cb51f8e402319e6a057dc0/output/res/drawable/abc_vector_test.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/drawable/setting.png",
+        "source": "/Users/student/AndroidStudioProjects/CaptainJava/app/src/main/res/drawable/setting.png"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\style_textview.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\src\\main\\res\\drawable\\style_textview.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/drawable/abc_ic_ab_back_material.xml",
+        "source": "/Users/student/.android/build-cache/13b4679d7136b2adca2bd5412cf1ab81252c1930/output/res/drawable/abc_ic_ab_back_material.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/drawable/navigation_empty_icon.xml",
-        "source": "/Users/machengzhang/.android/build-cache/f8f345778ccb60a2ca44e34d6506f0be65b26d68/output/res/drawable/navigation_empty_icon.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/drawable/notification_icon_background.xml",
+        "source": "/Users/student/.android/build-cache/13b4679d7136b2adca2bd5412cf1ab81252c1930/output/res/drawable/notification_icon_background.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\pluse.png",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\src\\main\\res\\drawable\\pluse.png"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/drawable/green_background.jpg",
+        "source": "/Users/student/AndroidStudioProjects/CaptainJava/app/src/main/res/drawable/green_background.jpg"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_vector_test.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\.android\\build-cache\\1d8da8d45dd217fd035153ddacfe3eb47db5bccb\\output\\res\\drawable\\abc_vector_test.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/drawable/abc_btn_default_mtrl_shape.xml",
+        "source": "/Users/student/.android/build-cache/13b4679d7136b2adca2bd5412cf1ab81252c1930/output/res/drawable/abc_btn_default_mtrl_shape.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/drawable/abc_ic_menu_overflow_material.xml",
-        "source": "/Users/machengzhang/.android/build-cache/24e700bbef4eb71076cb51f8e402319e6a057dc0/output/res/drawable/abc_ic_menu_overflow_material.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/drawable/navigation_empty_icon.xml",
+        "source": "/Users/student/.android/build-cache/43c4f0c75fe684f4b0651bc4e97fe01607a06679/output/res/drawable/navigation_empty_icon.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_borderless_material.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\.android\\build-cache\\1d8da8d45dd217fd035153ddacfe3eb47db5bccb\\output\\res\\drawable\\abc_btn_borderless_material.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/drawable/abc_btn_check_material.xml",
+        "source": "/Users/student/.android/build-cache/13b4679d7136b2adca2bd5412cf1ab81252c1930/output/res/drawable/abc_btn_check_material.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_fab_background.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\.android\\build-cache\\be891ca3ac5c8bc94d26f61dd1829a33ba54132d\\output\\res\\drawable\\design_fab_background.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/drawable/abc_text_cursor_material.xml",
+        "source": "/Users/student/.android/build-cache/13b4679d7136b2adca2bd5412cf1ab81252c1930/output/res/drawable/abc_text_cursor_material.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\.android\\build-cache\\1d8da8d45dd217fd035153ddacfe3eb47db5bccb\\output\\res\\drawable\\abc_dialog_material_background.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/drawable/abc_cab_background_top_material.xml",
+        "source": "/Users/student/.android/build-cache/13b4679d7136b2adca2bd5412cf1ab81252c1930/output/res/drawable/abc_cab_background_top_material.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_tick_mark_material.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\.android\\build-cache\\1d8da8d45dd217fd035153ddacfe3eb47db5bccb\\output\\res\\drawable\\abc_seekbar_tick_mark_material.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/drawable/plus.png",
+        "source": "/Users/student/AndroidStudioProjects/CaptainJava/app/src/main/res/drawable/plus.png"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\setting.png",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\src\\main\\res\\drawable\\setting.png"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/drawable/abc_ratingbar_indicator_material.xml",
+        "source": "/Users/student/.android/build-cache/13b4679d7136b2adca2bd5412cf1ab81252c1930/output/res/drawable/abc_ratingbar_indicator_material.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/drawable/notification_bg_low.xml",
-        "source": "/Users/machengzhang/.android/build-cache/24e700bbef4eb71076cb51f8e402319e6a057dc0/output/res/drawable/notification_bg_low.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/drawable/individual01.png",
+        "source": "/Users/student/AndroidStudioProjects/CaptainJava/app/src/main/res/drawable/individual01.png"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\plus.png",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\src\\main\\res\\drawable\\plus.png"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/drawable/abc_ic_menu_overflow_material.xml",
+        "source": "/Users/student/.android/build-cache/13b4679d7136b2adca2bd5412cf1ab81252c1930/output/res/drawable/abc_ic_menu_overflow_material.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/drawable/abc_item_background_holo_dark.xml",
-        "source": "/Users/machengzhang/.android/build-cache/24e700bbef4eb71076cb51f8e402319e6a057dc0/output/res/drawable/abc_item_background_holo_dark.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/drawable/abc_tab_indicator_material.xml",
+        "source": "/Users/student/.android/build-cache/13b4679d7136b2adca2bd5412cf1ab81252c1930/output/res/drawable/abc_tab_indicator_material.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_light.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\.android\\build-cache\\1d8da8d45dd217fd035153ddacfe3eb47db5bccb\\output\\res\\drawable\\abc_item_background_holo_light.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/drawable/notification_tile_bg.xml",
+        "source": "/Users/student/.android/build-cache/13b4679d7136b2adca2bd5412cf1ab81252c1930/output/res/drawable/notification_tile_bg.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_thumb_material.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\.android\\build-cache\\1d8da8d45dd217fd035153ddacfe3eb47db5bccb\\output\\res\\drawable\\abc_seekbar_thumb_material.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/drawable/wallet.png",
+        "source": "/Users/student/AndroidStudioProjects/CaptainJava/app/src/main/res/drawable/wallet.png"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/drawable/abc_btn_borderless_material.xml",
-        "source": "/Users/machengzhang/.android/build-cache/24e700bbef4eb71076cb51f8e402319e6a057dc0/output/res/drawable/abc_btn_borderless_material.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/drawable/abc_item_background_holo_dark.xml",
+        "source": "/Users/student/.android/build-cache/13b4679d7136b2adca2bd5412cf1ab81252c1930/output/res/drawable/abc_item_background_holo_dark.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_internal_bg.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\.android\\build-cache\\1d8da8d45dd217fd035153ddacfe3eb47db5bccb\\output\\res\\drawable\\abc_cab_background_internal_bg.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/drawable/style_button.xml",
+        "source": "/Users/student/AndroidStudioProjects/CaptainJava/app/src/main/res/drawable/style_button.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_default_mtrl_shape.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\.android\\build-cache\\1d8da8d45dd217fd035153ddacfe3eb47db5bccb\\output\\res\\drawable\\abc_btn_default_mtrl_shape.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/drawable/abc_ic_go_search_api_material.xml",
+        "source": "/Users/student/.android/build-cache/13b4679d7136b2adca2bd5412cf1ab81252c1930/output/res/drawable/abc_ic_go_search_api_material.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_radio_material.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\.android\\build-cache\\1d8da8d45dd217fd035153ddacfe3eb47db5bccb\\output\\res\\drawable\\abc_btn_radio_material.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/drawable/notification_bg_low.xml",
+        "source": "/Users/student/.android/build-cache/13b4679d7136b2adca2bd5412cf1ab81252c1930/output/res/drawable/notification_bg_low.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\group01.png",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\src\\main\\res\\drawable\\group01.png"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/drawable/abc_seekbar_tick_mark_material.xml",
+        "source": "/Users/student/.android/build-cache/13b4679d7136b2adca2bd5412cf1ab81252c1930/output/res/drawable/abc_seekbar_tick_mark_material.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/drawable/abc_textfield_search_material.xml",
-        "source": "/Users/machengzhang/.android/build-cache/24e700bbef4eb71076cb51f8e402319e6a057dc0/output/res/drawable/abc_textfield_search_material.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\style_button.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\src\\main\\res\\drawable\\style_button.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_icon_background.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\.android\\build-cache\\1d8da8d45dd217fd035153ddacfe3eb47db5bccb\\output\\res\\drawable\\notification_icon_background.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/drawable/abc_ic_search_api_material.xml",
-        "source": "/Users/machengzhang/.android/build-cache/24e700bbef4eb71076cb51f8e402319e6a057dc0/output/res/drawable/abc_ic_search_api_material.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_tile_bg.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\.android\\build-cache\\1d8da8d45dd217fd035153ddacfe3eb47db5bccb\\output\\res\\drawable\\notification_tile_bg.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/drawable/abc_spinner_textfield_background_material.xml",
-        "source": "/Users/machengzhang/.android/build-cache/24e700bbef4eb71076cb51f8e402319e6a057dc0/output/res/drawable/abc_spinner_textfield_background_material.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\drop_down.png",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\src\\main\\res\\drawable\\drop_down.png"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/drawable/green_background.jpg",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/app/src/main/res/drawable/green_background.jpg"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/drawable/style_textview.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/app/src/main/res/drawable/style_textview.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\register.png",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\src\\main\\res\\drawable\\register.png"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_text_cursor_material.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\.android\\build-cache\\1d8da8d45dd217fd035153ddacfe3eb47db5bccb\\output\\res\\drawable\\abc_text_cursor_material.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/drawable/group01.png",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/app/src/main/res/drawable/group01.png"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/drawable/abc_ic_clear_material.xml",
-        "source": "/Users/machengzhang/.android/build-cache/24e700bbef4eb71076cb51f8e402319e6a057dc0/output/res/drawable/abc_ic_clear_material.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\.android\\build-cache\\1d8da8d45dd217fd035153ddacfe3eb47db5bccb\\output\\res\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/drawable/abc_seekbar_track_material.xml",
-        "source": "/Users/machengzhang/.android/build-cache/24e700bbef4eb71076cb51f8e402319e6a057dc0/output/res/drawable/abc_seekbar_track_material.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_voice_search_api_material.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\.android\\build-cache\\1d8da8d45dd217fd035153ddacfe3eb47db5bccb\\output\\res\\drawable\\abc_ic_voice_search_api_material.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_ab_back_material.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\.android\\build-cache\\1d8da8d45dd217fd035153ddacfe3eb47db5bccb\\output\\res\\drawable\\abc_ic_ab_back_material.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/drawable/notification_bg.xml",
-        "source": "/Users/machengzhang/.android/build-cache/24e700bbef4eb71076cb51f8e402319e6a057dc0/output/res/drawable/notification_bg.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\style2_button.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\src\\main\\res\\drawable\\style2_button.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_tab_indicator_material.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\.android\\build-cache\\1d8da8d45dd217fd035153ddacfe3eb47db5bccb\\output\\res\\drawable\\abc_tab_indicator_material.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/drawable/abc_btn_check_material.xml",
-        "source": "/Users/machengzhang/.android/build-cache/24e700bbef4eb71076cb51f8e402319e6a057dc0/output/res/drawable/abc_btn_check_material.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/drawable/abc_ratingbar_indicator_material.xml",
-        "source": "/Users/machengzhang/.android/build-cache/24e700bbef4eb71076cb51f8e402319e6a057dc0/output/res/drawable/abc_ratingbar_indicator_material.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_indicator_material.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\.android\\build-cache\\1d8da8d45dd217fd035153ddacfe3eb47db5bccb\\output\\res\\drawable\\abc_ratingbar_indicator_material.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/drawable/style_button.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/app/src/main/res/drawable/style_button.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/drawable/setting.png",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/app/src/main/res/drawable/setting.png"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/drawable/abc_ic_ab_back_material.xml",
-        "source": "/Users/machengzhang/.android/build-cache/24e700bbef4eb71076cb51f8e402319e6a057dc0/output/res/drawable/abc_ic_ab_back_material.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/drawable/abc_seekbar_thumb_material.xml",
-        "source": "/Users/machengzhang/.android/build-cache/24e700bbef4eb71076cb51f8e402319e6a057dc0/output/res/drawable/abc_seekbar_thumb_material.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/drawable/abc_ic_go_search_api_material.xml",
-        "source": "/Users/machengzhang/.android/build-cache/24e700bbef4eb71076cb51f8e402319e6a057dc0/output/res/drawable/abc_ic_go_search_api_material.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_holo_dark.xml",
-        "source": "/Users/machengzhang/.android/build-cache/24e700bbef4eb71076cb51f8e402319e6a057dc0/output/res/drawable/abc_list_selector_holo_dark.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/drawable/design_snackbar_background.xml",
-        "source": "/Users/machengzhang/.android/build-cache/f8f345778ccb60a2ca44e34d6506f0be65b26d68/output/res/drawable/design_snackbar_background.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/drawable/abc_seekbar_tick_mark_material.xml",
-        "source": "/Users/machengzhang/.android/build-cache/24e700bbef4eb71076cb51f8e402319e6a057dc0/output/res/drawable/abc_seekbar_tick_mark_material.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_menu_overflow_material.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\.android\\build-cache\\1d8da8d45dd217fd035153ddacfe3eb47db5bccb\\output\\res\\drawable\\abc_ic_menu_overflow_material.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_holo_light.xml",
-        "source": "/Users/machengzhang/.android/build-cache/24e700bbef4eb71076cb51f8e402319e6a057dc0/output/res/drawable/abc_list_selector_holo_light.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_material.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\.android\\build-cache\\1d8da8d45dd217fd035153ddacfe3eb47db5bccb\\output\\res\\drawable\\abc_ratingbar_material.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/drawable/abc_cab_background_top_material.xml",
-        "source": "/Users/machengzhang/.android/build-cache/24e700bbef4eb71076cb51f8e402319e6a057dc0/output/res/drawable/abc_cab_background_top_material.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_search_api_material.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\.android\\build-cache\\1d8da8d45dd217fd035153ddacfe3eb47db5bccb\\output\\res\\drawable\\abc_ic_search_api_material.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/drawable/plus.png",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/app/src/main/res/drawable/plus.png"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/drawable/abc_dialog_material_background.xml",
-        "source": "/Users/machengzhang/.android/build-cache/24e700bbef4eb71076cb51f8e402319e6a057dc0/output/res/drawable/abc_dialog_material_background.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/drawable/pluse.png",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/app/src/main/res/drawable/pluse.png"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_track_material.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\.android\\build-cache\\1d8da8d45dd217fd035153ddacfe3eb47db5bccb\\output\\res\\drawable\\abc_seekbar_track_material.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/drawable/design_fab_background.xml",
-        "source": "/Users/machengzhang/.android/build-cache/f8f345778ccb60a2ca44e34d6506f0be65b26d68/output/res/drawable/design_fab_background.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_small_material.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\.android\\build-cache\\1d8da8d45dd217fd035153ddacfe3eb47db5bccb\\output\\res\\drawable\\abc_ratingbar_small_material.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/drawable/abc_switch_thumb_material.xml",
-        "source": "/Users/machengzhang/.android/build-cache/24e700bbef4eb71076cb51f8e402319e6a057dc0/output/res/drawable/abc_switch_thumb_material.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/drawable/abc_tab_indicator_material.xml",
-        "source": "/Users/machengzhang/.android/build-cache/24e700bbef4eb71076cb51f8e402319e6a057dc0/output/res/drawable/abc_tab_indicator_material.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/drawable/abc_text_cursor_material.xml",
-        "source": "/Users/machengzhang/.android/build-cache/24e700bbef4eb71076cb51f8e402319e6a057dc0/output/res/drawable/abc_text_cursor_material.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\navigation_empty_icon.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\.android\\build-cache\\be891ca3ac5c8bc94d26f61dd1829a33ba54132d\\output\\res\\drawable\\navigation_empty_icon.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_snackbar_background.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\.android\\build-cache\\be891ca3ac5c8bc94d26f61dd1829a33ba54132d\\output\\res\\drawable\\design_snackbar_background.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/drawable/drop_down.png",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/app/src/main/res/drawable/drop_down.png"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/drawable/abc_item_background_holo_light.xml",
-        "source": "/Users/machengzhang/.android/build-cache/24e700bbef4eb71076cb51f8e402319e6a057dc0/output/res/drawable/abc_item_background_holo_light.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_background_transition_holo_light.xml",
-        "source": "/Users/machengzhang/.android/build-cache/24e700bbef4eb71076cb51f8e402319e6a057dc0/output/res/drawable/abc_list_selector_background_transition_holo_light.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_textfield_search_material.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\.android\\build-cache\\1d8da8d45dd217fd035153ddacfe3eb47db5bccb\\output\\res\\drawable\\abc_textfield_search_material.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/drawable/abc_ic_voice_search_api_material.xml",
-        "source": "/Users/machengzhang/.android/build-cache/24e700bbef4eb71076cb51f8e402319e6a057dc0/output/res/drawable/abc_ic_voice_search_api_material.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/drawable/abc_seekbar_track_material.xml",
+        "source": "/Users/student/.android/build-cache/13b4679d7136b2adca2bd5412cf1ab81252c1930/output/res/drawable/abc_seekbar_track_material.xml"
     }
 ]

@@ -1,34 +1,18 @@
 [
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/animator/zoom_enter.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/app/src/main/res/animator/zoom_enter.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/animator/right_in.xml",
+        "source": "/Users/student/AndroidStudioProjects/CaptainJava/app/src/main/res/animator/right_in.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\animator\\zoom_exit.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\src\\main\\res\\animator\\zoom_exit.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/animator/left_out.xml",
+        "source": "/Users/student/AndroidStudioProjects/CaptainJava/app/src/main/res/animator/left_out.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/animator/left_out.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/app/src/main/res/animator/left_out.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/animator/zoom_enter.xml",
+        "source": "/Users/student/AndroidStudioProjects/CaptainJava/app/src/main/res/animator/zoom_enter.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/animator/zoom_exit.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/app/src/main/res/animator/zoom_exit.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/animator/right_in.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/app/src/main/res/animator/right_in.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\animator\\right_in.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\src\\main\\res\\animator\\right_in.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\animator\\left_out.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\src\\main\\res\\animator\\left_out.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\animator\\zoom_enter.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\src\\main\\res\\animator\\zoom_enter.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/animator/zoom_exit.xml",
+        "source": "/Users/student/AndroidStudioProjects/CaptainJava/app/src/main/res/animator/zoom_exit.xml"
     }
 ]

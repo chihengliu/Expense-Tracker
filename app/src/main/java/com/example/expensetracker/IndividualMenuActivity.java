@@ -407,6 +407,7 @@ public class IndividualMenuActivity extends AppCompatActivity {
     }
 
     public void timeBar(View view){
-        //
+        Intent intent = new Intent(this,BarActivity.class);
+        startActivity(intent);
     }
 }

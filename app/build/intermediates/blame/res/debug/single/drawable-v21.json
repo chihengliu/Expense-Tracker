@@ -1,66 +1,34 @@
 [
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_action_bar_item_background_material.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\.android\\build-cache\\1d8da8d45dd217fd035153ddacfe3eb47db5bccb\\output\\res\\drawable-v21\\abc_action_bar_item_background_material.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/drawable-v21/notification_action_background.xml",
+        "source": "/Users/student/.android/build-cache/13b4679d7136b2adca2bd5412cf1ab81252c1930/output/res/drawable-v21/notification_action_background.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\avd_hide_password.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\.android\\build-cache\\be891ca3ac5c8bc94d26f61dd1829a33ba54132d\\output\\res\\drawable-v21\\avd_hide_password.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/drawable-v21/abc_btn_colored_material.xml",
+        "source": "/Users/student/.android/build-cache/13b4679d7136b2adca2bd5412cf1ab81252c1930/output/res/drawable-v21/abc_btn_colored_material.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\design_bottom_navigation_item_background.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\.android\\build-cache\\be891ca3ac5c8bc94d26f61dd1829a33ba54132d\\output\\res\\drawable-v21\\design_bottom_navigation_item_background.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/drawable-v21/abc_action_bar_item_background_material.xml",
+        "source": "/Users/student/.android/build-cache/13b4679d7136b2adca2bd5412cf1ab81252c1930/output/res/drawable-v21/abc_action_bar_item_background_material.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/drawable-v21/design_password_eye.xml",
-        "source": "/Users/machengzhang/.android/build-cache/f8f345778ccb60a2ca44e34d6506f0be65b26d68/output/res/drawable-v21/design_password_eye.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/drawable-v21/design_bottom_navigation_item_background.xml",
+        "source": "/Users/student/.android/build-cache/43c4f0c75fe684f4b0651bc4e97fe01607a06679/output/res/drawable-v21/design_bottom_navigation_item_background.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\design_password_eye.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\.android\\build-cache\\be891ca3ac5c8bc94d26f61dd1829a33ba54132d\\output\\res\\drawable-v21\\design_password_eye.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/drawable-v21/avd_show_password.xml",
+        "source": "/Users/student/.android/build-cache/43c4f0c75fe684f4b0651bc4e97fe01607a06679/output/res/drawable-v21/avd_show_password.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_btn_colored_material.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\.android\\build-cache\\1d8da8d45dd217fd035153ddacfe3eb47db5bccb\\output\\res\\drawable-v21\\abc_btn_colored_material.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/drawable-v21/design_password_eye.xml",
+        "source": "/Users/student/.android/build-cache/43c4f0c75fe684f4b0651bc4e97fe01607a06679/output/res/drawable-v21/design_password_eye.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\avd_show_password.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\.android\\build-cache\\be891ca3ac5c8bc94d26f61dd1829a33ba54132d\\output\\res\\drawable-v21\\avd_show_password.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/drawable-v21/abc_edit_text_material.xml",
+        "source": "/Users/student/.android/build-cache/13b4679d7136b2adca2bd5412cf1ab81252c1930/output/res/drawable-v21/abc_edit_text_material.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_edit_text_material.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\.android\\build-cache\\1d8da8d45dd217fd035153ddacfe3eb47db5bccb\\output\\res\\drawable-v21\\abc_edit_text_material.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\notification_action_background.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\.android\\build-cache\\1d8da8d45dd217fd035153ddacfe3eb47db5bccb\\output\\res\\drawable-v21\\notification_action_background.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/drawable-v21/abc_edit_text_material.xml",
-        "source": "/Users/machengzhang/.android/build-cache/24e700bbef4eb71076cb51f8e402319e6a057dc0/output/res/drawable-v21/abc_edit_text_material.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/drawable-v21/design_bottom_navigation_item_background.xml",
-        "source": "/Users/machengzhang/.android/build-cache/f8f345778ccb60a2ca44e34d6506f0be65b26d68/output/res/drawable-v21/design_bottom_navigation_item_background.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/drawable-v21/avd_show_password.xml",
-        "source": "/Users/machengzhang/.android/build-cache/f8f345778ccb60a2ca44e34d6506f0be65b26d68/output/res/drawable-v21/avd_show_password.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/drawable-v21/avd_hide_password.xml",
-        "source": "/Users/machengzhang/.android/build-cache/f8f345778ccb60a2ca44e34d6506f0be65b26d68/output/res/drawable-v21/avd_hide_password.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/drawable-v21/abc_action_bar_item_background_material.xml",
-        "source": "/Users/machengzhang/.android/build-cache/24e700bbef4eb71076cb51f8e402319e6a057dc0/output/res/drawable-v21/abc_action_bar_item_background_material.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/drawable-v21/abc_btn_colored_material.xml",
-        "source": "/Users/machengzhang/.android/build-cache/24e700bbef4eb71076cb51f8e402319e6a057dc0/output/res/drawable-v21/abc_btn_colored_material.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/drawable-v21/notification_action_background.xml",
-        "source": "/Users/machengzhang/.android/build-cache/24e700bbef4eb71076cb51f8e402319e6a057dc0/output/res/drawable-v21/notification_action_background.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/drawable-v21/avd_hide_password.xml",
+        "source": "/Users/student/.android/build-cache/43c4f0c75fe684f4b0651bc4e97fe01607a06679/output/res/drawable-v21/avd_hide_password.xml"
     }
 ]

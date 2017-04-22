@@ -1,510 +1,258 @@
 [
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_bottom_navigation_item.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\.android\\build-cache\\be891ca3ac5c8bc94d26f61dd1829a33ba54132d\\output\\res\\layout\\design_bottom_navigation_item.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/layout/abc_alert_dialog_title_material.xml",
+        "source": "/Users/student/.android/build-cache/13b4679d7136b2adca2bd5412cf1ab81252c1930/output/res/layout/abc_alert_dialog_title_material.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_radio.xml",
-        "source": "/Users/machengzhang/.android/build-cache/24e700bbef4eb71076cb51f8e402319e6a057dc0/output/res/layout/abc_list_menu_item_radio.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/layout/activity_individual_menu.xml",
+        "source": "/Users/student/AndroidStudioProjects/CaptainJava/app/src/main/res/layout/activity_individual_menu.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/layout/design_navigation_item_subheader.xml",
-        "source": "/Users/machengzhang/.android/build-cache/f8f345778ccb60a2ca44e34d6506f0be65b26d68/output/res/layout/design_navigation_item_subheader.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/layout/abc_screen_simple.xml",
+        "source": "/Users/student/.android/build-cache/13b4679d7136b2adca2bd5412cf1ab81252c1930/output/res/layout/abc_screen_simple.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_add_group.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\src\\main\\res\\layout\\activity_add_group.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/layout/abc_action_menu_layout.xml",
+        "source": "/Users/student/.android/build-cache/13b4679d7136b2adca2bd5412cf1ab81252c1930/output/res/layout/abc_action_menu_layout.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/layout/activity_bar.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/app/src/main/res/layout/activity_bar.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/layout/select_dialog_multichoice_material.xml",
+        "source": "/Users/student/.android/build-cache/13b4679d7136b2adca2bd5412cf1ab81252c1930/output/res/layout/select_dialog_multichoice_material.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/layout/abc_screen_simple_overlay_action_mode.xml",
-        "source": "/Users/machengzhang/.android/build-cache/24e700bbef4eb71076cb51f8e402319e6a057dc0/output/res/layout/abc_screen_simple_overlay_action_mode.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/layout/abc_action_mode_close_item_material.xml",
+        "source": "/Users/student/.android/build-cache/13b4679d7136b2adca2bd5412cf1ab81252c1930/output/res/layout/abc_action_mode_close_item_material.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_individual_menu.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\src\\main\\res\\layout\\activity_individual_menu.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/layout/design_text_input_password_icon.xml",
+        "source": "/Users/student/.android/build-cache/43c4f0c75fe684f4b0651bc4e97fe01607a06679/output/res/layout/design_text_input_password_icon.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_separator.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\.android\\build-cache\\be891ca3ac5c8bc94d26f61dd1829a33ba54132d\\output\\res\\layout\\design_navigation_item_separator.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/layout/abc_screen_content_include.xml",
+        "source": "/Users/student/.android/build-cache/13b4679d7136b2adca2bd5412cf1ab81252c1930/output/res/layout/abc_screen_content_include.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_event_page.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\src\\main\\res\\layout\\activity_event_page.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/layout/activity_pie.xml",
+        "source": "/Users/student/AndroidStudioProjects/CaptainJava/app/src/main/res/layout/activity_pie.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_add_event_spending.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\src\\main\\res\\layout\\activity_add_event_spending.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/layout/abc_popup_menu_item_layout.xml",
+        "source": "/Users/student/.android/build-cache/13b4679d7136b2adca2bd5412cf1ab81252c1930/output/res/layout/abc_popup_menu_item_layout.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view_list_item.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\.android\\build-cache\\1d8da8d45dd217fd035153ddacfe3eb47db5bccb\\output\\res\\layout\\abc_activity_chooser_view_list_item.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/layout/activity_event_page.xml",
+        "source": "/Users/student/AndroidStudioProjects/CaptainJava/app/src/main/res/layout/activity_event_page.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_singlechoice_material.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\.android\\build-cache\\1d8da8d45dd217fd035153ddacfe3eb47db5bccb\\output\\res\\layout\\select_dialog_singlechoice_material.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/layout/activity_bar.xml",
+        "source": "/Users/student/AndroidStudioProjects/CaptainJava/app/src/main/res/layout/activity_bar.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_group_menu.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\src\\main\\res\\layout\\activity_group_menu.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/layout/design_navigation_item_subheader.xml",
+        "source": "/Users/student/.android/build-cache/43c4f0c75fe684f4b0651bc4e97fe01607a06679/output/res/layout/design_navigation_item_subheader.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\layout\\column_row.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\src\\main\\res\\layout\\column_row.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/layout/abc_screen_toolbar.xml",
+        "source": "/Users/student/.android/build-cache/13b4679d7136b2adca2bd5412cf1ab81252c1930/output/res/layout/abc_screen_toolbar.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/layout/abc_action_menu_layout.xml",
-        "source": "/Users/machengzhang/.android/build-cache/24e700bbef4eb71076cb51f8e402319e6a057dc0/output/res/layout/abc_action_menu_layout.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/layout/design_navigation_menu.xml",
+        "source": "/Users/student/.android/build-cache/43c4f0c75fe684f4b0651bc4e97fe01607a06679/output/res/layout/design_navigation_menu.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/layout/column_row.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/app/src/main/res/layout/column_row.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/layout/activity_add_event_spending.xml",
+        "source": "/Users/student/AndroidStudioProjects/CaptainJava/app/src/main/res/layout/activity_add_event_spending.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_bar.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\.android\\build-cache\\1d8da8d45dd217fd035153ddacfe3eb47db5bccb\\output\\res\\layout\\abc_action_mode_bar.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/layout/activity_register.xml",
+        "source": "/Users/student/AndroidStudioProjects/CaptainJava/app/src/main/res/layout/activity_register.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_title_item.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\.android\\build-cache\\1d8da8d45dd217fd035153ddacfe3eb47db5bccb\\output\\res\\layout\\abc_action_bar_title_item.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_icon.xml",
+        "source": "/Users/student/.android/build-cache/13b4679d7136b2adca2bd5412cf1ab81252c1930/output/res/layout/abc_list_menu_item_icon.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\.android\\build-cache\\1d8da8d45dd217fd035153ddacfe3eb47db5bccb\\output\\res\\layout\\abc_activity_chooser_view.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_checkbox.xml",
+        "source": "/Users/student/.android/build-cache/13b4679d7136b2adca2bd5412cf1ab81252c1930/output/res/layout/abc_list_menu_item_checkbox.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_title_material.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\.android\\build-cache\\1d8da8d45dd217fd035153ddacfe3eb47db5bccb\\output\\res\\layout\\abc_alert_dialog_title_material.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/layout/notification_template_lines_media.xml",
+        "source": "/Users/student/.android/build-cache/13b4679d7136b2adca2bd5412cf1ab81252c1930/output/res/layout/notification_template_lines_media.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_tab_icon.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\.android\\build-cache\\be891ca3ac5c8bc94d26f61dd1829a33ba54132d\\output\\res\\layout\\design_layout_tab_icon.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/layout/design_layout_tab_icon.xml",
+        "source": "/Users/student/.android/build-cache/43c4f0c75fe684f4b0651bc4e97fe01607a06679/output/res/layout/design_layout_tab_icon.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/layout/activity_pie.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/app/src/main/res/layout/activity_pie.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/layout/design_layout_snackbar_include.xml",
+        "source": "/Users/student/.android/build-cache/43c4f0c75fe684f4b0651bc4e97fe01607a06679/output/res/layout/design_layout_snackbar_include.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_tab_text.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\.android\\build-cache\\be891ca3ac5c8bc94d26f61dd1829a33ba54132d\\output\\res\\layout\\design_layout_tab_text.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/layout/design_bottom_navigation_item.xml",
+        "source": "/Users/student/.android/build-cache/43c4f0c75fe684f4b0651bc4e97fe01607a06679/output/res/layout/design_bottom_navigation_item.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/layout/activity_add_event_spending.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/app/src/main/res/layout/activity_add_event_spending.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/layout/activity_main_menu.xml",
+        "source": "/Users/student/AndroidStudioProjects/CaptainJava/app/src/main/res/layout/activity_main_menu.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/layout/abc_action_menu_item_layout.xml",
-        "source": "/Users/machengzhang/.android/build-cache/24e700bbef4eb71076cb51f8e402319e6a057dc0/output/res/layout/abc_action_menu_item_layout.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/layout/notification_template_part_time.xml",
+        "source": "/Users/student/.android/build-cache/13b4679d7136b2adca2bd5412cf1ab81252c1930/output/res/layout/notification_template_part_time.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/layout/abc_screen_simple.xml",
-        "source": "/Users/machengzhang/.android/build-cache/24e700bbef4eb71076cb51f8e402319e6a057dc0/output/res/layout/abc_screen_simple.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/layout/notification_template_media.xml",
+        "source": "/Users/student/.android/build-cache/13b4679d7136b2adca2bd5412cf1ab81252c1930/output/res/layout/notification_template_media.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/layout/design_bottom_navigation_item.xml",
-        "source": "/Users/machengzhang/.android/build-cache/f8f345778ccb60a2ca44e34d6506f0be65b26d68/output/res/layout/design_bottom_navigation_item.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/layout/abc_action_bar_up_container.xml",
+        "source": "/Users/student/.android/build-cache/13b4679d7136b2adca2bd5412cf1ab81252c1930/output/res/layout/abc_action_bar_up_container.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/layout/design_text_input_password_icon.xml",
-        "source": "/Users/machengzhang/.android/build-cache/f8f345778ccb60a2ca44e34d6506f0be65b26d68/output/res/layout/design_text_input_password_icon.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/layout/abc_select_dialog_material.xml",
+        "source": "/Users/student/.android/build-cache/13b4679d7136b2adca2bd5412cf1ab81252c1930/output/res/layout/abc_select_dialog_material.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_material.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\.android\\build-cache\\1d8da8d45dd217fd035153ddacfe3eb47db5bccb\\output\\res\\layout\\abc_alert_dialog_material.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/layout/select_dialog_singlechoice_material.xml",
+        "source": "/Users/student/.android/build-cache/13b4679d7136b2adca2bd5412cf1ab81252c1930/output/res/layout/select_dialog_singlechoice_material.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_close_item_material.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\.android\\build-cache\\1d8da8d45dd217fd035153ddacfe3eb47db5bccb\\output\\res\\layout\\abc_action_mode_close_item_material.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/layout/column_row.xml",
+        "source": "/Users/student/AndroidStudioProjects/CaptainJava/app/src/main/res/layout/column_row.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/layout/design_navigation_item_separator.xml",
-        "source": "/Users/machengzhang/.android/build-cache/f8f345778ccb60a2ca44e34d6506f0be65b26d68/output/res/layout/design_navigation_item_separator.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/layout/abc_action_bar_view_list_nav_layout.xml",
+        "source": "/Users/student/.android/build-cache/13b4679d7136b2adca2bd5412cf1ab81252c1930/output/res/layout/abc_action_bar_view_list_nav_layout.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_button_bar_material.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\.android\\build-cache\\1d8da8d45dd217fd035153ddacfe3eb47db5bccb\\output\\res\\layout\\abc_alert_dialog_button_bar_material.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view_list_item.xml",
+        "source": "/Users/student/.android/build-cache/13b4679d7136b2adca2bd5412cf1ab81252c1930/output/res/layout/abc_activity_chooser_view_list_item.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple_overlay_action_mode.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\.android\\build-cache\\1d8da8d45dd217fd035153ddacfe3eb47db5bccb\\output\\res\\layout\\abc_screen_simple_overlay_action_mode.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/layout/design_navigation_menu_item.xml",
+        "source": "/Users/student/.android/build-cache/43c4f0c75fe684f4b0651bc4e97fe01607a06679/output/res/layout/design_navigation_menu_item.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_subheader.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\.android\\build-cache\\be891ca3ac5c8bc94d26f61dd1829a33ba54132d\\output\\res\\layout\\design_navigation_item_subheader.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/layout/abc_action_bar_title_item.xml",
+        "source": "/Users/student/.android/build-cache/13b4679d7136b2adca2bd5412cf1ab81252c1930/output/res/layout/abc_action_bar_title_item.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_dialog_title_material.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\.android\\build-cache\\1d8da8d45dd217fd035153ddacfe3eb47db5bccb\\output\\res\\layout\\abc_dialog_title_material.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/layout/activity_listview.xml",
+        "source": "/Users/student/AndroidStudioProjects/CaptainJava/app/src/main/res/layout/activity_listview.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_header_item_layout.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\.android\\build-cache\\1d8da8d45dd217fd035153ddacfe3eb47db5bccb\\output\\res\\layout\\abc_popup_menu_header_item_layout.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/layout/activity_add_individual.xml",
+        "source": "/Users/student/AndroidStudioProjects/CaptainJava/app/src/main/res/layout/activity_add_individual.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_header.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\.android\\build-cache\\be891ca3ac5c8bc94d26f61dd1829a33ba54132d\\output\\res\\layout\\design_navigation_item_header.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/layout/design_navigation_item.xml",
+        "source": "/Users/student/.android/build-cache/43c4f0c75fe684f4b0651bc4e97fe01607a06679/output/res/layout/design_navigation_item.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/layout/notification_template_lines_media.xml",
-        "source": "/Users/machengzhang/.android/build-cache/24e700bbef4eb71076cb51f8e402319e6a057dc0/output/res/layout/notification_template_lines_media.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/layout/select_dialog_item_material.xml",
+        "source": "/Users/student/.android/build-cache/13b4679d7136b2adca2bd5412cf1ab81252c1930/output/res/layout/select_dialog_item_material.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_pie.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\src\\main\\res\\layout\\activity_pie.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/layout/abc_alert_dialog_button_bar_material.xml",
+        "source": "/Users/student/.android/build-cache/13b4679d7136b2adca2bd5412cf1ab81252c1930/output/res/layout/abc_alert_dialog_button_bar_material.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_media_custom.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\.android\\build-cache\\1d8da8d45dd217fd035153ddacfe3eb47db5bccb\\output\\res\\layout\\notification_template_media_custom.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/layout/support_simple_spinner_dropdown_item.xml",
+        "source": "/Users/student/.android/build-cache/13b4679d7136b2adca2bd5412cf1ab81252c1930/output/res/layout/support_simple_spinner_dropdown_item.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_menu_item.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\.android\\build-cache\\be891ca3ac5c8bc94d26f61dd1829a33ba54132d\\output\\res\\layout\\design_navigation_menu_item.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/layout/abc_search_dropdown_item_icons_2line.xml",
+        "source": "/Users/student/.android/build-cache/13b4679d7136b2adca2bd5412cf1ab81252c1930/output/res/layout/abc_search_dropdown_item_icons_2line.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_manage_member.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\src\\main\\res\\layout\\activity_manage_member.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view.xml",
+        "source": "/Users/student/.android/build-cache/13b4679d7136b2adca2bd5412cf1ab81252c1930/output/res/layout/abc_activity_chooser_view.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_expanded_menu_layout.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\.android\\build-cache\\1d8da8d45dd217fd035153ddacfe3eb47db5bccb\\output\\res\\layout\\abc_expanded_menu_layout.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/layout/activity_manage_member.xml",
+        "source": "/Users/student/AndroidStudioProjects/CaptainJava/app/src/main/res/layout/activity_manage_member.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/layout/activity_main_menu.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/app/src/main/res/layout/activity_main_menu.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_layout.xml",
+        "source": "/Users/student/.android/build-cache/13b4679d7136b2adca2bd5412cf1ab81252c1930/output/res/layout/abc_list_menu_item_layout.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/layout/notification_template_part_time.xml",
-        "source": "/Users/machengzhang/.android/build-cache/24e700bbef4eb71076cb51f8e402319e6a057dc0/output/res/layout/notification_template_part_time.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/layout/abc_alert_dialog_material.xml",
+        "source": "/Users/student/.android/build-cache/13b4679d7136b2adca2bd5412cf1ab81252c1930/output/res/layout/abc_alert_dialog_material.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/layout/abc_action_bar_up_container.xml",
-        "source": "/Users/machengzhang/.android/build-cache/24e700bbef4eb71076cb51f8e402319e6a057dc0/output/res/layout/abc_action_bar_up_container.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/layout/design_bottom_sheet_dialog.xml",
+        "source": "/Users/student/.android/build-cache/43c4f0c75fe684f4b0651bc4e97fe01607a06679/output/res/layout/design_bottom_sheet_dialog.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_item_material.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\.android\\build-cache\\1d8da8d45dd217fd035153ddacfe3eb47db5bccb\\output\\res\\layout\\select_dialog_item_material.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_radio.xml",
+        "source": "/Users/student/.android/build-cache/13b4679d7136b2adca2bd5412cf1ab81252c1930/output/res/layout/abc_list_menu_item_radio.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_chronometer.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\.android\\build-cache\\1d8da8d45dd217fd035153ddacfe3eb47db5bccb\\output\\res\\layout\\notification_template_part_chronometer.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/layout/notification_template_media_custom.xml",
+        "source": "/Users/student/.android/build-cache/13b4679d7136b2adca2bd5412cf1ab81252c1930/output/res/layout/notification_template_media_custom.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/layout/design_navigation_item.xml",
-        "source": "/Users/machengzhang/.android/build-cache/f8f345778ccb60a2ca44e34d6506f0be65b26d68/output/res/layout/design_navigation_item.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/layout/activity_add_group.xml",
+        "source": "/Users/student/AndroidStudioProjects/CaptainJava/app/src/main/res/layout/activity_add_group.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_media.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\.android\\build-cache\\1d8da8d45dd217fd035153ddacfe3eb47db5bccb\\output\\res\\layout\\notification_template_media.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/layout/design_layout_tab_text.xml",
+        "source": "/Users/student/.android/build-cache/43c4f0c75fe684f4b0651bc4e97fe01607a06679/output/res/layout/design_layout_tab_text.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/layout/abc_screen_toolbar.xml",
-        "source": "/Users/machengzhang/.android/build-cache/24e700bbef4eb71076cb51f8e402319e6a057dc0/output/res/layout/abc_screen_toolbar.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/layout/activity_group_menu.xml",
+        "source": "/Users/student/AndroidStudioProjects/CaptainJava/app/src/main/res/layout/activity_group_menu.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_snackbar_include.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\.android\\build-cache\\be891ca3ac5c8bc94d26f61dd1829a33ba54132d\\output\\res\\layout\\design_layout_snackbar_include.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/layout/abc_popup_menu_header_item_layout.xml",
+        "source": "/Users/student/.android/build-cache/13b4679d7136b2adca2bd5412cf1ab81252c1930/output/res/layout/abc_popup_menu_header_item_layout.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_icon.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\.android\\build-cache\\1d8da8d45dd217fd035153ddacfe3eb47db5bccb\\output\\res\\layout\\abc_list_menu_item_icon.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/layout/abc_expanded_menu_layout.xml",
+        "source": "/Users/student/.android/build-cache/13b4679d7136b2adca2bd5412cf1ab81252c1930/output/res/layout/abc_expanded_menu_layout.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/layout/activity_log_in.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/app/src/main/res/layout/activity_log_in.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/layout/abc_screen_simple_overlay_action_mode.xml",
+        "source": "/Users/student/.android/build-cache/13b4679d7136b2adca2bd5412cf1ab81252c1930/output/res/layout/abc_screen_simple_overlay_action_mode.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/layout/design_menu_item_action_area.xml",
-        "source": "/Users/machengzhang/.android/build-cache/f8f345778ccb60a2ca44e34d6506f0be65b26d68/output/res/layout/design_menu_item_action_area.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/layout/design_navigation_item_separator.xml",
+        "source": "/Users/student/.android/build-cache/43c4f0c75fe684f4b0651bc4e97fe01607a06679/output/res/layout/design_navigation_item_separator.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/layout/abc_popup_menu_header_item_layout.xml",
-        "source": "/Users/machengzhang/.android/build-cache/24e700bbef4eb71076cb51f8e402319e6a057dc0/output/res/layout/abc_popup_menu_header_item_layout.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/layout/abc_action_mode_bar.xml",
+        "source": "/Users/student/.android/build-cache/13b4679d7136b2adca2bd5412cf1ab81252c1930/output/res/layout/abc_action_mode_bar.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_checkbox.xml",
-        "source": "/Users/machengzhang/.android/build-cache/24e700bbef4eb71076cb51f8e402319e6a057dc0/output/res/layout/abc_list_menu_item_checkbox.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/layout/design_layout_snackbar.xml",
+        "source": "/Users/student/.android/build-cache/43c4f0c75fe684f4b0651bc4e97fe01607a06679/output/res/layout/design_layout_snackbar.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/layout/design_navigation_menu_item.xml",
-        "source": "/Users/machengzhang/.android/build-cache/f8f345778ccb60a2ca44e34d6506f0be65b26d68/output/res/layout/design_navigation_menu_item.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/layout/abc_search_view.xml",
+        "source": "/Users/student/.android/build-cache/13b4679d7136b2adca2bd5412cf1ab81252c1930/output/res/layout/abc_search_view.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_multichoice_material.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\.android\\build-cache\\1d8da8d45dd217fd035153ddacfe3eb47db5bccb\\output\\res\\layout\\select_dialog_multichoice_material.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/layout/design_menu_item_action_area.xml",
+        "source": "/Users/student/.android/build-cache/43c4f0c75fe684f4b0651bc4e97fe01607a06679/output/res/layout/design_menu_item_action_area.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_bottom_sheet_dialog.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\.android\\build-cache\\be891ca3ac5c8bc94d26f61dd1829a33ba54132d\\output\\res\\layout\\design_bottom_sheet_dialog.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/layout/design_navigation_item_header.xml",
+        "source": "/Users/student/.android/build-cache/43c4f0c75fe684f4b0651bc4e97fe01607a06679/output/res/layout/design_navigation_item_header.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view.xml",
-        "source": "/Users/machengzhang/.android/build-cache/24e700bbef4eb71076cb51f8e402319e6a057dc0/output/res/layout/abc_activity_chooser_view.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/layout/abc_action_menu_item_layout.xml",
+        "source": "/Users/student/.android/build-cache/13b4679d7136b2adca2bd5412cf1ab81252c1930/output/res/layout/abc_action_menu_item_layout.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view_list_item.xml",
-        "source": "/Users/machengzhang/.android/build-cache/24e700bbef4eb71076cb51f8e402319e6a057dc0/output/res/layout/abc_activity_chooser_view_list_item.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/layout/notification_template_part_chronometer.xml",
+        "source": "/Users/student/.android/build-cache/13b4679d7136b2adca2bd5412cf1ab81252c1930/output/res/layout/notification_template_part_chronometer.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_lines_media.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\.android\\build-cache\\1d8da8d45dd217fd035153ddacfe3eb47db5bccb\\output\\res\\layout\\notification_template_lines_media.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/layout/activity_log_in.xml",
+        "source": "/Users/student/AndroidStudioProjects/CaptainJava/app/src/main/res/layout/activity_log_in.xml"
     },
     {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/layout/design_layout_tab_text.xml",
-        "source": "/Users/machengzhang/.android/build-cache/f8f345778ccb60a2ca44e34d6506f0be65b26d68/output/res/layout/design_layout_tab_text.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_listview.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\src\\main\\res\\layout\\activity_listview.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_text_input_password_icon.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\.android\\build-cache\\be891ca3ac5c8bc94d26f61dd1829a33ba54132d\\output\\res\\layout\\design_text_input_password_icon.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/layout/activity_register.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/app/src/main/res/layout/activity_register.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/layout/design_navigation_menu.xml",
-        "source": "/Users/machengzhang/.android/build-cache/f8f345778ccb60a2ca44e34d6506f0be65b26d68/output/res/layout/design_navigation_menu.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/layout/abc_dialog_title_material.xml",
-        "source": "/Users/machengzhang/.android/build-cache/24e700bbef4eb71076cb51f8e402319e6a057dc0/output/res/layout/abc_dialog_title_material.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/layout/abc_action_bar_title_item.xml",
-        "source": "/Users/machengzhang/.android/build-cache/24e700bbef4eb71076cb51f8e402319e6a057dc0/output/res/layout/abc_action_bar_title_item.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_layout.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\.android\\build-cache\\1d8da8d45dd217fd035153ddacfe3eb47db5bccb\\output\\res\\layout\\abc_action_menu_layout.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_checkbox.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\.android\\build-cache\\1d8da8d45dd217fd035153ddacfe3eb47db5bccb\\output\\res\\layout\\abc_list_menu_item_checkbox.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/layout/abc_search_view.xml",
-        "source": "/Users/machengzhang/.android/build-cache/24e700bbef4eb71076cb51f8e402319e6a057dc0/output/res/layout/abc_search_view.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/layout/abc_select_dialog_material.xml",
-        "source": "/Users/machengzhang/.android/build-cache/24e700bbef4eb71076cb51f8e402319e6a057dc0/output/res/layout/abc_select_dialog_material.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_view_list_nav_layout.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\.android\\build-cache\\1d8da8d45dd217fd035153ddacfe3eb47db5bccb\\output\\res\\layout\\abc_action_bar_view_list_nav_layout.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_snackbar.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\.android\\build-cache\\be891ca3ac5c8bc94d26f61dd1829a33ba54132d\\output\\res\\layout\\design_layout_snackbar.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/layout/support_simple_spinner_dropdown_item.xml",
-        "source": "/Users/machengzhang/.android/build-cache/24e700bbef4eb71076cb51f8e402319e6a057dc0/output/res/layout/support_simple_spinner_dropdown_item.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/layout/activity_add_individual.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/app/src/main/res/layout/activity_add_individual.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/layout/abc_action_mode_bar.xml",
-        "source": "/Users/machengzhang/.android/build-cache/24e700bbef4eb71076cb51f8e402319e6a057dc0/output/res/layout/abc_action_mode_bar.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/layout/abc_screen_content_include.xml",
-        "source": "/Users/machengzhang/.android/build-cache/24e700bbef4eb71076cb51f8e402319e6a057dc0/output/res/layout/abc_screen_content_include.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/layout/notification_template_part_chronometer.xml",
-        "source": "/Users/machengzhang/.android/build-cache/24e700bbef4eb71076cb51f8e402319e6a057dc0/output/res/layout/notification_template_part_chronometer.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/layout/activity_group_menu.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/app/src/main/res/layout/activity_group_menu.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_time.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\.android\\build-cache\\1d8da8d45dd217fd035153ddacfe3eb47db5bccb\\output\\res\\layout\\notification_template_part_time.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/layout/abc_alert_dialog_material.xml",
-        "source": "/Users/machengzhang/.android/build-cache/24e700bbef4eb71076cb51f8e402319e6a057dc0/output/res/layout/abc_alert_dialog_material.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/layout/abc_search_dropdown_item_icons_2line.xml",
-        "source": "/Users/machengzhang/.android/build-cache/24e700bbef4eb71076cb51f8e402319e6a057dc0/output/res/layout/abc_search_dropdown_item_icons_2line.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/layout/design_layout_tab_icon.xml",
-        "source": "/Users/machengzhang/.android/build-cache/f8f345778ccb60a2ca44e34d6506f0be65b26d68/output/res/layout/design_layout_tab_icon.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/layout/activity_individual_menu.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/app/src/main/res/layout/activity_individual_menu.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_icon.xml",
-        "source": "/Users/machengzhang/.android/build-cache/24e700bbef4eb71076cb51f8e402319e6a057dc0/output/res/layout/abc_list_menu_item_icon.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_item_layout.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\.android\\build-cache\\1d8da8d45dd217fd035153ddacfe3eb47db5bccb\\output\\res\\layout\\abc_popup_menu_item_layout.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_register.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\src\\main\\res\\layout\\activity_register.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_radio.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\.android\\build-cache\\1d8da8d45dd217fd035153ddacfe3eb47db5bccb\\output\\res\\layout\\abc_list_menu_item_radio.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_menu_item_action_area.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\.android\\build-cache\\be891ca3ac5c8bc94d26f61dd1829a33ba54132d\\output\\res\\layout\\design_menu_item_action_area.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\.android\\build-cache\\1d8da8d45dd217fd035153ddacfe3eb47db5bccb\\output\\res\\layout\\abc_screen_simple.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/layout/design_layout_snackbar_include.xml",
-        "source": "/Users/machengzhang/.android/build-cache/f8f345778ccb60a2ca44e34d6506f0be65b26d68/output/res/layout/design_layout_snackbar_include.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/layout/abc_alert_dialog_title_material.xml",
-        "source": "/Users/machengzhang/.android/build-cache/24e700bbef4eb71076cb51f8e402319e6a057dc0/output/res/layout/abc_alert_dialog_title_material.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_item_layout.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\.android\\build-cache\\1d8da8d45dd217fd035153ddacfe3eb47db5bccb\\output\\res\\layout\\abc_action_menu_item_layout.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_layout.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\.android\\build-cache\\1d8da8d45dd217fd035153ddacfe3eb47db5bccb\\output\\res\\layout\\abc_list_menu_item_layout.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/layout/notification_template_media_custom.xml",
-        "source": "/Users/machengzhang/.android/build-cache/24e700bbef4eb71076cb51f8e402319e6a057dc0/output/res/layout/notification_template_media_custom.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main_menu.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\src\\main\\res\\layout\\activity_main_menu.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/layout/design_bottom_sheet_dialog.xml",
-        "source": "/Users/machengzhang/.android/build-cache/f8f345778ccb60a2ca44e34d6506f0be65b26d68/output/res/layout/design_bottom_sheet_dialog.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/layout/design_navigation_item_header.xml",
-        "source": "/Users/machengzhang/.android/build-cache/f8f345778ccb60a2ca44e34d6506f0be65b26d68/output/res/layout/design_navigation_item_header.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\.android\\build-cache\\be891ca3ac5c8bc94d26f61dd1829a33ba54132d\\output\\res\\layout\\design_navigation_item.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/layout/activity_event_page.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/app/src/main/res/layout/activity_event_page.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_add_individual.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\src\\main\\res\\layout\\activity_add_individual.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_toolbar.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\.android\\build-cache\\1d8da8d45dd217fd035153ddacfe3eb47db5bccb\\output\\res\\layout\\abc_screen_toolbar.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/layout/activity_add_group.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/app/src/main/res/layout/activity_add_group.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_content_include.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\.android\\build-cache\\1d8da8d45dd217fd035153ddacfe3eb47db5bccb\\output\\res\\layout\\abc_screen_content_include.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_select_dialog_material.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\.android\\build-cache\\1d8da8d45dd217fd035153ddacfe3eb47db5bccb\\output\\res\\layout\\abc_select_dialog_material.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_log_in.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\src\\main\\res\\layout\\activity_log_in.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_menu.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\.android\\build-cache\\be891ca3ac5c8bc94d26f61dd1829a33ba54132d\\output\\res\\layout\\design_navigation_menu.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/layout/abc_action_mode_close_item_material.xml",
-        "source": "/Users/machengzhang/.android/build-cache/24e700bbef4eb71076cb51f8e402319e6a057dc0/output/res/layout/abc_action_mode_close_item_material.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/layout/design_layout_snackbar.xml",
-        "source": "/Users/machengzhang/.android/build-cache/f8f345778ccb60a2ca44e34d6506f0be65b26d68/output/res/layout/design_layout_snackbar.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/layout/abc_expanded_menu_layout.xml",
-        "source": "/Users/machengzhang/.android/build-cache/24e700bbef4eb71076cb51f8e402319e6a057dc0/output/res/layout/abc_expanded_menu_layout.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/layout/select_dialog_multichoice_material.xml",
-        "source": "/Users/machengzhang/.android/build-cache/24e700bbef4eb71076cb51f8e402319e6a057dc0/output/res/layout/select_dialog_multichoice_material.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/layout/abc_alert_dialog_button_bar_material.xml",
-        "source": "/Users/machengzhang/.android/build-cache/24e700bbef4eb71076cb51f8e402319e6a057dc0/output/res/layout/abc_alert_dialog_button_bar_material.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/layout/activity_listview.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/app/src/main/res/layout/activity_listview.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/layout/notification_template_media.xml",
-        "source": "/Users/machengzhang/.android/build-cache/24e700bbef4eb71076cb51f8e402319e6a057dc0/output/res/layout/notification_template_media.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_view.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\.android\\build-cache\\1d8da8d45dd217fd035153ddacfe3eb47db5bccb\\output\\res\\layout\\abc_search_view.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\layout\\support_simple_spinner_dropdown_item.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\.android\\build-cache\\1d8da8d45dd217fd035153ddacfe3eb47db5bccb\\output\\res\\layout\\support_simple_spinner_dropdown_item.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/layout/abc_action_bar_view_list_nav_layout.xml",
-        "source": "/Users/machengzhang/.android/build-cache/24e700bbef4eb71076cb51f8e402319e6a057dc0/output/res/layout/abc_action_bar_view_list_nav_layout.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/layout/activity_manage_member.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/app/src/main/res/layout/activity_manage_member.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/layout/select_dialog_singlechoice_material.xml",
-        "source": "/Users/machengzhang/.android/build-cache/24e700bbef4eb71076cb51f8e402319e6a057dc0/output/res/layout/select_dialog_singlechoice_material.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/layout/abc_popup_menu_item_layout.xml",
-        "source": "/Users/machengzhang/.android/build-cache/24e700bbef4eb71076cb51f8e402319e6a057dc0/output/res/layout/abc_popup_menu_item_layout.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/layout/select_dialog_item_material.xml",
-        "source": "/Users/machengzhang/.android/build-cache/24e700bbef4eb71076cb51f8e402319e6a057dc0/output/res/layout/select_dialog_item_material.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_up_container.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\.android\\build-cache\\1d8da8d45dd217fd035153ddacfe3eb47db5bccb\\output\\res\\layout\\abc_action_bar_up_container.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_layout.xml",
-        "source": "/Users/machengzhang/.android/build-cache/24e700bbef4eb71076cb51f8e402319e6a057dc0/output/res/layout/abc_list_menu_item_layout.xml"
-    },
-    {
-        "merged": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\StudioProjects\\CaptainJavaNIHAOMA\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_dropdown_item_icons_2line.xml",
-        "source": "/Users/machengzhang/Desktop/CaptainJava/C:\\Users\\mudbr\\.android\\build-cache\\1d8da8d45dd217fd035153ddacfe3eb47db5bccb\\output\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/layout/abc_dialog_title_material.xml",
+        "source": "/Users/student/.android/build-cache/13b4679d7136b2adca2bd5412cf1ab81252c1930/output/res/layout/abc_dialog_title_material.xml"
     }
 ]
