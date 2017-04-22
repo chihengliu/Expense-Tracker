@@ -69,6 +69,7 @@
         android:layout_alignParentBottom="true"
         android:layout_alignStart="@+id/day_event"
         android:background="@android:color/holo_blue_dark"
+        android:onClick="timeBar"
         android:text="TIME" />
 
     <ImageButton

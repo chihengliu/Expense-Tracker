@@ -94,6 +94,12 @@ public class PieActivity extends AppCompatActivity {
         ArrayList<Integer> colors = new ArrayList<>();
         for (int c: ColorTemplate.JOYFUL_COLORS)
             colors.add(c);
+        for (int c: ColorTemplate.LIBERTY_COLORS)
+            colors.add(c);
+        for (int c: ColorTemplate.COLORFUL_COLORS)
+            colors.add(c);
+        for (int c: ColorTemplate.PASTEL_COLORS)
+            colors.add(c);
         pieDataSet.setColors(colors);
 
         //customize legends

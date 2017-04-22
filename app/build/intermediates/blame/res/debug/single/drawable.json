@@ -60,12 +60,12 @@
         "source": "/Users/student/.android/build-cache/13b4679d7136b2adca2bd5412cf1ab81252c1930/output/res/drawable/abc_ratingbar_small_material.xml"
     },
     {
-        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/drawable/drop_down.png",
-        "source": "/Users/student/AndroidStudioProjects/CaptainJava/app/src/main/res/drawable/drop_down.png"
-    },
-    {
         "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/drawable/style_textview.xml",
         "source": "/Users/student/AndroidStudioProjects/CaptainJava/app/src/main/res/drawable/style_textview.xml"
+    },
+    {
+        "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/drawable/drop_down.png",
+        "source": "/Users/student/AndroidStudioProjects/CaptainJava/app/src/main/res/drawable/drop_down.png"
     },
     {
         "merged": "/Users/student/AndroidStudioProjects/CaptainJava/app/build/intermediates/res/merged/debug/drawable/abc_vector_test.xml",

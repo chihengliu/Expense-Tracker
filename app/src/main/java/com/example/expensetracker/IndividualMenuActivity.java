@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
-
+import java.util.GregorianCalendar;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -407,7 +407,38 @@ public class IndividualMenuActivity extends AppCompatActivity {
     }
 
     public void timeBar(View view){
+        Calendar c = Calendar.getInstance();
+
+        int year = c.get(Calendar.YEAR);
+        int month = c.get(Calendar.MONTH);
+        int day = c.get(Calendar.DAY_OF_MONTH);
+
+        Date today = new GregorianCalendar(year, month, day).getTime();
+
+
+        ArrayList<Double> amountArray = new ArrayList<>();
+
+
+
+        for(int i = -6; i<=0; i++){
+            Calendar calendar = Calendar.getInstance();
+            calendar.setTime(today);
+            calendar.add(Calendar.DAY_OF_YEAR, i);
+            Date previousDate = calendar.getTime();
+
+            System.out.println(previousDate);
+
+            double amPerDay = 0;
+            for (int j=0; j<list.size()-1; j++ ){
+                if (previousDate.equals(list.get(j).getDate())){
+                    amPerDay += list.get(j).getAmount();
+                }
+            }
+            amountArray.add(amPerDay);
+        }
+
         Intent intent = new Intent(this,BarActivity.class);
+        intent.putExtra("amountArray", amountArray);
         startActivity(intent);
     }
 }
