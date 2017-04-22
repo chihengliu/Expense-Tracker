@@ -18,7 +18,7 @@ All data displayed on this app is stored in MySQL database.
 
 ## Installation
 
-1. Dowload Android Studio at [here](https://developer.android.com/studio/index.html?gclid=CjwKEAiA0fnFBRC6g8rgmICvrw0SJADx1_zASntPtDFk4kuUeoPWy__8XLeW76pvfyuSTsSKh2FBHxoCJw7w_wcB). 
+1. Dowload Android Studio at [here](https://developer.android.com/studio/index.html?gclid=CjwKEAiA0fnFBRC6g8rgmICvrw0SJADx1_zASntPtDFk4kuUeoPWy__8XLeW76pvfyuSTsSKh2FBHxoCJw7w_wcB). (Make sure the version of Android Studio is 2.3.1)
 
 2. Change to an empty directory clone this repository, run:
 ```
@@ -95,6 +95,10 @@ To view data in *Personal* table, run:
 ```
 select * from Personal;
 ```
+
+### Reference
+
+PieChart and BarChart: [https://github.com/PhilJay/MPAndroidChart/tree/master/MPChartLib/src/main/java/com/github/mikephil/charting](https://github.com/PhilJay/MPAndroidChart/tree/master/MPChartLib/src/main/java/com/github/mikephil/charting)
 
 # User Guide
 
