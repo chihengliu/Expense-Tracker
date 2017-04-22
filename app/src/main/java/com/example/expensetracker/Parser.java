@@ -80,7 +80,6 @@ class Parser extends AsyncTask<Void,Integer,Integer>{
 
             if (data.toString().trim().equals("nulln")){
 
-
                 return 1;
             }
             JSONArray ja = new JSONArray(data);

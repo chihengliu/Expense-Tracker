@@ -8,6 +8,9 @@ import com.github.mikephil.charting.data.BarEntry;
 
 import java.util.ArrayList;
 
+//Reference
+//https://github.com/PhilJay/MPAndroidChart/tree/master/MPChartLib/src/main/java/com/github/mikephil/charting
+
 public class BarActivity extends AppCompatActivity {
 
     BarChart barChart;

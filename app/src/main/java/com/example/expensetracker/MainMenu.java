@@ -34,9 +34,7 @@ public class MainMenu extends AppCompatActivity {
         String method = "updateEventList";
         BackgroundTask backgroundTask = new BackgroundTask(this,MainMenu.this);
         backgroundTask.execute(method,name);
-        /*Intent startGroupMenu = new Intent(MainMenu.this, GroupMenu.class);
-        startActivity(startGroupMenu);
-        overridePendingTransition(R.animator.zoom_enter,R.animator.zoom_exit);*/
+
     }
 
     public void logout(View view){
