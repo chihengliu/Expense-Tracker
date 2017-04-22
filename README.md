@@ -96,6 +96,10 @@ To view data in *Personal* table, run:
 select * from Personal;
 ```
 
+### Reference
+
+PieChart and BarChart: [https://github.com/PhilJay/MPAndroidChart/tree/master/MPChartLib/src/main/java/com/github/mikephil/charting](https://github.com/PhilJay/MPAndroidChart/tree/master/MPChartLib/src/main/java/com/github/mikephil/charting)
+
 # User Guide
 
 ## Login/Logout & Register
